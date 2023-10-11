@@ -10,7 +10,7 @@
 
 body{
     display: flex;
-    position: relative;
+
     justify-content: center;
 
 }
@@ -89,7 +89,7 @@ body{
     height: 45px;
     transition: transform 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.322);
-    
+    cursor: pointer;
 }
 
 .contact_us:hover {
@@ -138,7 +138,7 @@ body{
     left: 0;
     top: 0;
 }
-/* Styles for the carousel container */
+/* Styles for the carousel product-list li */
 .carousel {
     left: 0;
     right: 0;
@@ -151,10 +151,10 @@ body{
     
 }
 
-/* Styles for the image slide container */
+/* Styles for the image slide product-list li */
 .carousel-slide {
     display: flex;
-    transition: transform 0.5s ease;
+    transition: transform 0.3s ease;
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -217,10 +217,172 @@ body{
     align-items: center;
     flex-direction: column;
     justify-content: space-around;
-    padding-top: 100px; /* NOTE: change for mobile*/
+    padding-top: 150px; /* NOTE: change for mobile*/
 }
 
+
+
 .product-list{
+    display: flex;
+    list-style: none;
+}
+  
+  .product-list li {
+    width: 24rem;
+    height: 17rem;
+    display: flex;
+    transition: width 0.3s, height 0.3s, transform 0.3s;
+    transform: translateX(0) translateY(0);
+    margin-right: -10rem;
+    position: relative;
+ 
+  }
+
+  .product-list li a{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+  }
+  
+  
+  .product-list li:hover {
+    width: 24rem;
+    height: 25rem;
+    transform: translateY(-12%) translateX(-25%); /* Move up and to the left */
+    z-index: 4; /* Set a higher z-index for the hovering li */
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  
+  .tile-le, .tile-r {
+    transition: 0.3s;/*transform 0.3s, width 0.3s, height 0.3s*/
+  }
+  
+  .tile-le {
+    flex: 1;
+    width: 24rem;
+    height: 17rem;
+    z-index: 4;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+  
+  .tile-r {
+    background-color: rgb(255, 255, 255);
+    flex: 1;
+    width: 6rem;
+    height: 17rem;
+    transform: translateX(-100%) translateY(0);
+    transition: 0.3s;
+    z-index: 3;
+    border-radius: 20px;
+    overflow: hidden;
+    
+  }
+  
+  .product-list li:hover .tile-r {
+    transform: translateX(0) translateY(0);
+    width: 24rem;
+    height: 25rem;
+    border-radius: 0px;
+    overflow: hidden;
+    
+  }
+  
+.r-cont{
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    padding-top: 30px;
+    padding-bottom: 45px;
+}
+
+.r-cont p{
+    font-size: 20px;
+    color: black;
+}
+
+.r-cont button{
+    border: none;
+    background-color: antiquewhite;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.322);
+    border-radius: 40px;
+    width: 70px;
+    height: 20px;
+    transition: 0.3s ease-in;
+    position: relative;
+}
+
+.r-cont button:hover{
+    position: relative;
+    transform: scale(1.2) translateY(-5px);
+    background-color: antiquewhite;
+}
+    
+
+  .product-list li:hover .tile-le {   /*    NOTE: NOT WORKING      */
+    width: 24rem;
+    height: 25rem;
+    border-radius: 0px;
+    overflow: hidden;
+  }
+  
+.request_sample-product_button{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 0, 0);
+    border: none;
+    border-radius: 50px;
+    height: 40px;
+    width: 160px;
+    font-weight: 600;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.322);
+    position: absolute;
+    transition: 0.5s ease-in;
+    cursor: pointer;
+    bottom: 50px;
+}
+
+.product-list li img{
+    height: 25rem;
+    width: auto;
+    object-fit: fill;
+}
+
+.tile-le h2{
+    position: relative;
+    bottom: 150px;
+    transform: translateX(0) translateY(-100%);
+    color: aliceblue;
+    left: 10px;
+    width: 50px;
+    transition: 0.3s;
+}
+
+
+
+.product-list li a {
+    text-decoration: none;
+}
+
+.product-list li:hover .tile-le h2{
+    font-size: 35px;
+}
+
+.product-list li:hover .request_sample-product_button{          /*    NOTE: NOT WORKING      */
+    transform: scale(1.5);
+    background-color: #70b5ff;
+    
+}
+
+
+/*.product-list{
     display: flex;
     gap: 30px;
     height: 10rem;
@@ -261,13 +423,13 @@ body{
 }
 
 .product-list li img{
-    width: 12rem;
-    max-width: 17rem;
+    width: 24rem;
+    max-width: 24rem;
     min-width: 7rem;
     height: 100%;/* NOTE: add max and min here*/
 }
 
-.tile-r{
+/*.tile-r{
     display: none;
 }
 
@@ -286,16 +448,16 @@ body{
 
 .tile-le h2{
     opacity: 100%;
-    transition: 0.5s ;
+    transition: 0.3s ;
 }
 
 .product-list li:hover{
     transform: scale(1.10);
     position: relative;
     transform: translateY(-15%);
-    height: 22rem;
+    height: 17rem;
     border-radius: 5px;
-    transition: 0.5s ;
+    transition: 0.3s ;
     overflow: hidden;
 }
 
@@ -305,7 +467,7 @@ body{
 
 .product-list li:hover .tile-r {
     display: block;
-    width: 12rem;
+    width: 24rem;
     background-color: #ffffff;
 }
 
@@ -326,5 +488,5 @@ body{
 
 .product-list li:hover .tile-le h2{
     display: none;
-}
+}*/
 
