@@ -37,3 +37,4 @@ function autoSlide() {
 setInterval(autoSlide, 10000); // Adjust the interval as needed (in milliseconds)
 
 showSlide(slideIndex);
+
