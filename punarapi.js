@@ -75,7 +75,7 @@ document.getElementById('item1').addEventListener('mouseover', function () {
 });
 
 document.getElementById('item1').addEventListener('mouseout', function () {
-    document.getElementById('item1').style.transform = 'translate(0px, 20px) rotate(0deg)';
+    document.getElementById('item1').style.transform = 'translate(0px, 50px) rotate(0deg)';
     document.getElementById('item2').style.transform = 'translate(-9px, -20px) rotate(12deg)';
 });
 
@@ -90,7 +90,7 @@ document.getElementById('item2').addEventListener('mouseover', function () {
 
 document.getElementById('item2').addEventListener('mouseout', function () {
     document.getElementById('item1').style.transform = 'translate(0px, 20px) rotate(0deg)';
-    document.getElementById('item2').style.transform = 'translate(-9px, -20px) rotate(12deg)';
+    document.getElementById('item2').style.transform = 'translate(-9px, -50px) rotate(12deg)';
     document.getElementById('item3').style.transform = 'translate(10px, 20px) rotate(-6deg)';
 });
 
@@ -105,7 +105,7 @@ document.getElementById('item3').addEventListener('mouseover', function(){
 
 document.getElementById('item3').addEventListener('mouseout', function () {
     document.getElementById('item2').style.transform = 'translate(-9px, -20px) rotate(12deg)';
-    document.getElementById('item3').style.transform = 'translate(10px, 20px) rotate(-6deg)';
+    document.getElementById('item3').style.transform = 'translate(10px, 50px) rotate(-6deg)';
     document.getElementById('item4').style.transform = 'translate(-5px, -10px) rotate(9deg)';
 });
 
@@ -120,7 +120,7 @@ document.getElementById('item4').addEventListener('mouseover', function(){
 
 document.getElementById('item4').addEventListener('mouseout', function () {
     document.getElementById('item3').style.transform = 'translate(10px, 20px) rotate(-6deg)';
-    document.getElementById('item4').style.transform = 'translate(-5px, -10px) rotate(9deg)';
+    document.getElementById('item4').style.transform = 'translate(-5px, -40px) rotate(9deg)';
     document.getElementById('item5').style.transform = 'translate(10px, 15px) rotate(-5deg)';
 });
 
@@ -133,5 +133,5 @@ document.getElementById('item5').addEventListener('mouseover', function(){
 
 document.getElementById('item5').addEventListener('mouseout', function(){
     document.getElementById('item4').style.transform = 'translate(-5px, -10px) rotate(9deg)';
-    document.getElementById('item5').style.transform = 'translate(10px, 15px) rotate(-5deg)';
+    document.getElementById('item5').style.transform = 'translate(10px, 45px) rotate(-5deg)';
 });

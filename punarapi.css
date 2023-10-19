@@ -1,6 +1,4 @@
-
-
-*{
+* {
 
     box-sizing: border-box;
     margin: 0;
@@ -30,11 +28,11 @@
     src: local('Codec Cold Trial Regular'), url('resource/fonts/Codec-Cold-Regular-trial.woff') format('woff');
 }
 
-body{
+body {
     display: flex;
     justify-content: center;
     width: 100%;
-    background-color: #5c7474;
+    background-color: #000000;
     margin: 0;
     padding: 0;
 }
@@ -64,13 +62,13 @@ body{
     top: 2rem;
 }
 
-.navbar{
-    width: 100%; 
+.navbar {
+    width: 100%;
     max-width: 1084px;
     height: 75px;
     margin: 3rem;
     display: flex;
-    align-items: center;  
+    align-items: center;
     background-color: #e6ceb5b5;
     border-radius: 50px;
     padding: 18px;
@@ -85,14 +83,14 @@ body{
     margin-left: 10px;
     width: 150px;
     height: auto;
-    cursor: pointer; 
+    cursor: pointer;
     background-color: transparent;
     /* the space between the logo
     the left end of the navbar is
     smaller than the button and right end */
 }
 
-.navlist{
+.navlist {
     display: flex;
     list-style: none;
     background-color: transparent;
@@ -116,11 +114,11 @@ body{
     font-weight: 800;
 }
 
-.contact_us{
+.contact_us {
     font-family: 'Codec Cold Trial ExtraBold';
     position: relative;
     color: aliceblue;
-    background-color:#c16632;
+    background-color: #c16632;
     color: #e6ceb5;
     border: none;
     border-radius: 50px;
@@ -141,7 +139,7 @@ body{
 
 
 
-.primary_request img{
+.primary_request img {
     position: absolute;
     top: 0;
     left: 0;
@@ -156,22 +154,23 @@ body{
 @media screen and (max-width: 800px) {
     .navlist li:not(.contact_us) {
         display: none;
-        
+
 
     }
+
     .contact_us {
         margin-left: auto;
     }
 }
 
-@media screen and (min-width: 1020px){
-    .navlist{
+@media screen and (min-width: 1020px) {
+    .navlist {
         position: relative;
-        left:23px;
+        left: 23px;
     }
 }
 
-.middle{
+.middle {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -180,6 +179,7 @@ body{
     left: 0;
     top: -175px;
 }
+
 /* Styles for the carousel product-list li */
 .carousel {
     left: 0;
@@ -201,7 +201,8 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    background-image: url(resource/media/pan1-1.jpg);/*figure this out for some reason it works without this*/
+    background-image: url(resource/media/pan1-1.jpg);
+    /*figure this out for some reason it works without this*/
     z-index: 2;
 }
 
@@ -229,11 +230,12 @@ body{
     position: absolute;
 }
 
-.carousel1{
+.carousel1 {
     background-color: transparent;
     width: 100%;
     height: 100%;
 }
+
 .prev-button {
     left: 0;
     width: 50%;
@@ -247,31 +249,49 @@ body{
     height: 1380px;
     top: 0;
 }
+
 /*u have to stop the hover function when with is computer is reduced less dan maybe 400px*/
-.product{
+.product {
     width: 100%;
     height: 100vh;
-    background-color:#5c7474;
+    background-color: #000000;
     z-index: 2;
     position: relative;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: space-around;
-    padding-top: 80px; /* NOTE: change for mobile*/
+    padding-top: 80px;
+    /* NOTE: change for mobile*/
+}
+
+.product-heading {
+    color: #e6ceb5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 30px 0px 30px;
+}
+
+.product-heading p {
+    width: 30%;
+}
+
+.product-heading h1 {
+    font-family: 'Codec Cold Trial Heavy';
+    font-size: 45px;
 }
 
 
-
-.product-list{
+.product-list {
     display: flex;
     list-style: none;
     position: relative;
     left: 16px;
-    
+
 }
-  
-  .product-list li {
+
+.product-list li {
     width: 24rem;
     height: 17rem;
     display: flex;
@@ -279,41 +299,43 @@ body{
     transform: translateX(0) translateY(0);
     margin-right: -10rem;
     position: relative;
-    
-  }
+
+}
 
 
-@media screen and (max-width: 900px){
-    .product{
+@media screen and (max-width: 900px) {
+    .product {
         display: flex;
         width: 100%;
         height: 1050px;
         padding-top: 0px;
-        
+
     }
-    .product-list{
+
+    .product-list {
         display: flex;
         flex-direction: column;
         top: -40px;
         gap: 30px;
     }
 
-    .request_sample-product_button{
+    .requestsample-productbutton {
         position: relative;
         bottom: -20px;
     }
-    
+
 }
 
-@media screen and (max-width: 577px){
-    .product{
+@media screen and (max-width: 577px) {
+    .product {
         display: flex;
         width: 100%;
         height: 1050px;
         padding-top: 0px;
-        
+
     }
-    .product-list{
+
+    .product-list {
         display: flex;
         flex-direction: column;
         top: -40px;
@@ -321,35 +343,39 @@ body{
         overflow: hidden;
     }
 
-    .request_sample-product_button{
+    .requestsample-productbutton {
         position: relative;
         bottom: -20px;
     }
-    
+
 }
 
-  .product-list li a{
+.product-list li a {
     display: flex;
     height: 100%;
     width: 100%;
     background-color: transparent;
-  }
-  
-  
-  .product-list li:hover {
+}
+
+
+.product-list li:hover {
     width: 24rem;
     height: 25rem;
-    transform: translateY(-12%) translateX(-25%); /* Move up and to the left */
-    z-index: 4; /* Set a higher z-index for the hovering li */
+    transform: translateY(-12%) translateX(-25%);
+    /* Move up and to the left */
+    z-index: 4;
+    /* Set a higher z-index for the hovering li */
     border-radius: 20px;
     overflow: hidden;
-  }
-  
-  .tile-le, .tile-r {
-    transition: 0.3s;/*transform 0.3s, width 0.3s, height 0.3s*/
-  }
-  
-  .tile-le {
+}
+
+.tile-le,
+.tile-r {
+    transition: 0.3s;
+    /*transform 0.3s, width 0.3s, height 0.3s*/
+}
+
+.tile-le {
     flex: 1;
     width: 24rem;
     height: 17rem;
@@ -357,9 +383,9 @@ body{
     border-radius: 20px;
     overflow: hidden;
     transition: 0.3s;
-  }
-  
-  .tile-r {
+}
+
+.tile-r {
     background-color: #8c9086;
     flex: 1;
     width: 6rem;
@@ -369,20 +395,20 @@ body{
     z-index: 3;
     border-radius: 20px;
     overflow: hidden;
-    
-  }
-  
-  .product-list li:hover .tile-r {
+
+}
+
+.product-list li:hover .tile-r {
     transform: translateX(0) translateY(0);
     width: 24rem;
     height: 25rem;
     border-radius: 0px;
     overflow: hidden;
-    
-  }
-  
-.r-cont{
-    
+
+}
+
+.r-cont {
+
     width: 100%;
     height: 100%;
     display: flex;
@@ -394,13 +420,13 @@ body{
     padding-bottom: 45px;
 }
 
-.r-cont p{
+.r-cont p {
     font-size: 20px;
     color: #e6ceb5;
     font-family: 'Codec Cold Trial Regular';
 }
 
-.r-cont button{
+.r-cont button {
     border: none;
     background-color: antiquewhite;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.322);
@@ -411,21 +437,22 @@ body{
     position: relative;
 }
 
-.r-cont button:hover{
+.r-cont button:hover {
     position: relative;
     transform: scale(1.2) translateY(-5px);
     background-color: antiquewhite;
 }
-    
 
-  .product-list li:hover .tile-le {   /*    NOTE: NOT WORKING      */
+
+.product-list li:hover .tile-le {
+    /*    NOTE: NOT WORKING      */
     width: 24rem;
     height: 25rem;
     border-radius: 0px;
     overflow: hidden;
-  }
-  
-.request_sample-product_button{
+}
+
+.requestsample-productbutton {
     color: rgb(0, 0, 0);
     background-color: #e6ceb5;
     border: none;
@@ -437,16 +464,16 @@ body{
     position: absolute;
     transition: 0.5s ease-in;
     cursor: pointer;
-    bottom: 40px;
+    bottom: -40px;
 }
 
-.product-list li img{
+.product-list li img {
     height: 25rem;
     width: auto;
     object-fit: fill;
 }
 
-.tile-le h2{
+.tile-le h2 {
     font-family: 'Codec Cold Trial Heavy';
     position: relative;
     bottom: 150px;
@@ -463,28 +490,29 @@ body{
     text-decoration: none;
 }
 
-.product-list li:hover .tile-le h2{
+.product-list li:hover .tile-le h2 {
     font-size: 32px;
 }
 
-.product-list li:hover .request_sample-product_button{          /*    NOTE: NOT WORKING      */
+.product-list li:hover .requestsample-productbutton {
+    /*    NOTE: NOT WORKING      */
     transform: scale(1.5);
     background-color: #70b5ff;
-    
+
 }
 
 
 
 
 
-.footer{
+.footer {
     position: relative;
     height: 100vh;
-    width:100%;
+    width: 100%;
     overflow: hidden;
 }
 
-.bookmark-container{
+.bookmark-container {
     position: absolute;
     top: -400px;
     left: 10px;
@@ -498,12 +526,12 @@ body{
     transition: transform 1s ease;
 }
 
-.map-cont{
+.map-cont {
     height: 100%;
     width: 100%;
 }
 
-.info-container{
+.info-container {
     position: absolute;
     bottom: -100px;
     width: 100%;
@@ -538,71 +566,76 @@ body{
     z-index: 3;
 }
 
-.review-section{
+.review-section {
     width: 100%;
     height: 1000px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-around;
-    background-color: #5c7474;
+    background-color: #000000;
     margin-top: 100px;
 }
+
 /* review Styles */
 .review {
-width: 100%;
-height: 650px; /* Adjust the height as needed */
-overflow: hidden; /* Hide the horizontal scrollbar */
-display: flex;
-align-items: center;
-justify-content: flex-start;
-cursor: grab;
-padding: 50px 20px 50px 20px;
+    width: 100%;
+    height: 750px;
+    /* Adjust the height as needed */
+    overflow: hidden;
+    /* Hide the horizontal scrollbar */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: grab;
+    padding: 50px 20px 50px 20px;
 
 }
 
 /* review-list Styles */
 .review-list {
-display: flex;
-gap: 0px; /* Adjust the gap between items as needed */
+    display: flex;
+    gap: 0px;
+    /* Adjust the gap between items as needed */
 
 }
 
 /* Individual Item Styles */
 .review-list li {
-width: 390px;
-height: auto;
-border-radius: 50px;
-list-style: none;
-background-color: var(--item-color); /* Use variables for different colors */
-position: relative;
-display: flex;
-flex-direction: column;
-padding: 37px 25px 30px 25px;
-justify-content: space-between;
+    width: 390px;
+    height: auto;
+    border-radius: 50px;
+    list-style: none;
+    background-color: var(--item-color);
+    /* Use variables for different colors */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 25px 5px 25px;
+
 
 }
 
-.review-list li h2{
+.review-list li h2 {
     font-family: 'Codec Cold Trial ExtraBold';
     font-size: 38px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
-.author-details{
+.author-details {
     font-size: 22px;
-    padding: 20px 0px 20px 0px;
+    padding: 10px 0px 15px 0px;
 }
 
-.author-details h3{
+.author-details h3 {
     font-family: 'Codec Cold Trial ExtraBold';
 }
 
-.para-review{
-    padding: 15px 0px 10px 0px;
+.para-review {
+    padding: 0px 0px 10px 0px;
 }
 
-.para-review p{
+.para-review p {
     font-family: 'Codec Cold Trial Regular';
     font-size: 20px;
 }
@@ -638,16 +671,14 @@ justify-content: space-between;
 .review-list li:nth-child(5) {
     --item-color: #e6ceb5;
     transform: translate(10px, 15px) rotate(-15deg);
-    transition: 0.3s ;
+    transition: 0.3s;
 }
 
 
 
-.review-section h1{
-color: #e6ceb5;
-font-family: 'Codec Cold Trial Heavy';
-padding: 40px 0px 0px 50px;
-font-size: 50px;
+.review-section h1 {
+    color: #e6ceb5;
+    font-family: 'Codec Cold Trial Heavy';
+    padding: 40px 0px 0px 70px;
+    font-size: 45px;
 }
-
-  
