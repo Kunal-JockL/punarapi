@@ -2,8 +2,8 @@ const prevButton = document.querySelector(".prev-button");
 const nextButton = document.querySelector(".next-button");
 const slide = document.querySelector(".carousel-slide");
 const images = [
-    "resource/media/pan1-1.jpg",
-    "resource/media/pan1-2.jpg"
+    "resource/media/general/pan1-1.jpg",
+    "resource/media/general/pan1-2.jpg"
     // Add more image URLs as needed
 ];
 

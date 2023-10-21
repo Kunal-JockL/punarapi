@@ -46,4 +46,15 @@ CT.addEventListener('click', function () {
     zc.style.zIndex = '3';
 });
 
+window.addEventListener('load', function() {
+    MTl.style.color = 'white';
+    MTl.style.transform = 'scale(1.2)';
+    RTl.style.color = '#ffffff98';
+    RTl.style.transform = 'scale(1)';
+    CTl.style.color = '#ffffff98';
+    CTl.style.transform = 'scale(1)';
+    zm.style.zIndex = '3';
+    zr.style.zIndex = '2';
+    zc.style.zIndex = '1';
+});
 
