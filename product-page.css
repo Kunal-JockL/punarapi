@@ -534,3 +534,26 @@ input:disabled {
   z-index: 1;
 }
 
+/*SCROLLBAR*/
+
+/* Track */
+::-webkit-scrollbar {
+  width: 10px; /* Set the width of the scrollbar */
+  background-color: transparent; /* Make the track transparent */
+}
+
+/* Thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* Set the color of the thumb */
+  border-radius: 10px; /* Add border radius to the thumb */
+}
+
+/* Hide buttons */
+::-webkit-scrollbar-button {
+  display: none; /* Hide scrollbar buttons */
+}
+
+/* Track Piece */
+::-webkit-scrollbar-track-piece {
+  background-color: black; /* Make the track piece transparent */
+}
