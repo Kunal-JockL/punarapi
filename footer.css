@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+    position: relative;
+    height: 70vh;
+    width: 100%;
+    background-color: aliceblue;
+}
+
+.footer {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
