@@ -12,24 +12,15 @@
     <link rel="icon" href="/resource/media/general/Logo_hero_icon.png" type="image/png" sizes="36x36">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/punarapi.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    
 </head>
 
 <body>
     <section class="main">
-        <nav class="navbar-wrapper">
-            <div class="navbar">
-                <img src="resource\media\general\Logo-2.png" alt="Loading" class="logo">
-                <ul class="navlist">
-                    <li>Product<a href="#product"></a></li>
-                    <li>Quality<a href="#"></a></li>
-                    <li>Review<a href="#"></a></li>
-                    <li>Blog<a href="#"></a></li>
-                    <li>FAQs<a href="#"></a></li>
-                    <button class="contact_us">Contact Us<a href="#"></a></button>
-                </ul>
-            </div>
-        </nav>
+        <%- include('partials/_navbar.ejs'); %>
         <section class="middle">
             <section class="carousel">
                 <section class="carousel1">
@@ -192,6 +183,7 @@
     <%- include('partials/_footer.ejs'); %>
     </section>
     <script src="/js/punarapi.js" async defer></script>
+    <script src="/js/navbar.js" async defer></script>
 </body>
 
 </html>

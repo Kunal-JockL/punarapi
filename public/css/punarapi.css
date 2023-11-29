@@ -10,14 +10,14 @@
     font-family: 'Codec Cold Trial Heavy';
     font-style: normal;
     font-weight: normal;
-    src: local('Codec Cold Trial Heavy'), url('resource/fonts/Codec-Cold-Heavy-trial.woff') format('woff');
+    src: local('Codec Cold Trial Heavy'), url('/resource/fonts/Codec-Cold-Heavy-trial.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Codec Cold Trial ExtraBold';
     font-style: normal;
     font-weight: normal;
-    src: local('Codec Cold Trial ExtraBold'), url('resource/fonts/Codec-Cold-ExtraBold-trial.woff') format('woff');
+    src: local('Codec Cold Trial ExtraBold'), url('/resource/fonts/Codec-Cold-ExtraBold-trial.woff') format('woff');
 }
 
 
@@ -25,7 +25,7 @@
     font-family: 'Codec Cold Trial Regular';
     font-style: normal;
     font-weight: normal;
-    src: local('Codec Cold Trial Regular'), url('resource/fonts/Codec-Cold-Regular-trial.woff') format('woff');
+    src: local('Codec Cold Trial Regular'), url('/resource/fonts/Codec-Cold-Regular-trial.woff') format('woff');
 }
 
 body {
@@ -46,130 +46,6 @@ body {
     width: 100%;
 }
 
-
-/*navbar*/
-
-/*add the animation in the navbar the one from shift*/
-
-.navbar-wrapper {
-    height: 75px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: sticky;
-    z-index: 100;
-    top: 2rem;
-}
-
-.navbar {
-    width: 100%;
-    max-width: 1084px;
-    height: 75px;
-    margin: 3rem;
-    display: flex;
-    align-items: center;
-    background-color: #ffffffb5;
-    border-radius: 50px;
-    padding: 18px;
-    backdrop-filter: blur(10px);
-    z-index: 100;
-    top: 2rem;
-}
-
-
-.logo {
-    position: relative;
-    margin-left: 10px;
-    width: 150px;
-    height: auto;
-    cursor: pointer;
-    background-color: transparent;
-    top: 2px;
-    /* the space between the logo
-    the left end of the navbar is
-    smaller than the button and right end */
-}
-
-.navlist {
-    display: flex;
-    list-style: none;
-    background-color: transparent;
-    justify-content: space-around;
-    padding: 0px;
-    flex-basis: auto;
-    flex-grow: 1;
-    margin-left: 10px;
-    margin-right: 0px;
-    align-items: center;
-}
-
-.navlist li {
-    font-family: 'Codec Cold Trial ExtraBold';
-    position: relative;
-    top: 3px;
-    cursor: pointer;
-    background-color: transparent;
-    color: #c16632;
-    font-size: 17px;
-    font-weight: 800;
-}
-
-.contact_us {
-    font-family: 'Codec Cold Trial ExtraBold';
-    position: relative;
-    color: aliceblue;
-    background-color: #c16632;
-    color: white;
-    border: none;
-    border-radius: 50px;
-    width: 150px;
-    font-size: 17px;
-    height: 45px;
-    transition: transform 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.322);
-    cursor: pointer;
-    padding-top: 3px;
-}
-
-.contact_us:hover {
-    background-color: white;
-    transform: scale(1.05);
-    color: #c16632;
-}
-
-
-
-.primary_request img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-}
-
-
-
-@media screen and (max-width: 800px) {
-    .navlist li:not(.contact_us) {
-        display: none;
-
-
-    }
-
-    .contact_us {
-        margin-left: auto;
-    }
-}
-
-@media screen and (min-width: 1020px) {
-    .navlist {
-        position: relative;
-        left: 23px;
-    }
-}
 
 .middle {
     display: flex;
@@ -340,7 +216,7 @@ body {
 
 }
 
-/* @media screen and (max-width: 577px) {
+ @media screen and (max-width: 585px) {
     .product {
         display: flex;
         width: 100%;
@@ -362,7 +238,7 @@ body {
         bottom: -20px;
     }
 
-} */
+} 
 
 .product-list li a {
     display: flex;
@@ -689,65 +565,3 @@ body {
     background-color: transparent; /* Make the track piece transparent */
 }
 
-/* --------------------------------------------footers css------------------------------------------------- */
-
-.footer{
-    color: aliceblue;
-    height: 500px;
-    width: 100%;
-    align-items: center;
-    justify-content: flex-end;
-    background-color: #282828;
-}
-
-.upperFooter{
-    height: 90%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.socialContent{
-    width: 10%;
-}
-
-.footerDetail{
-    height: 100%;
-    width: 35%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-around;
-}
-
-.mapContent{
-    width: 55%;
-}
-
-.socialContent{
-    height: 100%;
-    display: flex;
-    justify-content: flex-start;
-}
-
-.socialContent ul{
-    padding: 40px 0 0 2vw;
-}
-
-.socialContent ul li{
-    list-style-type: none;
-}
-
-.socialContent img{
-    height: 25px;
-    width: 25px;
-}
-
-
-.lowerFooter{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-}
