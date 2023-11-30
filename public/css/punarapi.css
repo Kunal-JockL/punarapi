@@ -41,7 +41,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: absolute;
     justify-content: center;
     width: 100%;
 }
@@ -54,7 +53,7 @@ body {
     position: relative;
     width: 100%;
     left: 0;
-    top: -175px;
+    top: -75px;
 }
 
 /* Styles for the carousel product-list li */
