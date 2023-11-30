@@ -7,6 +7,7 @@ document.getElementById('nav-icon3').addEventListener("click", function () {
     document.querySelector('.middle').classList.toggle('dropdown-middle');
     document.querySelector('.logo').classList.toggle('dropdown-logo');
     document.querySelector('.navlist').classList.toggle('dropdown-navlist');
+    document.querySelector('.hamburger').classList.toggle('dropdown-hamburger');
     var contactUs = document.querySelector('.contact_us');
     contactUs.style.display = (contactUs.style.display === 'none' || contactUs.style.display === '') ? 'block' : 'none';
     document.querySelectorAll('.navlist li').forEach(li => {

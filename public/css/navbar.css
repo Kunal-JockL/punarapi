@@ -265,15 +265,12 @@
         justify-content: space-around;
     }
 
-    .dropdown-navlist li{
-        display: visible;
-    }
-    .dropdown-navlist-item{
-        display: visible;
-    }
-
     .dropdown-contact_us{
         display: visible;
     }
+
+    .dropdown-hamburger {
+        top: -5px;
+    } 
 }
 
