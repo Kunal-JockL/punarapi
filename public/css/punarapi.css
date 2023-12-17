@@ -177,17 +177,40 @@ body {
     justify-content: center;
     align-items: center;
     list-style: none;
+    column-gap: 2rem;
     position: relative;
     left: 16px;
+    height: 17rem;
 }
 
-.product-list li {
+.product-item {
     border-radius: 2rem;
     width: 11rem;
     height: 17rem;
-    transition: width 0.3s, height 0.3s, transform 0.3s;
-    transform: translateX(0) translateY(0);
+    transition: 0.3s;
     position: relative;
+    color: white;
+    overflow: hidden;
+}
+
+.product-item:hover {
+    cursor: pointer;
+    height: 24rem;
+    width: 24rem;
+    transform: translateY(-20%);
+}
+
+.tile-le {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/resource/media/general/tile1.jpg');
+    background-size: cover;
+}
+
+.tile-name {
+    width: 90%;
 }
 
 /* .product-list li:hover {
@@ -199,15 +222,14 @@ body {
     overflow: hidden;
 } */
 
-.product-item {
+/* .product-item {
     cursor: pointer;
 }
 
 .tile-le,
 .tile-r {
     transition: 0.3s;
-    /*transform 0.3s, width 0.3s, height 0.3s*/
-}
+} */
 
 /* .tile-le {
     width: 11rem;
@@ -229,7 +251,7 @@ body {
     width: 50px;
     transition: 0.3s;
 } */
-
+/* 
 .tile-r {
     background-color: #8c9086;
     flex: 1;
@@ -249,7 +271,6 @@ body {
     height: 25rem;
     border-radius: 0px;
     overflow: hidden;
-
 }
 
 .r-cont {
@@ -288,6 +309,35 @@ body {
     background-color: antiquewhite;
 }
 
+.product-list li {
+    border-radius: 2rem;
+    width: 11rem;
+    height: 17rem;
+    transition: width 0.3s, height 0.3s, transform 0.3s;
+    transform: translateX(0) translateY(0);
+    position: relative;
+}
+
+.product-list li img {
+    height: 25rem;
+    width: auto;
+    object-fit: fill;
+}
+
+.product-list li a {
+    text-decoration: none;
+}
+
+.product-list li:hover .tile-le h2 {
+    font-size: 32px;
+}
+
+.product-list li:hover .requestsample-productbutton {
+    transform: scale(1.5);
+    background-color: #70b5ff;
+
+} */
+
 
 /* .product-list li:hover .tile-le {
     width: 24rem;
@@ -310,31 +360,6 @@ body {
     cursor: pointer;
     bottom: -40px;
 }
-
-.product-list li img {
-    height: 25rem;
-    width: auto;
-    object-fit: fill;
-}
-
-
-
-.product-list li a {
-    text-decoration: none;
-}
-
-.product-list li:hover .tile-le h2 {
-    font-size: 32px;
-}
-
-.product-list li:hover .requestsample-productbutton {
-    /*    NOTE: NOT WORKING      */
-    transform: scale(1.5);
-    background-color: #70b5ff;
-
-}
-
-
 
 .review-section {
     width: 100%;
