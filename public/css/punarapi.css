@@ -263,20 +263,90 @@ body {
     padding: 0.3rem 0.6rem;
 }
 
-.requestsample-productbutton {
-    color: rgb(0, 0, 0);
-    background-color: white;
-    border: none;
-    border-radius: 50px;
-    height: 40px;
-    width: 160px;
-    font-weight: 600;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.322);
-    position: absolute;
-    transition: 0.5s ease-in;
-    cursor: pointer;
-    bottom: -40px;
+
+.quality{
+    width: 100%;
+    height: 100vh;
+    padding: 40px 7vw 0px 7vw;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Codec Cold Trial Regular';
 }
+
+.qualityHeading h1{
+    font-family: 'Codec Cold Trial Heavy';
+    font-size: 45px;
+}
+
+.choosePoints{
+    width: 100%;
+    height: 100px;
+}
+
+.choosePointsItems{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.choosePointsItems li{
+    list-style: none;
+}
+
+.chooseItem{
+    border: none;
+    background-color: #ffffff;
+    font-size: 20px;
+    font-family: 'Codec Cold Trial Heavy';
+}
+
+.pointsDisplay{
+    width: 100%;
+    height: 70%;
+}
+
+.pointsListContent{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.pointsContent{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #ff0000;
+    list-style: none;
+    display: flex;
+    
+}
+
+.pointspara{
+    width: 35%;
+    height: 100%;
+}
+
+.pointspara p{
+    width: 100%;
+}
+
+.pointsImages{
+    width: 65%;
+    height: 100%;
+}
+
+.pointsImages img{
+    width: 100%;
+    height: auto;
+    
+}
+
+
+
+
+
 
 .review-section {
     width: 100%;
