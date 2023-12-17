@@ -87,5 +87,3 @@ window.addEventListener('load', function() {
     }
 
 });
-
-
