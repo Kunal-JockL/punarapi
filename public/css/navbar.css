@@ -16,7 +16,7 @@
 .navbar {
     width: 100%;
     max-width: 1084px;
-    height: 75px;
+    height: 100%;
     margin: 3rem;
     display: flex;
     align-items: center;
@@ -36,9 +36,6 @@
     cursor: pointer;
     background-color: transparent;
     top: 2px;
-    /* the space between the logo
-    the left end of the navbar is
-    smaller than the button and right end */
 }
 
 .navlist {
