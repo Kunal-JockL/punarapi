@@ -191,6 +191,7 @@ body {
     position: relative;
     color: white;
     overflow: hidden;
+    transition: 0.3s ease;
 }
 
 .product-item:hover {
@@ -201,16 +202,84 @@ body {
 }
 
 .tile-le {
+    width: 11rem;
     height: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     background-image: url('/resource/media/general/tile1.jpg');
     background-size: cover;
 }
 
 .tile-name {
+    font-size: 1.3rem;
     width: 90%;
+    margin-bottom: 1rem;
+    transition: 0.3s ease;
+}
+
+.product-item:hover .tile-name {
+    font-size: 1.6rem;
+    margin-bottom: 8rem;
+}
+
+.tile-r {
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Codec Cold Trial Regular';
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 11rem;
+    height: 100%;
+    background-color: #8c9086;
+    transition: 0.3s ease;
+}
+
+.tile-r-wrapper {
+    box-sizing: border-box;
+    height: 100%;
+    width: 11rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.product-item:hover .tile-r {
+    width: 24rem;
+}
+
+.product-item:hover .tile-r-wrapper {
+    width: 13rem;
+}
+
+.r-cont button {
+    border: none;
+    background-color: antiquewhite;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.322);
+    border-radius: 40px;
+    width: 70px;
+    height: 20px;
+    transition: 0.3s ease-in;
+    position: relative;
+}
+
+.r-cont button:hover {
+    position: relative;
+    transform: scale(1.2) translateY(-5px);
+    background-color: antiquewhite;
+}
+
+.view-button {
+    border: none;
+    background-color: antiquewhite;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.322);
+    border-radius: 40px;
+    color: black;
+    padding: 0.1rem 0.5rem;
 }
 
 /* .product-list li:hover {
