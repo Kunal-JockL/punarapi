@@ -1,11 +1,17 @@
 .blog-section {
-    width: 100vw;
+    position: relative;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     row-gap: 2rem;
-    padding: 0rem 10rem;
+    padding: 5rem 10rem;
+    padding-right: 0;
+
+    background-image: url('/resource/media/bg/pattern.svg');
+    background-size: 80vw;
+    background-repeat: repeat;
 }
 
 .blog-title {
@@ -21,15 +27,21 @@
 
 .videos-container {
     width: 100%;
-    overflow-x: auto;
+    overflow-x: scroll;
+    padding: 0 0 1rem;
     white-space: nowrap;
-    padding: 20px;
     box-sizing: border-box;
 }
 
-.video {
+.video-link {
     display: inline-block;
     width: 480px;
     height: 270px;
-    margin-right: 10px;
+    margin-right: 2rem;
+}
+
+.video {
+    width: 480px;
+    height: 270px;
+    pointer-events: none;
 }
