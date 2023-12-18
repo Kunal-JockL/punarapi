@@ -15,7 +15,16 @@
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/punarapi.css">
     <link rel="stylesheet" href="/css/navbar.css">
+
+    <link rel="stylesheet" href="/css/blog.css">
+    
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
 </head>
 
 <body>
@@ -236,12 +245,30 @@
             <section class="faqs"></section>
             <section class="request_sample"></section>
         </section>
+
+        <section class="blog-section">
+            <h1 class="blog-title">Our Blogs</h1>
+            <p class="blog-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. In aliquam quis quos aut. Iure officiis soluta voluptatem ullam amet blanditiis aperiam quaerat? Illo maxime nam earum cum molestiae consequuntur distinctio!</p>
+            <div class="videos-container">
+                <a href="https://www.youtube.com/watch?v=ynvOBQ_DrO4" class="video-link" data-video-id="ynvOBQ_DrO4">
+                    <iframe class="video" src="https://www.youtube.com/embed/ynvOBQ_DrO4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" frameborder="0" allowfullscreen></iframe>
+                </a>
+                <a href="https://www.youtube.com/watch?v=pxdU2Po6Hpg" class="video-link" data-video-id="pxdU2Po6Hpg">
+                    <iframe class="video" src="https://www.youtube.com/embed/pxdU2Po6Hpg" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" frameborder="0" allowfullscreen></iframe>
+                </a>
+            </div>  
+        </section>
         
     <%- include('partials/_footer.ejs'); %>
     </section>
     <script src="/js/punarapi.js" async defer></script>
     <script src="/js/navbar.js" async defer></script>
+
+
+    <script src="/js/blog.js" charset="utf-8"></script>
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </body>
 
 </html>
