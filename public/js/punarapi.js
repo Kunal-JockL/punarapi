@@ -38,6 +38,65 @@ setInterval(autoSlide, 10000); // Adjust the interval as needed (in milliseconds
 
 showSlide(slideIndex);
 
+const pointsContent1 = document.getElementById('pointsContent1');
+const pointsContent2 = document.getElementById('pointsContent2');
+const pointsContent3 = document.getElementById('pointsContent3');
+const pointsContent4 = document.getElementById('pointsContent4');
+
+chooseItem1.addEventListener("click", () =>{
+    pointsContent1.style.zIndex = '3';
+    pointsContent2.style.zIndex = '0';
+    pointsContent3.style.zIndex = '0';
+    pointsContent4.style.zIndex = '0';
+    var typed1 = new Typed('#pointSentence1', {
+        strings: ['Our tiles embody sustainability by ingeniously repurposing plastic waste. By utilizing recycled materials, we contribute to a circular economy, conserve precious resources, and take a proactive step in reducing environmental pollution. Our commitment to sustainability is reflected in every tile, showcasing a fusion of eco-friendliness and innovative design.'],
+        typeSpeed: 10,
+    });
+    return () => {
+        typed1.destroy();
+    };
+});
+chooseItem2.addEventListener("click", () =>{
+    pointsContent1.style.zIndex = '0';
+    pointsContent2.style.zIndex = '3';
+    pointsContent3.style.zIndex = '0';
+    pointsContent4.style.zIndex = '0';
+    var typed2 = new Typed('#pointSentence2', {
+        strings: ['Elevate your space with our tiles that offer a spectrum of vibrant and customizable color options. From bold hues to subtle tones, our tiles provide an extensive palette to match your style. Ensuring color consistency and UV resistance, our tiles stand the test of time, maintaining their brilliance and aesthetic appeal for years to come.'],
+        typeSpeed: 10,
+    });
+    return () => {
+        typed2.destroy();
+    };
+});
+chooseItem3.addEventListener("click", () =>{
+    pointsContent1.style.zIndex = '0';
+    pointsContent2.style.zIndex = '0';
+    pointsContent3.style.zIndex = '3';
+    pointsContent4.style.zIndex = '0';
+    var typed3 = new Typed('#pointSentence3', {
+        strings: ['Experience durability redefined with our tiles. Crafted for strength, our tiles are engineered to withstand wear and tear in high-traffic areas, ensuring longevity and low maintenance. Their resistance to impact and exceptional strength make them the perfect choice for spaces that demand both resilience and style.'],
+        typeSpeed: 10,
+    });
+    return () => {
+        typed3.destroy();
+    };
+});
+chooseItem4.addEventListener("click", () =>{
+    pointsContent1.style.zIndex = '0';
+    pointsContent2.style.zIndex = '0';
+    pointsContent3.style.zIndex = '0';
+    pointsContent4.style.zIndex = '3';
+    
+    var typed4 = new Typed('#pointSentence4', {
+        strings: ['At the core of our mission is a commitment to minimizing our environmental footprint. By utilizing recycled plastic waste, our tiles significantly reduce carbon emissions associated with traditional manufacturing. Energy-efficient processes and eco-friendly packaging further underscore our dedication to providing a sustainable, high-quality tiling solution.'],
+        typeSpeed: 10,
+    });
+    return () => {
+        typed4.destroy();
+    };
+});
+
 const review = document.querySelector(".review");
 const review_list = document.querySelector(".review_list");
 
