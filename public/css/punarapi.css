@@ -377,7 +377,7 @@ body {
 /* review Styles */
 .review {
     width: 100%;
-    height: 500px;
+    height: 600px;
     /* Adjust the height as needed */
     overflow: hidden;
     /* Hide the horizontal scrollbar */
@@ -399,8 +399,8 @@ body {
 
 /* Individual Item Styles */
 .review-list li {
-    width: 320px;
-    height: auto;
+    width: 380px;
+    height: 430px;
     border-radius: 50px;
     list-style: none;
     background-color: var(--item-color);
@@ -419,7 +419,7 @@ body {
 }
 
 .review-begin{
-    color: var(--font-color);
+    color: white;
     z-index: 5;
 }
 
@@ -441,7 +441,7 @@ body {
 .para-review p {
     font-family: 'Codec Cold Trial Regular';
     font-size: 17px;
-    color: var(--font-color);
+    color: white;
 }
 
 .review-img{
@@ -494,7 +494,7 @@ body {
 
 .review-overlay{
     position: relative;
-    background: linear-gradient(to right, #0000009b, #00000000);
+    background: linear-gradient(to top, #0000009b, #00000000);
     position: absolute;
     z-index: 1;
     height: 120%;
@@ -521,7 +521,7 @@ body {
 
 /* Thumb */
 ::-webkit-scrollbar-thumb {
-    background-color: #888; /* Set the color of the thumb */
+    background-color: #464646; /* Set the color of the thumb */
     border-radius: 10px; /* Add border radius to the thumb */
 }
 
@@ -532,7 +532,7 @@ body {
 
 /* Track Piece */
 ::-webkit-scrollbar-track-piece {
-    background-color: transparent; /* Make the track piece transparent */
+    background-color: rgb(163, 163, 163); /* Make the track piece transparent */
 }
 
 @media screen and (max-width: 900px) {
