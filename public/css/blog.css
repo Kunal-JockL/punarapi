@@ -1,0 +1,35 @@
+.blog-section {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    row-gap: 2rem;
+    padding: 0rem 10rem;
+}
+
+.blog-title {
+    font-size: 60px;
+    font-family: 'Codec Cold Trial Heavy';
+}
+
+.blog-subtitle {
+    font-size: 20px;
+    width: 50%;
+    font-family: 'Codec Cold Trial Regular';
+}
+
+.videos-container {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.video {
+    display: inline-block;
+    width: 480px;
+    height: 270px;
+    margin-right: 10px;
+}
