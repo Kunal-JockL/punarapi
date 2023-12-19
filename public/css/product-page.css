@@ -20,15 +20,18 @@
   src: local('Codec Cold Trial Regular'), url('/resource/fonts/Codec-Cold-Regular-trial.woff') format('woff');
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-/* Reset styles for body and margin/padding */
 html,
 body {
   margin: 0;
   padding: 0;
 }
 
-/* Apply styles for the entire body content */
 body {
   display: flex;
   flex-direction: column;

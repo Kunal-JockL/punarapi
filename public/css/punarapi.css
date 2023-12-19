@@ -37,6 +37,7 @@
 
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     width: 100%;
     background-color:var(--bg-color);
@@ -45,6 +46,8 @@ body {
 }
 
 .main {
+    position: absolute;
+    top: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -60,7 +63,6 @@ body {
     position: relative;
     width: 100%;
     left: 0;
-    top: -75px;
 }
 
 /* Styles for the carousel product-list li */
