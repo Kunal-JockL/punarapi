@@ -290,6 +290,12 @@ body {
     background-color: rgb(163, 163, 163); /* Make the track piece transparent */
 }
 
+@media screen and (max-width: 1200px) {
+    .product-heading p {
+        width: 50%;
+    }
+}
+
 @media screen and (max-width: 900px) {
     .product {
         display: flex;
