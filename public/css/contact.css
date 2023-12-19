@@ -1,39 +1,49 @@
 .contact-section {
     position: relative;
-    width: 100%;
-    height: 200px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    row-gap: 2rem;
+    width: 100%;
     color: white;
     font-family: 'Codec Cold Trial Regular';
-    padding: 10rem;
+    padding: 5rem 10rem;
 
     background-image: url('/resource/media/bg/pattern-dark.svg');
     background-size: 80vw;
     background-repeat: repeat;
 }
 
-.contact-wrapper {
+.contact-request-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-request-title-wrapper {
     max-width: 40rem;
     padding-right: 3rem;
 }
 
-.contact-title {
-    font-size: 4rem;
+.contact-request-title {
+    font-size: 3.5rem;
     font-family: 'Codec Cold Trial Heavy';
 }
 
-.contact-subtitle {
+.contact-request-subtitle {
+    margin-top: 1rem;
     font-size: 1.2rem;
 }
 
-.your-info-title {
+.form-section-title {
+    color: #e15819;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.379);
     font-weight: 600;
     padding: 0.5rem;
+    padding-top: 1rem;
 }
 
-.contact-form {
+.form-section {
     display: grid;
     grid-template-columns: repeat(2, 20vw);
 }
@@ -62,4 +72,15 @@
     padding-left: 0.5rem;
     font-family: 'Codec Cold Trial Regular';
     height: 2.2rem;
+}
+
+.textarea-input {
+    padding-top: 0.5rem;
+    height: 5rem;
+    resize: vertical;
+}
+
+.submit-button {
+    margin-top: 1rem;
+    margin-left: 0.5rem;
 }
