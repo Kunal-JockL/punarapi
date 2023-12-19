@@ -97,6 +97,10 @@
 }
 
 @media screen and (max-width: 1200px){
+    .quality{
+        height: 80vh;
+    }
+
     .pointSentence{
         font-size: 18px;
     }
@@ -206,8 +210,8 @@
     }
 
     .pointsImages img{
-        width: auto;
-        height: 100%;
+        width: 100%;
+        height: auto;
     }
 
     .choosePointsItems{
@@ -229,7 +233,7 @@
     }
 
     .pointSentence{
-        font-size: 16px;
+        font-size: 14px;
     }
 } 
 

@@ -1,85 +1,75 @@
 .review-section {
+    position: relative;
     width: 100%;
-    height: 800px;
+    height: 600px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-around;
-    background-color: var(--bg-color);
-    margin-top: 0px;
+    
+    margin: 0;
+    padding: 0;
 }
 
-/* review Styles */
-.review {
-    width: 100%;
-    height: 600px;
-    /* Adjust the height as needed */
-    overflow: hidden;
-    /* Hide the horizontal scrollbar */
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    cursor: grab;
-    padding: 50px 20px 50px 20px;
-
+.swiper {
+    height: 500px;
+    width: 100%; 
+    padding-top: 0px;
+    padding-bottom: 70px;
 }
 
-/* review-list Styles */
-.review-list {
-    display: flex;
-    gap: 0px;
-    /* Adjust the gap between items as needed */
 
-}
 
 /* Individual Item Styles */
-.review-list li {
-    width: 380px;
-    height: 430px;
-    border-radius: 50px;
+.swiper-slide {
+    width: 600px !important;
+    height: 430px !important;
+    border-radius: 30px;
     list-style: none;
     background-color: var(--item-color);
-    position: relative;
-    display: flex;
+    display: flex !important;
     flex-direction: column;
-    justify-content: flex-end;
-    padding: 0px 0px 20px 25px;
+    justify-content: flex-end !important;
+    padding: 0px 20px 20px 25px;
     overflow: hidden;
+    background-position: center; 
+    background-size: cover;
 }
 
-.review-list li h2 {
+.swiper-slide h2 {
     font-family: 'Codec Cold Trial ExtraBold';
-    font-size: 23px;
-    padding-bottom: 8px;
+    font-size: 20px;
+    padding-bottom: 5px;
 }
 
-.review-begin{
+.review-begin {
+    position: relative;
     color: white;
     z-index: 5;
 }
 
 .author-details {
-    font-size: 15px;
+    font-size: 13px;
     padding: 8px 0px 12px 0px;
 }
 
 .author-details h3 {
-    font-family: 'Codec Cold Trial Regular';
+    font-family: 'Codec Cold Trial Extrabold';
 }
 
 
 .para-review {
-    padding: 0px 0px 10px 0px;
+    position: relative;
+    padding: 0px 8px 10px 0px;
     z-index: 5;
 }
 
 .para-review p {
     font-family: 'Codec Cold Trial Regular';
-    font-size: 17px;
+    font-size: 14px;
     color: white;
 }
 
-.review-img{
+.review-img {
     position: absolute;
     height: 100%;
     top: -10px;
@@ -90,58 +80,125 @@
     z-index: 0;
 }
 
-.review-img img{
+.review-img img {
     height: 110%;
     z-index: 0;
 }
 
 
-/* Colors for Individual Items */
-.review-list li:nth-child(1) {
-    --item-color: rgba(255, 255, 255, 0);
-    transform: translate(0px, 20px) rotate(0deg);
-    transition: 0.3s;
-}
 
-.review-list li:nth-child(2) {
-    --item-color: rgba(255, 255, 255, 0);
-    transform: translate(-9px, -20px) rotate(12deg);
-    transition: 0.3s;
-}
-
-.review-list li:nth-child(3) {
-    --item-color: rgba(255, 255, 255, 0);
-    transform: translate(10px, 20px) rotate(-6deg);
-    transition: 0.3s;
-}
-
-.review-list li:nth-child(4) {
-    --item-color: rgba(255, 255, 255, 0);
-    transform: translate(-5px, -10px) rotate(9deg);
-    transition: 0.3s;
-}
-
-.review-list li:nth-child(5) {
-    --item-color: rgba(255, 255, 255, 0);
-    transform: translate(10px, 15px) rotate(-15deg);
-    transition: 0.3s;
-}
-
-.review-overlay{
+.review-overlay {
     position: relative;
-    background: linear-gradient(to top, #0000009b, #00000000);
+    background: linear-gradient(to top, #000000b4, #00000000);
     position: absolute;
     z-index: 1;
-    height: 120%;
-    width: 120%;
-    transform: translate(-15px, 10px);
+    height: 100%;
+    width: 100%;
+    transform: translate(-25px, 20px);
 }
 
-.review-section h1 {
+.ourCustomers {
     position: relative;
     color: var(--font-color);
     font-family: 'Codec Cold Trial Heavy';
-    padding: 0px 0px 0px 7vw;
+    padding: 0px 0px 30px 7vw;
     font-size: 45px;
-    transform: translateY(0px);
+}
+
+.swiper-pagination{
+    position: relative;
+    transform: translateY(-20px) !important;
+}
+
+@media screen and (max-width: 900px){
+    .swiper-slide{
+        width: 450px !important;
+        height: 430px !important;
+        padding: 0px 15px 15px 25px;
+    }
+
+    .swiper-slide h2 {
+        font-size: 18px;
+        padding-bottom: 0px;
+    }
+
+    .author-details {
+        font-size: 13px;
+        padding: 4px 0px 8px 0px;
+    }
+
+    .para-review p {
+        font-size: 14px;
+        padding: 0px 0px 0px 0px;
+    }
+
+    .ourCustomers {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .review-section {
+        height: 530px;
+    }
+    .swiper {
+        height: 480px;
+    }
+
+    .swiper-slide{
+        width: 330px !important;
+        height: 400px !important;
+        border-radius: 20px;
+        padding: 0px 10px 10px 15px;
+    }
+
+    .swiper-slide h2 {
+        font-size: 17px;
+        padding-bottom: 0px;
+    }
+
+    .author-details {
+        font-size: 12px;
+        padding: 2px 0px 4px 0px;
+    }
+
+    .para-review p {
+        font-size: 13px;
+        padding: 0px 0px 0px 0px;
+    }
+
+    .review-overlay {
+        transform: translate(-15px, 10px);
+    }
+}
+
+@media screen and (max-width: 425px){
+    .review-section {
+        height: 520px;
+    }
+    .swiper {
+        height: 480px;
+    }
+
+    .swiper-slide{
+        width: 340px !important;
+        height: 400px !important;
+        border-radius: 20px;
+        padding: 0px 10px 0px 15px;
+    }
+
+    .swiper-slide h2 {
+        font-size: 17px;
+        padding-bottom: 0px;
+    }
+
+    .author-details {
+        font-size: 12px;
+        padding: 4px 0px 8px 0px;
+    }
+
+    .para-review p {
+        font-size: 13px;
+        padding: 0px 8px 10px 0px;
+    }
 }
