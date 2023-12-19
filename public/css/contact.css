@@ -1,8 +1,8 @@
 .contact-section {
     position: relative;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
     row-gap: 2rem;
     width: 100%;
     color: white;
@@ -12,12 +12,6 @@
     background-image: url('/resource/media/bg/pattern-dark.svg');
     background-size: 80vw;
     background-repeat: repeat;
-}
-
-.contact-request-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .contact-request-title-wrapper {

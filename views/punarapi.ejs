@@ -18,7 +18,7 @@
 
     <link rel="stylesheet" href="/css/blog.css">
     <link rel="stylesheet" href="/css/contact.css">
-    
+
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
@@ -31,246 +31,274 @@
 <body>
     <section class="main">
         <%- include('partials/_navbar.ejs'); %>
-        <section class="middle">
-            <section class="carousel">
-                <section class="carousel1">
-                    <button class="carousel-button prev-button">&#10094;</button>
-                    <div class="carousel-slide" );"></div>
-                    <button class="carousel-button next-button">&#10095;</button>
+            <section class="middle">
+                <section class="carousel">
+                    <section class="carousel1">
+                        <button class="carousel-button prev-button">&#10094;</button>
+                        <div class="carousel-slide" );"></div>
+                        <button class="carousel-button next-button">&#10095;</button>
+                    </section>
+                    <div class="request_cont">
+
+                    </div>
                 </section>
-                <div class="request_cont">
-                    
-                </div>
-            </section>
 
 
-            <section class="product" id="product">
-                <div class="product-heading">
-                    <h1>Composite Roofing Collections</h1>
-                    <p>Punarapi roof tiles: the eco-smart choice. Outlasting, eco-conscious, and stunningly elegant,
-                        they surpass asphalt, concrete, and traditional tiles. Roofing reimagined for a greener future,
-                        offering both durability and a statement of sustainability for your home or project.</p>
-                </div>
-                <ul class="product-list">
-                    <li class="product-item">
-                        <a href="/products?button=button1" class="product-item-wrapper">
-                            <div class="tile-le" style="background-image: url('/resource/media/general/tile1.jpg')">
-                                <h2 class="tile-name">Mangalore<br>Tile</h2>
-                            </div>
-                            <div class="tile-r">
-                                <div class="tile-r-wrapper">
-                                    <p class="tile-r-content">Authentic Mangalore tile aesthetics meet modern composite innovation, offering timeless appeal with enhanced durability and cost-effectiveness.</p>
-                                    <span class="view-button">View &#8594;</span>
+                <section class="product" id="product">
+                    <div class="product-heading">
+                        <h1>Composite Roofing Collections</h1>
+                        <p>Punarapi roof tiles: the eco-smart choice. Outlasting, eco-conscious, and stunningly elegant,
+                            they surpass asphalt, concrete, and traditional tiles. Roofing reimagined for a greener
+                            future,
+                            offering both durability and a statement of sustainability for your home or project.</p>
+                    </div>
+                    <ul class="product-list">
+                        <li class="product-item">
+                            <a href="/products?button=button1" class="product-item-wrapper">
+                                <div class="tile-le" style="background-image: url('/resource/media/general/tile1.jpg')">
+                                    <h2 class="tile-name">Mangalore<br>Tile</h2>
                                 </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="product-item">
-                        <a href="/products?button=button2" class="product-item-wrapper">
-                            <div class="tile-le" style="background-image: url('/resource/media/general/tile2.jpg')">
-                                <h2 class="tile-name">Roman<br>Tile</h2>
-                            </div>
-                            <div class="tile-r">
-                                <div class="tile-r-wrapper">
-                                    <p class="tile-r-content">A fusion of Roman architectural elegance and contemporary durability, our Composite Roman Tiles provide a classic look that lasts.</p>
-                                    <span class="view-button">View &#8594;</span>
+                                <div class="tile-r">
+                                    <div class="tile-r-wrapper">
+                                        <p class="tile-r-content">Authentic Mangalore tile aesthetics meet modern
+                                            composite innovation, offering timeless appeal with enhanced durability and
+                                            cost-effectiveness.</p>
+                                        <span class="view-button">View &#8594;</span>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="product-item">
-                        <a href="/products?button=button3" class="product-item-wrapper">
-                            <div class="tile-le" style="background-image: url('/resource/media/general/tile3.jpg')">
-                                <h2 class="tile-name">Ridge<br>Tile</h2>
-                            </div>
-                            <div class="tile-r">
-                                <div class="tile-r-wrapper">
-                                    <p class="tile-r-content">Seamlessly blend form and function in your roofing system with our Ridge Tiles, designed for composite roofs to endure and enhance.</p>
-                                    <span class="view-button">View &#8594;</span>
+                            </a>
+                        </li>
+                        <li class="product-item">
+                            <a href="/products?button=button2" class="product-item-wrapper">
+                                <div class="tile-le" style="background-image: url('/resource/media/general/tile2.jpg')">
+                                    <h2 class="tile-name">Roman<br>Tile</h2>
                                 </div>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </section>
-
-
-            <section class="quality">
-                <div class="qualityHeading"><h1>Why Choose Punarapi ?</h1></div>
-                <div class="choosePoints">
-                    <button class="qualityLeft" id="qualityLeft"><img src="\resource\media\justIcons\qualityLeft.png" alt="left"></button>
-                    <ul class="choosePointsItems">
-                        <li><button class="chooseItem" id="chooseItem0">Sustainability</button></li>
-                        <li><button class="chooseItem" id="chooseItem1">Color Detail</button></li>
-                        <li><button class="chooseItem" id="chooseItem2">Durability</button></li>
-                        <li><button class="chooseItem" id="chooseItem3">Eco Impact</button></li>
-                    </ul>
-                    <button class="qualityRight" id="qualityRight"><img src="\resource\media\justIcons\qualityRight.png" alt="Right"></button>
-                </div>
-                <div class="pointsDisplay">
-                    <ul class="pointsListContent">
-
-                        <!-- Point 1 -->
-                        <li class="pointsContent" id="pointsContent1">
-                            <div class="pointsPara" id="pointsPara1">
-                                <span class="pointSentence" id="pointSentence1"></span>
-                            </div>
-                            <div class="pointsImages" id="pointsImages1">
-                                <img src="\resource\media\choiceItems\choiceItem1.jpg" alt="">
-                            </div>
+                                <div class="tile-r">
+                                    <div class="tile-r-wrapper">
+                                        <p class="tile-r-content">A fusion of Roman architectural elegance and
+                                            contemporary durability, our Composite Roman Tiles provide a classic look
+                                            that lasts.</p>
+                                        <span class="view-button">View &#8594;</span>
+                                    </div>
+                                </div>
+                            </a>
                         </li>
-                    
-                        <!-- Point 2 -->
-                        <li class="pointsContent" id="pointsContent2">
-                            <div class="pointsPara" id="pointsPara2">
-                                <span class="pointSentence" id="pointSentence2"></span>
-                            </div>
-                            <div class="pointsImages" id="pointsImages2">
-                                <img src="\resource\media\choiceItems\choiceItem2.jpg" alt="">
-                            </div>
-                        </li>
-                    
-                        <!-- Point 3 -->
-                        <li class="pointsContent" id="pointsContent3">
-                            <div class="pointsPara" id="pointsPara3">
-                                <span class="pointSentence" id="pointSentence3"></span>
-                            </div>
-                            <div class="pointsImages" id="pointsImages3">
-                                <img src="\resource\media\choiceItems\choiceItem3.jpg" alt="">
-                            </div>
-                        </li>
-                    
-                        <!-- Point 4 -->
-                        <li class="pointsContent" id="pointsContent4">
-                            <div class="pointsPara" id="pointsPara4">
-                                <span class="pointSentence" id="pointSentence4"></span>
-                            </div>
-                            <div class="pointsImages" id="pointsImages4">
-                                <img src="\resource\media\choiceItems\choiceItem4.jpg" alt="">
-                            </div>
+                        <li class="product-item">
+                            <a href="/products?button=button3" class="product-item-wrapper">
+                                <div class="tile-le" style="background-image: url('/resource/media/general/tile3.jpg')">
+                                    <h2 class="tile-name">Ridge<br>Tile</h2>
+                                </div>
+                                <div class="tile-r">
+                                    <div class="tile-r-wrapper">
+                                        <p class="tile-r-content">Seamlessly blend form and function in your roofing
+                                            system with our Ridge Tiles, designed for composite roofs to endure and
+                                            enhance.</p>
+                                        <span class="view-button">View &#8594;</span>
+                                    </div>
+                                </div>
+                            </a>
                         </li>
                     </ul>
-                    
+                </section>
+
+
+                <section class="quality">
+                    <div class="qualityHeading">
+                        <h1>Why Choose Punarapi ?</h1>
+                    </div>
+                    <div class="choosePoints">
+                        <button class="qualityLeft" id="qualityLeft"><img
+                                src="\resource\media\justIcons\qualityLeft.png" alt="left"></button>
+                        <ul class="choosePointsItems">
+                            <li><button class="chooseItem" id="chooseItem0">Sustainability</button></li>
+                            <li><button class="chooseItem" id="chooseItem1">Color Detail</button></li>
+                            <li><button class="chooseItem" id="chooseItem2">Durability</button></li>
+                            <li><button class="chooseItem" id="chooseItem3">Eco Impact</button></li>
+                        </ul>
+                        <button class="qualityRight" id="qualityRight"><img
+                                src="\resource\media\justIcons\qualityRight.png" alt="Right"></button>
+                    </div>
+                    <div class="pointsDisplay">
+                        <ul class="pointsListContent">
+
+                            <!-- Point 1 -->
+                            <li class="pointsContent" id="pointsContent1">
+                                <div class="pointsPara" id="pointsPara1">
+                                    <span class="pointSentence" id="pointSentence1"></span>
+                                </div>
+                                <div class="pointsImages" id="pointsImages1">
+                                    <img src="\resource\media\choiceItems\choiceItem1.jpg" alt="">
+                                </div>
+                            </li>
+
+                            <!-- Point 2 -->
+                            <li class="pointsContent" id="pointsContent2">
+                                <div class="pointsPara" id="pointsPara2">
+                                    <span class="pointSentence" id="pointSentence2"></span>
+                                </div>
+                                <div class="pointsImages" id="pointsImages2">
+                                    <img src="\resource\media\choiceItems\choiceItem2.jpg" alt="">
+                                </div>
+                            </li>
+
+                            <!-- Point 3 -->
+                            <li class="pointsContent" id="pointsContent3">
+                                <div class="pointsPara" id="pointsPara3">
+                                    <span class="pointSentence" id="pointSentence3"></span>
+                                </div>
+                                <div class="pointsImages" id="pointsImages3">
+                                    <img src="\resource\media\choiceItems\choiceItem3.jpg" alt="">
+                                </div>
+                            </li>
+
+                            <!-- Point 4 -->
+                            <li class="pointsContent" id="pointsContent4">
+                                <div class="pointsPara" id="pointsPara4">
+                                    <span class="pointSentence" id="pointSentence4"></span>
+                                </div>
+                                <div class="pointsImages" id="pointsImages4">
+                                    <img src="\resource\media\choiceItems\choiceItem4.jpg" alt="">
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </section>
+
+
+                <section class="review-section">
+                    <h1>What Others Are Saying</h1>
+                    <div class="review">
+                        <ul class="review-list">
+                            <li id="item1">
+                                <div class="review-begin">
+                                    <h2>A Poetic Revolution in Sustainability</h2>
+                                    <div class="author-details">
+                                        <h3>By Subramania Bharati</h3>
+                                        <h3>Poet & Freedom Fighter</h3>
+                                        <p>17/10/2023</p>
+                                    </div>
+                                </div>
+                                <div class="para-review">
+                                    <p>Punarapi's tiles are a revolution in sustainability, akin to the power of words.
+                                        They
+                                        breathe life into discarded plastic, and I applaud their commitment to a greener
+                                        India.</p>
+                                </div>
+                                <div class="review-img"><img src="resource\media\product page\gal\mang_gal (1).jpg"
+                                        alt="Loading"></div>
+                                <div class="review-overlay"></div>
+                            </li>
+                            <li id="item2">
+                                <div class="review-begin">
+                                    <h2>Symbol of Self-Reliance</h2>
+                                    <div class="author-details">
+                                        <h3>By V.O. Chidambaram Pillai</h3>
+                                        <h3>Trade Union Leader</h3>
+                                        <p>17/10/2023</p>
+                                    </div>
+                                </div>
+                                <div class="para-review">
+                                    <p>Punarapi's tiles represent self-reliance and economic independence, similar to
+                                        the
+                                        Swadeshi movement. They embody the spirit of turning adversity into opportunity.
+                                    </p>
+                                </div>
+                                <div class="review-img"><img src="resource\media\product page\gal\mang_gal (2).jpg"
+                                        alt="Loading"></div>
+                                <div class="review-overlay"></div>
+                            </li>
+                            <li id="item3">
+                                <div class="review-begin">
+                                    <h2>Empowering the Marginalized</h2>
+                                    <div class="author-details">
+                                        <h3>By U. Muthuramalingam Thevar</h3>
+                                        <h3>Social Activist</h3>
+                                        <p>17/10/2023</p>
+                                    </div>
+                                </div>
+                                <div class="para-review">
+                                    <p>Punarapi's tiles empower the marginalized, offering economic opportunities and
+                                        environmental conservation. I wholeheartedly support their mission.</p>
+                                </div>
+                                <div class="review-img"><img src="resource\media\product page\gal\mang_gal (3).jpg"
+                                        alt="Loading"></div>
+                                <div class="review-overlay"></div>
+                            </li>
+                            <li id="item4">
+                                <div class="review-begin">
+                                    <h2>Justice for a Greener Tomorrow</h2>
+                                    <div class="author-details">
+                                        <h3>By S. V. Subramania Iyer</h3>
+                                        <h3>Politician & Freedom Fighter</h3>
+                                        <p>17/10/2023</p>
+                                    </div>
+                                </div>
+                                <div class="para-review">
+                                    <p>Punarapi's tiles symbolize justice for our environment, taking discarded plastic
+                                        and
+                                        transforming it into a shield against the elements.</p>
+                                </div>
+                                <div class="review-img"><img src="resource\media\product page\gal\mang_gal (4).jpg"
+                                        alt="Loading"></div>
+                                <div class="review-overlay"></div>
+                            </li>
+                            <li id="item5">
+                                <div class="review-begin">
+                                    <h2>A Step Towards a Cleaner Tomorrow</h2>
+                                    <div class="author-details">
+                                        <h3>By Kuyil Pattu S. Subramaniam</h3>
+                                        <h3>Freedom Fighter</h3>
+                                        <p>17/10/2023</p>
+                                    </div>
+                                </div>
+                                <div class="para-review">
+                                    <p>Punarapi's tiles represent a step towards a cleaner and greener future, embodying
+                                        the
+                                        values of self-sufficiency and hope. Subramaniam would have been proud.</p>
+                                </div>
+                                <div class="review-img"><img src="resource\media\product page\gal\rid_gal (1).jpg"
+                                        alt="Loading"></div>
+                                <div class="review-overlay"></div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="faqs"></section>
+                <section class="request_sample"></section>
+            </section>
+
+            <section class="blog-section">
+                <h1 class="blog-title">Our Blogs</h1>
+                <p class="blog-subtitle">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. In aliquam quis quos aut. Iure officiis
+                    soluta voluptatem ullam amet blanditiis aperiam quaerat? Illo maxime nam earum cum molestiae
+                    consequuntur distinctio!
+                </p>
+                <div class="videos-container">
+                    <a href="https://www.youtube.com/watch?v=ynvOBQ_DrO4" class="video-link"
+                        data-video-id="ynvOBQ_DrO4">
+                        <iframe class="video" src="https://www.youtube.com/embed/ynvOBQ_DrO4"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            frameborder="0" allowfullscreen></iframe>
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=pxdU2Po6Hpg" class="video-link"
+                        data-video-id="pxdU2Po6Hpg">
+                        <iframe class="video" src="https://www.youtube.com/embed/pxdU2Po6Hpg"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            frameborder="0" allowfullscreen></iframe>
+                    </a>
                 </div>
             </section>
 
-
-            <section class="review-section">
-                <h1>What Others Are Saying</h1>
-                <div class="review">
-                    <ul class="review-list">
-                        <li id="item1">
-                            <div class="review-begin">
-                                <h2>A Poetic Revolution in Sustainability</h2>
-                                <div class="author-details">
-                                    <h3>By Subramania Bharati</h3>
-                                    <h3>Poet & Freedom Fighter</h3>
-                                    <p>17/10/2023</p>
-                                </div>
-                            </div>
-                            <div class="para-review">
-                                <p>Punarapi's tiles are a revolution in sustainability, akin to the power of words. They
-                                    breathe life into discarded plastic, and I applaud their commitment to a greener
-                                    India.</p>
-                            </div>
-                            <div class="review-img"><img src="resource\media\product page\gal\mang_gal (1).jpg" alt="Loading"></div>
-                            <div class="review-overlay"></div>
-                        </li>
-                        <li id="item2">
-                            <div class="review-begin">
-                                <h2>Symbol of Self-Reliance</h2>
-                                <div class="author-details">
-                                    <h3>By V.O. Chidambaram Pillai</h3>
-                                    <h3>Trade Union Leader</h3>
-                                    <p>17/10/2023</p>
-                                </div>
-                            </div>
-                            <div class="para-review">
-                                <p>Punarapi's tiles represent self-reliance and economic independence, similar to the
-                                    Swadeshi movement. They embody the spirit of turning adversity into opportunity.</p>
-                            </div>
-                            <div class="review-img"><img src="resource\media\product page\gal\mang_gal (2).jpg" alt="Loading"></div>
-                            <div class="review-overlay"></div>
-                        </li>
-                        <li id="item3">
-                            <div class="review-begin">
-                                <h2>Empowering the Marginalized</h2>
-                                <div class="author-details">
-                                    <h3>By U. Muthuramalingam Thevar</h3>
-                                    <h3>Social Activist</h3>
-                                    <p>17/10/2023</p>
-                                </div>
-                            </div>
-                            <div class="para-review">
-                                <p>Punarapi's tiles empower the marginalized, offering economic opportunities and
-                                    environmental conservation. I wholeheartedly support their mission.</p>
-                            </div>
-                            <div class="review-img"><img src="resource\media\product page\gal\mang_gal (3).jpg" alt="Loading"></div>
-                            <div class="review-overlay"></div>
-                        </li>
-                        <li id="item4">
-                            <div class="review-begin">
-                                <h2>Justice for a Greener Tomorrow</h2>
-                                <div class="author-details">
-                                    <h3>By S. V. Subramania Iyer</h3>
-                                    <h3>Politician & Freedom Fighter</h3>
-                                    <p>17/10/2023</p>
-                                </div>
-                            </div>
-                            <div class="para-review">
-                                <p>Punarapi's tiles symbolize justice for our environment, taking discarded plastic and
-                                    transforming it into a shield against the elements.</p>
-                            </div>
-                            <div class="review-img"><img src="resource\media\product page\gal\mang_gal (4).jpg" alt="Loading"></div>
-                            <div class="review-overlay"></div>
-                        </li>
-                        <li id="item5">
-                            <div class="review-begin">
-                                <h2>A Step Towards a Cleaner Tomorrow</h2>
-                                <div class="author-details">
-                                    <h3>By Kuyil Pattu S. Subramaniam</h3>
-                                    <h3>Freedom Fighter</h3>
-                                    <p>17/10/2023</p>
-                                </div>
-                            </div>
-                            <div class="para-review">
-                                <p>Punarapi's tiles represent a step towards a cleaner and greener future, embodying the
-                                    values of self-sufficiency and hope. Subramaniam would have been proud.</p>
-                            </div>
-                            <div class="review-img"><img src="resource\media\product page\gal\rid_gal (1).jpg" alt="Loading"></div>
-                            <div class="review-overlay"></div>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <section class="faqs"></section>
-            <section class="request_sample"></section>
-        </section>
-
-        <section class="blog-section">
-            <h1 class="blog-title">Our Blogs</h1>
-            <p class="blog-subtitle">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. In aliquam quis quos aut. Iure officiis soluta voluptatem ullam amet blanditiis aperiam quaerat? Illo maxime nam earum cum molestiae consequuntur distinctio!
-            </p>
-            <div class="videos-container">
-                <a href="https://www.youtube.com/watch?v=ynvOBQ_DrO4" class="video-link" data-video-id="ynvOBQ_DrO4">
-                    <iframe class="video" src="https://www.youtube.com/embed/ynvOBQ_DrO4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" frameborder="0" allowfullscreen></iframe>
-                </a>
-                <a href="https://www.youtube.com/watch?v=pxdU2Po6Hpg" class="video-link" data-video-id="pxdU2Po6Hpg">
-                    <iframe class="video" src="https://www.youtube.com/embed/pxdU2Po6Hpg" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" frameborder="0" allowfullscreen></iframe>
-                </a>
-            </div>  
-        </section>
-
-        <section class="contact-section">
-            <div class="contact-request-wrapper">
-
+            <section class="contact-section">
                 <div class="contact-request-title-wrapper">
                     <h1 class="contact-request-title">
                         Request Sample
                     </h1>
                     <p class="contact-request-subtitle">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolor laborum illum dignissimos debitis praesentium necessitatibus provident? Ea, voluptatem incidunt?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolor laborum illum dignissimos
+                        debitis praesentium necessitatibus provident? Ea, voluptatem incidunt?
                     </p>
                 </div>
 
@@ -281,7 +309,7 @@
                         <div class="form-item">
                             <label for="firstname">First Name <span class="req-sign">*</span></label>
                             <input type="text" class="form-input" name="firstname" id="firstname" required>
-                        </div>  
+                        </div>
                         <div class="form-item">
                             <label for="lastname">Last Name</label>
                             <input type="text" class="form-input" name="lastname" id="lastname">
@@ -313,7 +341,8 @@
                     <h2 class="form-section-title">Tell us about your Project</h2>
                     <div class="form-section">
                         <div class="form-item form-item-long">
-                            <label for="sample">Product Sample You Are Interested In <span class="req-sign">*</span></label>
+                            <label for="sample">Product Sample You Are Interested In <span
+                                    class="req-sign">*</span></label>
                             <select class="form-input" id="sample" name="sample" required>
                                 <option value="" disabled selected>Select an Option</option>
                                 <option value="Mangalore">Mangalore Tiles</option>
@@ -322,7 +351,9 @@
                             </select>
                         </div>
                         <div class="form-item form-item-long">
-                            <label for="colors">Tell us what colors you would like to receive or specify multiple styles and colors you need below. If you need many colors a representative will reach out to you to help you narrow your selection<span class="req-sign">*</span></label>
+                            <label for="colors">Tell us what colors you would like to receive or specify multiple styles
+                                and colors you need below. If you need many colors a representative will reach out to
+                                you to help you narrow your selection<span class="req-sign">*</span></label>
                             <textarea class="form-input textarea-input" name="colors" id="colors" required></textarea>
                         </div>
                     </div>
@@ -393,10 +424,9 @@
 
                     <button type="submit" class="contact_us submit-button" id="submit-request">Submit</button>
                 </form>
-            </div>
-        </section>
-        
-    <%- include('partials/_footer.ejs'); %>
+            </section>
+
+            <%- include('partials/_footer.ejs'); %>
     </section>
     <script src="/js/punarapi.js" async defer></script>
     <script src="/js/navbar.js" async defer></script>
