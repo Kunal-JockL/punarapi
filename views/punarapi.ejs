@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="/css/navbar.css">
 
     <link rel="stylesheet" href="/css/blog.css">
+    <link rel="stylesheet" href="/css/contact.css">
     
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
@@ -248,7 +249,9 @@
 
         <section class="blog-section">
             <h1 class="blog-title">Our Blogs</h1>
-            <p class="blog-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. In aliquam quis quos aut. Iure officiis soluta voluptatem ullam amet blanditiis aperiam quaerat? Illo maxime nam earum cum molestiae consequuntur distinctio!</p>
+            <p class="blog-subtitle">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In aliquam quis quos aut. Iure officiis soluta voluptatem ullam amet blanditiis aperiam quaerat? Illo maxime nam earum cum molestiae consequuntur distinctio!
+            </p>
             <div class="videos-container">
                 <a href="https://www.youtube.com/watch?v=ynvOBQ_DrO4" class="video-link" data-video-id="ynvOBQ_DrO4">
                     <iframe class="video" src="https://www.youtube.com/embed/ynvOBQ_DrO4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" frameborder="0" allowfullscreen></iframe>
@@ -257,6 +260,50 @@
                     <iframe class="video" src="https://www.youtube.com/embed/pxdU2Po6Hpg" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" frameborder="0" allowfullscreen></iframe>
                 </a>
             </div>  
+        </section>
+
+        <section class="contact-section">
+            <div class="contact-wrapper">
+                <h1 class="contact-title">
+                    Contact Us
+                </h1>
+                <p class="contact-subtitle">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolor laborum illum dignissimos debitis praesentium necessitatibus provident? Ea, voluptatem incidunt?
+                </p>
+            </div>
+            <div class="contact-form-wrapper">
+                <div class="your-info">
+                    <h2 class="your-info-title">Your Information</h2>
+                    <form action="/contact" method="POST" class="contact-form">
+                        <div class="form-item">
+                            <label for="firstname">First Name <span class="req-sign">*</span></label>
+                            <input type="text" class="form-input" name="firstname" id="firstname">
+                        </div>
+                        <div class="form-item">
+                            <label for="lastname">Last Name</label>
+                            <input type="text" class="form-input" name="lastname" id="lastname">
+                        </div>
+                        <div class="form-item">
+                            <label for="email">Email <span class="req-sign">*</span></label>
+                            <input type="text" class="form-input" name="email" id="email">
+                        </div>
+                        <div class="form-item">
+                            <label for="phno">Phone Number <span class="req-sign">*</span></label>
+                            <input type="text" class="form-input" name="phno" id="phno">
+                        </div>
+                        <div class="form-item form-item-long">
+                            <label for="position">I am a <span class="req-sign">*</span></label>
+                            <select class="form-input" id="position" name="position">
+                                <option value="" disabled selected>Select an Option</option>
+                                <option value="volvo">Volvo</option>
+                                <option value="saab">Saab</option>
+                                <option value="mercedes">Mercedes</option>
+                                <option value="audi">Audi</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </section>
         
     <%- include('partials/_footer.ejs'); %>
