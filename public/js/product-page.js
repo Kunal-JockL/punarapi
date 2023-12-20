@@ -12,11 +12,11 @@ const zc = document.getElementById('rig-ti');
 
 
 function handleMTClick() {
-    MTl.style.color = 'white';
+    MTl.style.color = '#000000';
     MTl.style.transform = 'scale(1.2)';
-    RTl.style.color = '#ffffff98';
+    RTl.style.color = '#00000098';
     RTl.style.transform = 'scale(1)';
-    CTl.style.color = '#ffffff98';
+    CTl.style.color = '#00000098';
     CTl.style.transform = 'scale(1)';
 
     zm.style.zIndex = 3;
@@ -25,11 +25,11 @@ function handleMTClick() {
 }
 
 function handleRTClick() {
-    MTl.style.color = '#ffffff98';
+    MTl.style.color = '#00000098';
     MTl.style.transform = 'scale(1)';
-    RTl.style.color = 'white';
+    RTl.style.color = '#000000';
     RTl.style.transform = 'scale(1.2)';
-    CTl.style.color = '#ffffff98';
+    CTl.style.color = '#00000098';
     CTl.style.transform = 'scale(1)';
 
     zm.style.zIndex = 2;
@@ -38,11 +38,11 @@ function handleRTClick() {
 }
 
 function handleCTClick() {
-    MTl.style.color = '#ffffff98';
+    MTl.style.color = '#00000098';
     MTl.style.transform = 'scale(1)';
-    RTl.style.color = '#ffffff98';
+    RTl.style.color = '#00000098';
     RTl.style.transform = 'scale(1)';
-    CTl.style.color = 'white';
+    CTl.style.color = '#000000';
     CTl.style.transform = 'scale(1.2)';
 
     zm.style.zIndex = 1;

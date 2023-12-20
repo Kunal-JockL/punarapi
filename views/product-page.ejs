@@ -15,18 +15,20 @@
     <link rel="icon" href="/resource/media/general/Logo_hero_icon.png" type="image/png" sizes="32*32">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="/css/product-page.css">
     <link rel="stylesheet" href="/css/navbar.css">
     <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/product-color.css">
 </head>
 
 <body>
     <%- include('partials/_navbar.ejs'); %>
 
-    <button class="back"><a href="\#product">&larr;</a></button>
     <section class="radio-parent">
         <div class="radio-buttons">
-            <label id="MTl"><input id="MT" type="radio" name="e" checked>Manglore Tiles</label><!--remove the checked later-->
+            <label id="MTl"><input id="MT" type="radio" name="e">Manglore Tiles</label><!--remove the checked later-->
             <label id="RTl"><input id="RT" type="radio" name="e">Roman Tiles</label>
             <label id="CTl"><input id="CT" type="radio" name="e">Ridge Tiles</label>
         </div>
@@ -40,49 +42,54 @@
                     <div class="overlay"></div>
                     <div class="intro">
                         <h2>Mangalore Tiles</h2>
-                        <p>Coastal Elegance in Every Terracotta Curve - Timeless Roofing Heritage</p>
+                        <p>Classic yet eco-friendly, our recycled plastic Mangalore tiles embody timeless charm while contributing to sustainability, combining traditional aesthetics with modern responsibility.</p>
                         <button class="request-button"><a href="#">Request Sample  <span class="arrow">&rarr;</span></a></button>
                     </div>
                     <div class="slide"></div>
-                </section>
-                <section class="big-para">
-                    <h2>Composite Mangalore Tiles</h2>
-                    <p>
-                        Mangalore tiles, originating from the coastal region of South India, carry with them a
-                        deep-rooted heritage. These traditional clay tiles have been a staple in regional architecture
-                        for centuries. Known for their distinct terracotta design, they are emblematic of the local
-                        culture and architecture. What sets Mangalore tiles apart is not just their aesthetic charm, but
-                        their remarkable ability to withstand the unique challenges posed by the coastal climate. Their
-                        durability and ability to maintain their timeless appeal make them a sought-after choice for
-                        roofing in this region.
-                    </p>
                 </section>
                 <section class="colours">
                     <h2>
                         Colours:
                     </h2>
-                    <ul class="colours-list">
-                        <li>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
                             <img src="resource\media\product page\colour-tile\mang_colour (1).jpg" alt="Loading">
                             <p>Aged Red</p>
-                        </li>
-                        <li>
+                          </div>
+                          <div class="swiper-slide">
                             <img src="resource\media\product page\colour-tile\mang_colour (2).jpg" alt="Loading">
                             <p>Baran Orange</p>
-                        </li>
-                        <li>
+                          </div>
+                          <div class="swiper-slide">
                             <img src="resource\media\product page\colour-tile\mang_colour (3).jpg" alt="Loading">
                             <p>Nature brown</p>
-                        </li>
-                        <li>
+                          </div>
+                          <div class="swiper-slide">
                             <img src="resource\media\product page\colour-tile\mang_colour (4).jpg" alt="Loading">
                             <p>Night Red</p>
-                        </li>
-                        <li>
+                          </div>
+                          <div class="swiper-slide">
                             <img src="resource\media\product page\colour-tile\mang_colour (5).jpg" alt="Loading">
                             <p>Fox Blue</p>
-                        </li>
-                    </ul>
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="resource\media\product page\colour-tile\mang_colour (3).jpg" alt="Loading">
+                            <p>Nature brown</p>
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="resource\media\product page\colour-tile\mang_colour (4).jpg" alt="Loading">
+                            <p>Night Red</p>
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="resource\media\product page\colour-tile\mang_colour (5).jpg" alt="Loading">
+                            <p>Fox Blue</p>
+                          </div>
+                        </div>
+                        <div class="swiper-scrollbar">
+                          <div class="swiper-scrollbar-drag"></div>
+                        </div>
+                      </div>
                 </section>
                 <section class="gallery">
                     <h2>
@@ -186,49 +193,54 @@
                     <div class="overlay"></div>
                     <div class="intro">
                         <h2>Roman Tiles</h2>
-                        <p>Elevate Your Roofline with Curved Excellence - Timeless European Charm</p>
+                        <p>Redefining elegance sustainably, our recycled plastic Roman tiles offer enduring style and strength, seamlessly blending timeless design with an eco-conscious twist.</p>
                         <button><a href="#">Request Sample</a></button>
                     </div>
                     <div class="slide"></div>
-                </section>
-                <section class="big-para">
-                    <h2>Composite Roman Tiles</h2>
-                    <p>
-                        Roman tiles, with their iconic curved profile, bring a touch of classic European elegance to
-                        architectural designs. These tiles have long been associated with Mediterranean and European
-                        aesthetics. Their distinctive shape and visual appeal have made them a symbol of timeless beauty
-                        in roofing. Roman tiles not only add an air of sophistication to any structure but are also
-                        known for their durability. They have the unique ability to blend the old with the new, evoking
-                        a sense of history in modern construction while providing reliable and long-lasting roofing
-                        solutions.
-                    </p>
                 </section>
                 <section class="colours">
                     <h2>
                         Colours:
                     </h2>
-                    <ul class="colours-list">
-                        <li>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
                             <img src="resource\media\product page\colour-tile\rid_colour (1).jpg" alt="Loading">
                             <p>Aged Red</p>
-                        </li>
-                        <li>
+                          </div>
+                          <div class="swiper-slide">
                             <img src="resource\media\product page\colour-tile\rid_colour (2).jpg" alt="Loading">
                             <p>Baran Orange</p>
-                        </li>
-                        <li>
+                          </div>
+                          <div class="swiper-slide">
                             <img src="resource\media\product page\colour-tile\rid_colour (3).jpg" alt="Loading">
                             <p>Nature brown</p>
-                        </li>
-                        <li>
+                          </div>
+                          <div class="swiper-slide">
                             <img src="resource\media\product page\colour-tile\rid_colour (4).jpg" alt="Loading">
                             <p>Night Red</p>
-                        </li>
-                        <li>
+                          </div>
+                          <div class="swiper-slide">
                             <img src="resource\media\product page\colour-tile\rid_colour (5).jpg" alt="Loading">
                             <p>Fox Blue</p>
-                        </li>
-                    </ul>
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="resource\media\product page\colour-tile\rid_colour (3).jpg" alt="Loading">
+                            <p>Nature brown</p>
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="resource\media\product page\colour-tile\rid_colour (4).jpg" alt="Loading">
+                            <p>Night Red</p>
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="resource\media\product page\colour-tile\rid_colour (5).jpg" alt="Loading">
+                            <p>Fox Blue</p>
+                          </div>
+                        </div>
+                        <div class="swiper-scrollbar">
+                          <div class="swiper-scrollbar-drag"></div>
+                        </div>
+                      </div>
                 </section>
                 <section class="gallery">
                     <h2>
@@ -332,49 +344,54 @@
                     <div class="overlay"></div>
                     <div class="intro">
                         <h2>Ridge Tiles</h2>
-                        <p>Roof Integrity, Elevating Aesthetics - Crowning Your Structure with Confidence</p>
+                        <p> Elevate your roof sustainably with our recycled plastic Ridge tiles, providing a finishing touch that combines style and environmental consciousness for a sophisticated architectural statement.</p>
                         <button><a href="#">Request Sample</a></button>
                     </div>
                     <div class="slide"></div>
-                </section>
-                <section class="big-para">
-                    <h2>Composite Ridge Tiles</h2>
-                    <p>
-                        In the world of roofing, ridge tiles are often an unsung hero. These tiles, whether in
-                        traditional or modern roofing, play a critical role in maintaining the integrity of the
-                        roofline. They are positioned at the peak of the roof, securing the connection between the two
-                        sloping sides. Beyond their structural significance, ridge tiles can also contribute to the
-                        overall aesthetics of a roof. They come in a variety of shapes, sizes, and designs, allowing for
-                        creative and visually pleasing options to complement the overall architectural style of a
-                        building. Ridge tiles may be small in size.
-                    </p>
                 </section>
                 <section class="colours">
                     <h2>
                         Colours:
                     </h2>
-                    <ul class="colours-list">
-                        <li>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
                             <img src="resource\media\product page\colour-tile\roman_colour (1).jpg" alt="Loading">
                             <p>Aged Red</p>
-                        </li>
-                        <li>
+                          </div>
+                          <div class="swiper-slide">
                             <img src="resource\media\product page\colour-tile\roman_colour (2).jpg" alt="Loading">
                             <p>Baran Orange</p>
-                        </li>
-                        <li>
+                          </div>
+                          <div class="swiper-slide">
                             <img src="resource\media\product page\colour-tile\roman_colour (3).jpg" alt="Loading">
                             <p>Nature brown</p>
-                        </li>
-                        <li>
+                          </div>
+                          <div class="swiper-slide">
                             <img src="resource\media\product page\colour-tile\roman_colour (4).jpg" alt="Loading">
                             <p>Night Red</p>
-                        </li>
-                        <li>
+                          </div>
+                          <div class="swiper-slide">
                             <img src="resource\media\product page\colour-tile\roman_colour (5).jpg" alt="Loading">
                             <p>Fox Blue</p>
-                        </li>
-                    </ul>
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="resource\media\product page\colour-tile\roman_colour (3).jpg" alt="Loading">
+                            <p>Nature brown</p>
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="resource\media\product page\colour-tile\roman_colour (4).jpg" alt="Loading">
+                            <p>Night Red</p>
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="resource\media\product page\colour-tile\roman_colour (5).jpg" alt="Loading">
+                            <p>Fox Blue</p>
+                          </div>
+                        </div>
+                        <div class="swiper-scrollbar">
+                          <div class="swiper-scrollbar-drag"></div>
+                        </div>
+                      </div>
                 </section>
                 <section class="gallery">
                     <h2>
@@ -477,8 +494,10 @@
     
     <%- include('partials/_footer.ejs'); %>
     
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="/js/product-page.js" async defer></script>
     <script src="/js/navbar.js" async defer></script>
+    <script src="/js/product-color.js" async defer></script>
 </body>
 
 </html>

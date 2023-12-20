@@ -89,7 +89,7 @@
 
 .review-overlay {
     position: relative;
-    background: linear-gradient(to top, #000000b4, #00000000);
+    background: linear-gradient(to top, #00000094, #ffffff00);
     position: absolute;
     z-index: 1;
     height: 100%;
