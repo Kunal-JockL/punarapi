@@ -58,7 +58,7 @@ app.post('/request_sample', (req, res) => {
         from: SRCEMAIL,
         to: DESTEMAILS,
         subject: `Punarapi - A sample request for ${sampleTile} tiles has been arrived!`,
-        text: `Form Details:\nFirst Name: ${firstName}\nLast Name: ${lastName}\nE-Mail:\n ${email}\nPhone No: ${phoneNumber}\nPosition: ${jobPosition}\nRequested Sample: ${sampleTile} Tiles\nColors: ${colors}\nAddress: ${address}\nCity: ${city}\nState: ${state}\nZIP Code: ${zipCode}\nCountry: ${country}\n\nContact the client through email as soon as possible.`,
+        text: `A sample has been requested by:\n\nName: ${firstName} ${lastName}\nE-Mail: ${email}\nPhone No: ${phoneNumber}\nPosition: ${jobPosition}\n\nTile Requested: ${sampleTile} Tiles\nColors: ${colors}\n\nAddress: ${address}, ${city}, ${state}, ${zipCode}, ${country}\n\nContact the client through email as soon as possible.`,
     }
 
     transporter.sendMail(mailOptions, (error, info) => {

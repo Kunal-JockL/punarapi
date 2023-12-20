@@ -54,7 +54,7 @@ body {
 .products{
   position: relative;
   width: 100%;
-  height: calc(100vw + 270px + 60px + 260px + 60px + 650px + 880px);
+  height: calc(100vh + 320px + 60px + 260px + 60px + 650px + 880px);
   z-index: 0;
   background-color: #d50000;
   top: 0;
@@ -118,7 +118,7 @@ body {
 
 .intro{
   position: relative;
-  transform: translateY(-120%);
+  transform: translateY(-170%);
   width: auto;
   height: 300px;
   z-index: 5;
@@ -184,19 +184,21 @@ body {
 }
 
 .gallery{
-  padding: 40px 80px 0px 40px;
+  padding: 40px 330px 0px 40px;
+  
 }
 
 .gallery h2{
   color: var(--font-color);
   font-family: 'Codec Cold Trial ExtraBold';
-  font-size: 60px;
+  font-size: 45px;
+  padding: 0px 0px 20px 0px;
 }
 
 .set{
   display: flex;
   gap: 40px;
-  padding: 0px 250px 40px 0px;
+  padding: 0px 0px 40px 0px;
   list-style: none;
 }
 

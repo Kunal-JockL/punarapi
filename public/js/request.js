@@ -30,7 +30,7 @@ $(document).ready(() => {
     function validateInputs() {
         validateRegex(firstName, firstName.val(), isValidName);
 
-        if(lastName.val() !== '' && !isValidName(lastName.val())) {
+        if(lastName.val() !== '' && !isValidLastName(lastName.val())) {
             mentionError(lastName);
         }
 
@@ -92,6 +92,11 @@ $(document).ready(() => {
 
 function isValidName(name) {
     const nameRegex = /^[a-zA-Z ]{2,30}$/;
+    return nameRegex.test(name);
+}
+
+function isValidLastName(name) {
+    const nameRegex = /^[a-zA-Z ]{1,30}$/;
     return nameRegex.test(name);
 }
 
