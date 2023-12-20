@@ -35,6 +35,10 @@
     src: local('Codec Cold Trial Regular'), url('/resource/fonts/Codec-Cold-Regular-trial.woff') format('woff');
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     display: flex;
     flex-direction: column;

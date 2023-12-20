@@ -1,0 +1,96 @@
+.contact-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    row-gap: 2rem;
+    width: 100%;
+    color: white;
+    font-family: 'Codec Cold Trial Regular';
+    padding: 5rem 10rem;
+
+    background-image: url('/resource/media/bg/pattern-dark.svg');
+    background-size: 80vw;
+    background-repeat: repeat;
+}
+
+.contact-request-title-wrapper {
+    max-width: 40rem;
+    padding-right: 3rem;
+}
+
+.contact-request-title {
+    font-size: 3.5rem;
+    font-family: 'Codec Cold Trial Heavy';
+}
+
+.contact-request-subtitle {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.form-section-title {
+    color: #e15819;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.379);
+    font-weight: 600;
+    padding: 0.5rem;
+    padding-top: 1rem;
+}
+
+.form-section {
+    display: grid;
+    grid-template-columns: repeat(2, 20vw);
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.invalid {
+    outline: 2px solid #d1260f;
+}
+
+.form-item-long {
+    grid-column: span 2;
+}
+
+.req-sign {
+    color: rgb(225, 107, 22);
+    text-shadow: 0px 0px 2px black;
+}
+
+.form-input {
+    padding-left: 0.5rem;
+    font-family: 'Codec Cold Trial Regular';
+    height: 2.2rem;
+}
+
+.textarea-input {
+    padding-top: 0.5rem;
+    height: 5rem;
+    resize: vertical;
+}
+
+.submit-button {
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .contact-section {
+	padding: 5rem 2rem;
+	flex-direction: column;
+    }
+
+    .form-section {
+	width: 90vw;
+        grid-template-columns: repeat(2, 50%)
+    }
+
+    .form-item {
+   	font-size: 0.8rem; 
+    }
+}
