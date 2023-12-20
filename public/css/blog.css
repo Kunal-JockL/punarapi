@@ -10,7 +10,7 @@
     padding-right: 0;
 
     background-image: url('/resource/media/bg/pattern.svg');
-    background-size: 80vw;
+    background-size: 150vh;
     background-repeat: repeat;
 }
 
@@ -20,7 +20,7 @@
 }
 
 .blog-subtitle {
-    font-size: 20px;
+    font-size: 1.2rem;
     width: 50%;
     font-family: 'Codec Cold Trial Regular';
 }
@@ -44,4 +44,25 @@
     width: 480px;
     height: 270px;
     pointer-events: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .blog-section {
+        padding: 5rem 2rem;
+        padding-right: 0;
+    }
+
+    .blog-subtitle {
+        width: 80%;
+    }
+
+    .video-link {
+        width: 240px;
+        height: 135px;
+    }
+    
+    .video {
+        width: 240px;
+        height: 135px;
+    }
 }
