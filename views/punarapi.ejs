@@ -17,9 +17,16 @@
     <link rel="stylesheet" href="/css/navbar.css">
 
     <link rel="stylesheet" href="/css/blog.css">
+
     <link rel="stylesheet" href="/css/contact.css">
 
+    <link rel="stylesheet" href="/css/quality.css">
+    <link rel="stylesheet" href="/css/review.css">
+
+
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
@@ -29,8 +36,8 @@
 </head>
 
 <body>
+    <%- include('partials/_navbar.ejs'); %>
     <section class="main">
-        <%- include('partials/_navbar.ejs'); %>
             <section class="middle">
                 <section class="carousel">
                     <section class="carousel1">
@@ -57,6 +64,7 @@
                             <a href="/products?button=button1" class="product-item-wrapper">
                                 <div class="tile-le" style="background-image: url('/resource/media/general/tile1.jpg')">
                                     <h2 class="tile-name">Mangalore<br>Tile</h2>
+
                                 </div>
                                 <div class="tile-r">
                                     <div class="tile-r-wrapper">
@@ -100,6 +108,7 @@
                         </li>
                     </ul>
                 </section>
+
 
 
                 <section class="quality">
@@ -164,18 +173,20 @@
 
                     </div>
                 </section>
+            </section>
 
 
                 <section class="review-section">
-                    <h1>What Others Are Saying</h1>
-                    <div class="review">
-                        <ul class="review-list">
-                            <li id="item1">
+                    <h1 class="ourCustomers">Our Customers</h1>
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
                                 <div class="review-begin">
                                     <h2>A Poetic Revolution in Sustainability</h2>
                                     <div class="author-details">
                                         <h3>By Subramania Bharati</h3>
-                                        <h3>Poet & Freedom Fighter</h3>
+            
                                         <p>17/10/2023</p>
                                     </div>
                                 </div>
@@ -185,16 +196,15 @@
                                         breathe life into discarded plastic, and I applaud their commitment to a greener
                                         India.</p>
                                 </div>
-                                <div class="review-img"><img src="resource\media\product page\gal\mang_gal (1).jpg"
-                                        alt="Loading"></div>
+                                <div class="review-img"><img src="\resource\media\product page\gal\mang_gal (1).jpg" alt="Loading"></div>
                                 <div class="review-overlay"></div>
-                            </li>
-                            <li id="item2">
+                            </div>
+                            <div class="swiper-slide">
                                 <div class="review-begin">
                                     <h2>Symbol of Self-Reliance</h2>
                                     <div class="author-details">
                                         <h3>By V.O. Chidambaram Pillai</h3>
-                                        <h3>Trade Union Leader</h3>
+
                                         <p>17/10/2023</p>
                                     </div>
                                 </div>
@@ -204,16 +214,14 @@
                                         Swadeshi movement. They embody the spirit of turning adversity into opportunity.
                                     </p>
                                 </div>
-                                <div class="review-img"><img src="resource\media\product page\gal\mang_gal (2).jpg"
-                                        alt="Loading"></div>
+                                <div class="review-img"><img src="\resource\media\product page\gal\mang_gal (2).jpg" alt="Loading"></div>
                                 <div class="review-overlay"></div>
-                            </li>
-                            <li id="item3">
+                            </div>
+                            <div class="swiper-slide">
                                 <div class="review-begin">
                                     <h2>Empowering the Marginalized</h2>
                                     <div class="author-details">
                                         <h3>By U. Muthuramalingam Thevar</h3>
-                                        <h3>Social Activist</h3>
                                         <p>17/10/2023</p>
                                     </div>
                                 </div>
@@ -221,16 +229,15 @@
                                     <p>Punarapi's tiles empower the marginalized, offering economic opportunities and
                                         environmental conservation. I wholeheartedly support their mission.</p>
                                 </div>
-                                <div class="review-img"><img src="resource\media\product page\gal\mang_gal (3).jpg"
-                                        alt="Loading"></div>
+                                <div class="review-img"><img src="\resource\media\product page\gal\mang_gal (3).jpg" alt="Loading"></div>
                                 <div class="review-overlay"></div>
-                            </li>
-                            <li id="item4">
+                            </div>
+                            <div class="swiper-slide">
                                 <div class="review-begin">
                                     <h2>Justice for a Greener Tomorrow</h2>
                                     <div class="author-details">
                                         <h3>By S. V. Subramania Iyer</h3>
-                                        <h3>Politician & Freedom Fighter</h3>
+            
                                         <p>17/10/2023</p>
                                     </div>
                                 </div>
@@ -242,13 +249,12 @@
                                 <div class="review-img"><img src="resource\media\product page\gal\mang_gal (4).jpg"
                                         alt="Loading"></div>
                                 <div class="review-overlay"></div>
-                            </li>
-                            <li id="item5">
+                            </div>
+                            <div class="swiper-slide">
                                 <div class="review-begin">
                                     <h2>A Step Towards a Cleaner Tomorrow</h2>
                                     <div class="author-details">
                                         <h3>By Kuyil Pattu S. Subramaniam</h3>
-                                        <h3>Freedom Fighter</h3>
                                         <p>17/10/2023</p>
                                     </div>
                                 </div>
@@ -260,21 +266,54 @@
                                 <div class="review-img"><img src="resource\media\product page\gal\rid_gal (1).jpg"
                                         alt="Loading"></div>
                                 <div class="review-overlay"></div>
-                            </li>
-                        </ul>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="review-begin">
+                                    <h2>A Step Towards a Cleaner Tomorrow</h2>
+                                    <div class="author-details">
+                                        <h3>By Kuyil Pattu S. Subramaniam</h3>
+                                        <p>17/10/2023</p>
+                                    </div>
+                                </div>
+                                <div class="para-review">
+                                    <p>Punarapi's tiles represent a step towards a cleaner and greener future, embodying
+                                        the
+                                        values of self-sufficiency and hope. Subramaniam would have been proud.</p>
+                                </div>
+                                <div class="review-img"><img src="\resource\media\product page\gal\rid_gal (3).jpg"
+                                        alt="Loading"></div>
+                                <div class="review-overlay"></div>
+                            </div>
+                            <div class="swiper-slide">
+
+                                <div class="review-begin">
+                                    <h2>A Step Towards a Cleaner Tomorrow</h2>
+                                    <div class="author-details">
+                                        <h3>By Kuyil Pattu S. Subramaniam</h3>
+                                        <p>17/10/2023</p>
+                                    </div>
+                                </div>
+                                <div class="para-review">
+                                    <p>Punarapi's tiles represent a step towards a cleaner and greener future, embodying
+                                        the
+                                        values of self-sufficiency and hope. Subramaniam would have been proud.</p>
+                                </div>
+                                <div class="review-img"><img src="\resource\media\product page\gal\roman_gal (2).jpg"
+                                        alt="Loading"></div>
+                                <div class="review-overlay"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
                     </div>
                 </section>
-                <section class="faqs"></section>
-                <section class="request_sample"></section>
-            </section>
+
+            
 
             <section class="blog-section">
                 <h1 class="blog-title">Our Blogs</h1>
-                <p class="blog-subtitle">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. In aliquam quis quos aut. Iure officiis
-                    soluta voluptatem ullam amet blanditiis aperiam quaerat? Illo maxime nam earum cum molestiae
-                    consequuntur distinctio!
-                </p>
+                <p class="blog-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. In aliquam quis quos
+                    aut. Iure officiis soluta voluptatem ullam amet blanditiis aperiam quaerat? Illo maxime nam earum
+                    cum molestiae consequuntur distinctio!</p>
                 <div class="videos-container">
                     <a href="https://www.youtube.com/watch?v=ynvOBQ_DrO4" class="video-link"
                         data-video-id="ynvOBQ_DrO4">
@@ -290,6 +329,7 @@
                     </a>
                 </div>
             </section>
+
 
             <section class="contact-section">
                 <div class="contact-request-title-wrapper">
@@ -426,14 +466,22 @@
                 </form>
             </section>
 
+
             <%- include('partials/_footer.ejs'); %>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="/js/punarapi.js" async defer></script>
     <script src="/js/navbar.js" async defer></script>
 
 
     <script src="/js/blog.js" charset="utf-8"></script>
+
     <script src="/js/request.js" charset="utf-8"></script>
+
+    <script src="/js/quality.js" charset="utf-8"></script>
+    <script src="/js/review.js" charset="utf-8"></script>
+
+
 
 </body>
 

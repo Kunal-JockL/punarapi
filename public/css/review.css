@@ -1,0 +1,204 @@
+.review-section {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    margin: 0;
+    padding: 0;
+}
+
+.swiper {
+    height: 500px;
+    width: 100%; 
+    padding-top: 0px;
+    padding-bottom: 70px;
+}
+
+
+
+/* Individual Item Styles */
+.swiper-slide {
+    width: 600px !important;
+    height: 430px !important;
+    border-radius: 30px;
+    list-style: none;
+    background-color: var(--item-color);
+    display: flex !important;
+    flex-direction: column;
+    justify-content: flex-end !important;
+    padding: 0px 20px 20px 25px;
+    overflow: hidden;
+    background-position: center; 
+    background-size: cover;
+}
+
+.swiper-slide h2 {
+    font-family: 'Codec Cold Trial ExtraBold';
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+.review-begin {
+    position: relative;
+    color: white;
+    z-index: 5;
+}
+
+.author-details {
+    font-size: 13px;
+    padding: 8px 0px 12px 0px;
+}
+
+.author-details h3 {
+    font-family: 'Codec Cold Trial Extrabold';
+}
+
+
+.para-review {
+    position: relative;
+    padding: 0px 8px 10px 0px;
+    z-index: 5;
+}
+
+.para-review p {
+    font-family: 'Codec Cold Trial Regular';
+    font-size: 14px;
+    color: white;
+}
+
+.review-img {
+    position: absolute;
+    height: 100%;
+    top: -10px;
+    left: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+.review-img img {
+    height: 110%;
+    z-index: 0;
+}
+
+
+
+.review-overlay {
+    position: relative;
+    background: linear-gradient(to top, #00000094, #ffffff00);
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    transform: translate(-25px, 20px);
+}
+
+.ourCustomers {
+    position: relative;
+    color: var(--font-color);
+    font-family: 'Codec Cold Trial Heavy';
+    padding: 0px 0px 30px 7vw;
+    font-size: 45px;
+}
+
+.swiper-pagination{
+    position: relative;
+    transform: translateY(-20px) !important;
+}
+
+@media screen and (max-width: 900px){
+    .swiper-slide{
+        width: 450px !important;
+        height: 430px !important;
+        padding: 0px 15px 15px 25px;
+    }
+
+    .swiper-slide h2 {
+        font-size: 18px;
+        padding-bottom: 0px;
+    }
+
+    .author-details {
+        font-size: 13px;
+        padding: 4px 0px 8px 0px;
+    }
+
+    .para-review p {
+        font-size: 14px;
+        padding: 0px 0px 0px 0px;
+    }
+
+    .ourCustomers {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .review-section {
+        height: 530px;
+    }
+    .swiper {
+        height: 480px;
+    }
+
+    .swiper-slide{
+        width: 330px !important;
+        height: 400px !important;
+        border-radius: 20px;
+        padding: 0px 10px 10px 15px;
+    }
+
+    .swiper-slide h2 {
+        font-size: 17px;
+        padding-bottom: 0px;
+    }
+
+    .author-details {
+        font-size: 12px;
+        padding: 2px 0px 4px 0px;
+    }
+
+    .para-review p {
+        font-size: 13px;
+        padding: 0px 0px 0px 0px;
+    }
+
+    .review-overlay {
+        transform: translate(-15px, 10px);
+    }
+}
+
+@media screen and (max-width: 425px){
+    .review-section {
+        height: 520px;
+    }
+    .swiper {
+        height: 480px;
+    }
+
+    .swiper-slide{
+        width: 340px !important;
+        height: 400px !important;
+        border-radius: 20px;
+        padding: 0px 10px 0px 15px;
+    }
+
+    .swiper-slide h2 {
+        font-size: 17px;
+        padding-bottom: 0px;
+    }
+
+    .author-details {
+        font-size: 12px;
+        padding: 4px 0px 8px 0px;
+    }
+
+    .para-review p {
+        font-size: 13px;
+        padding: 0px 8px 10px 0px;
+    }
+}

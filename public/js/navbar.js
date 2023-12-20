@@ -4,7 +4,6 @@ document.getElementById('nav-icon3').addEventListener("click", function () {
     document.getElementById('nav-icon3').classList.toggle('open');
     document.querySelector('.navbar-wrapper').classList.toggle('dropdown-navbar-wrapper');
     document.querySelector('.navbar').classList.toggle('dropdown-navbar');
-    document.querySelector('.middle').classList.toggle('dropdown-middle');
     document.querySelector('.logo').classList.toggle('dropdown-logo');
     document.querySelector('.navlist').classList.toggle('dropdown-navlist');
     document.querySelector('.hamburger').classList.toggle('dropdown-hamburger');

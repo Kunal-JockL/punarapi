@@ -8,7 +8,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    position: sticky;
+    position: fixed;
     z-index: 100;
     top: 2rem;
 }
@@ -79,7 +79,7 @@
 }
 
 .contact_us:hover {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0);
     transform: scale(1.05);
     color: #c16632;
 }
@@ -88,6 +88,7 @@
 .hamburger {
     position: relative;
     border: none; 
+    background-color: #ffffff00;
 } 
 
 
