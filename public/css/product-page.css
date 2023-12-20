@@ -50,138 +50,11 @@ body {
   width: 100%;
 }
 
-.radio-parent {
-  position: fixed;
-  right: 45px;
-  top: 50vh;
-  z-index: 100;
-  background-color: #00000000;
-  transform: translateY(-50%);
-}
-
-.radio-buttons {
-
-  --s: 0.5em;
-  /* control the size */
-  --g: 30px;
-  /* the gap */
-  --c: var(--font-color);
-  /* the active color */
-
-  display: grid;
-  grid-auto-rows: 1fr;
-  gap: var(--g);
-  position: relative;
-  font-size: 30px;
-}
-
-.radio-buttons:before {
-  content: "";
-  position: fixed;
-  height: calc(var(--s)/2);
-  left: calc(var(--s)/4 + var(--_x, 0px));
-  top: calc(var(--s)/4);
-  background: var(--c);
-  border-radius: 50%;
-  aspect-ratio: 1;
-  transition: .4s, left cubic-bezier(.1, -2000, .7, -2000) .4s;
-}
-
-label {
-  
-  display: inline-flex;
-  line-height: var(--s);
-  align-items: center;
-  gap: 10px;
-  cursor: pointer;
-  color: rgb(255, 255, 255);
-  transition: .3s;
-  transform-origin: 8.5px 8.5px;
-
-}
-
-input {
-  height: var(--s);
-  aspect-ratio: 1;
-  border: calc(var(--s)/6) solid var(--_c, #00000098);
-  border-radius: 50%;
-  outline-offset: calc(var(--s)/10);
-  padding: calc(var(--s)/8);
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  font-size: inherit;
-  margin: 0;
-  transition: .3s;
-}
-
-input:checked {
-  --_c: var(--c);
-}
-
-#RTl, #MTl, #CTl{
-  font-family: 'Codec Cold Trial Heavy';
-  color: #000000;
-}
-
-.radio-buttons:not(:has(input:checked)):before {
-  --_i: -1;
-  opacity: 0;
-}
-
-.radio-buttons:has(input:checked):before {
-  opacity: 1;
-  transform: translateY(calc(var(--_i)*(var(--s) + var(--g))))
-}
-
-.radio-buttons:has(label:nth-child(1) input:checked):before {
-  --_i: 0;
-  --_x: .02px
-}
-
-.radio-buttons:has(label:nth-child(2) input:checked):before {
-  --_i: 1;
-  --_x: .04px
-}
-
-.radio-buttons:has(label:nth-child(3) input:checked):before {
-  --_i: 2;
-  --_x: .06px
-}
-
-
-input:disabled {
-  background:
-    linear-gradient(#939393 0 0) 50%/100% 20% no-repeat content-box;
-  opacity: .5;
-  cursor: not-allowed;
-}
-
-@media print {
-  input[type=radio] {
-    -webkit-appearance: auto;
-    -moz-appearance: auto;
-    appearance: auto;
-    background: none;
-  }
-}
-
-@supports not selector(:has(*)) {
-  .radio-buttons:before {
-    display: none;
-  }
-
-  input:checked {
-    --_c: var(--c);
-    background: var(--c) content-box;
-  }
-}
 
 .products{
   position: relative;
   width: 100%;
-  height: calc(650px + 270px + 60px + 260px + 60px + 650px + 880px);
+  height: calc(100vw + 270px + 60px + 260px + 60px + 650px + 880px);
   z-index: 0;
   background-color: #d50000;
   top: 0;
@@ -221,17 +94,17 @@ input:disabled {
 
 .opening{
   width: 100%;
-  height: 650px;
+  height: 100vh;
   object-fit: cover;
-
+  overflow: hidden;
 }
 
 .overlay{
-  position: relative;
-  top: -101%;
+  position: absolute;
+  top: 0;
   left: 0;
   width: 100%;
-  height: 653px;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.296);
   z-index: 4;
   
@@ -239,13 +112,13 @@ input:disabled {
 
 .opening img{
   width: 100%;
-  height: 650px;
+  height: auto;
   object-fit: cover;
 }
 
 .intro{
   position: relative;
-  transform: translateY(-350%);
+  transform: translateY(-120%);
   width: auto;
   height: 300px;
   z-index: 5;
@@ -262,6 +135,7 @@ input:disabled {
   color: white;
   font-size: 70px;
   margin: 0;
+  padding-bottom: 15px;
 }
 
 .intro p{
@@ -270,6 +144,7 @@ input:disabled {
   width: 100%;
   font-size: 17px;
   padding-right: 10vw;
+  padding-bottom: 20px;
 }
 
 .intro button{
@@ -308,54 +183,6 @@ input:disabled {
   display: none;
 }
 
-.big-para{
-  width: auto;
-  height: 270px;
-  padding: 5px 370px 5px 40px;
-}
-
-@media screen and (max-width: 1257px) {
-  .big-para{
-    height: 370px;
-  }
-}
-
-@media screen and (max-width: 1030px) {
-  .big-para{
-    height: 400px;
-  }
-}
-
-@media screen and (max-width: 910px) {
-  .big-para{
-    height: 490px;
-  }
-}
-
-@media screen and (max-width: 870px) {
-  .big-para{
-    height: 540px;
-  }
-}
-
-@media screen and (max-width: 770px) {
-  .big-para{
-    height: 580px;
-  }
-}
-
-.big-para h2{
-  font-family: 'Codec Cold Trial ExtraBold';
-  color: var(--font-color);
-  font-size: 60px;
-}
-
-.big-para p{
-  color: var(--font-color);
-  font-family: 'Codec Cold Trial Regular';
-
-}
-
 .gallery{
   padding: 40px 80px 0px 40px;
 }
@@ -370,6 +197,7 @@ input:disabled {
   display: flex;
   gap: 40px;
   padding: 0px 250px 40px 0px;
+  list-style: none;
 }
 
 .set li{
