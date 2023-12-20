@@ -78,3 +78,19 @@
     margin-top: 1rem;
     margin-left: 0.5rem;
 }
+
+@media only screen and (max-width: 768px) {
+    .contact-section {
+	padding: 5rem 2rem;
+	flex-direction: column;
+    }
+
+    .form-section {
+	width: 90vw;
+        grid-template-columns: repeat(2, 50%)
+    }
+
+    .form-item {
+   	font-size: 0.8rem; 
+    }
+}
