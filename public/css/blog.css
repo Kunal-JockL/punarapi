@@ -15,13 +15,13 @@
 }
 
 .blog-title {
-    font-size: 4rem;
+    font-size: 45px;
     font-family: 'Codec Cold Trial Heavy';
 }
 
 .blog-subtitle {
-    font-size: 1.2rem;
-    width: 50%;
+    font-size: 18px;
+    width: 60%;
     font-family: 'Codec Cold Trial Regular';
 }
 
