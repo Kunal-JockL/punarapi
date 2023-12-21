@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Punarapi India</title>
+    <link rel="icon" href="/resource/media/general/Logo_hero_icon.png" type="image/png" sizes="36x36">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/punarapi.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+
+    <script src="https://kit.fontawesome.com/841b46b139.js" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <link rel="stylesheet" href="/css/request.css">
+</head>
+
+<body>
+    <%- include('partials/_navbar.ejs'); %>
+
+    <div class="request-result-wrapper">
+        <div class="result-title-wrapper">
+            <h1 class="result-title">
+                <%= result %>
+            </h1>
+            <p class="result-subtitle">
+                <%= resultSubtitle %>
+            </p>
+            <a class="return-home" id="submit-request" href="/"><i class="fa-solid fa-arrow-left"></i> &nbsp;Return Home</a>
+        </div>
+    </div>
+
+    <%- include('partials/_footer.ejs'); %>
+    <script src="/js/navbar.js" async defer></script>
+</body>
+</html>

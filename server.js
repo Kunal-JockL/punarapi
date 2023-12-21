@@ -63,10 +63,7 @@ app.post('/request_sample', (req, res) => {
 
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
-
-            /////// DO RES.RENDER WITH THE EJS TEMPLATE FOR UNSUCCESSFUL SAMPLE REQUEST /////////
-
-            res.send('Form was not submitted! Please Try Again Later');
+            res.render('request', { result: 'Your Sample Request Was Not Sent!', resultSubtitle: "Due to some unknown error your sample request was not sent. Our developers were notified and we are working on this issue. Please try submitting the form again. If the issue persists, please contact us directly at example@email.com directly with your sample request."});
             return console.error(error);
         }
 
@@ -85,9 +82,7 @@ app.post('/request_sample', (req, res) => {
             }
         });
         
-        //////// DO RES.RENDER WITH THE EJS TEMPLATE FOR SUCCESSFULY SENDING SAMPLE REQUEST /////////
-        
-        res.send('Form submitted successfully!');
+        res.render('request', { result: 'Thank You For Considering Us', resultSubtitle: "Your sample request has been received and you will receieve an email containing the confirmation. We shall get in contact with you as soon as possible. Thank you."});
     });
 })
 
