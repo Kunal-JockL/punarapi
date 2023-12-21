@@ -34,25 +34,29 @@
 }
 
 .choosePointsItems li{
+    height: 30px;
     list-style: none;
+    position: relative;
 }
 
 .hover-underline-animation-quality::after {
     content: '';
-    position: relative;
+    position: absolute;
     width: 100%;
     transform: scaleX(0);
     height: 2px;
-    bottom: 0px;
-    left: 0;
+    bottom: 1px;
+    left: 0; 
     background: red;
     transform-origin: center;
     transition: transform 0.20s ease-out;
+    z-index: 100;
   }
 
 .hover-underline-animation-quality:hover::after {
     transform: scaleX(1);
     transform-origin: center;
+    height: 2px;
 }
 
 .chooseItem{
