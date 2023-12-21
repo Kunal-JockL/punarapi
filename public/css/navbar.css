@@ -62,6 +62,11 @@
     font-weight: 800;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .contact_us {
     font-family: 'Codec Cold Trial ExtraBold';
     position: relative;
@@ -271,3 +276,22 @@
     } 
 }
 
+.hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background: red;
+    transform-origin: center;
+    transition: transform 0.20s ease-out;
+  }
+
+
+  
+.hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: center;
+}

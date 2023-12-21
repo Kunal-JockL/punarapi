@@ -37,6 +37,24 @@
     list-style: none;
 }
 
+.hover-underline-animation-quality::after {
+    content: '';
+    position: relative;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0px;
+    left: 0;
+    background: red;
+    transform-origin: center;
+    transition: transform 0.20s ease-out;
+  }
+
+.hover-underline-animation-quality:hover::after {
+    transform: scaleX(1);
+    transform-origin: center;
+}
+
 .chooseItem{
     border: none;
     background-color: #ffffff;
