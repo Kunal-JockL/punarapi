@@ -3,7 +3,7 @@ const nextButton = document.querySelector(".next-button");
 const slide = document.querySelector(".carousel-slide");
 const images = [
     "resource/media/general/pan1-1.jpg",
-    "resource/media/general/pan1-2.jpg"
+    "resource/media/general/pan1-2.jpg",
     // Add more image URLs as needed
 ];
 
@@ -37,4 +37,3 @@ function autoSlide() {
 setInterval(autoSlide, 10000); // Adjust the interval as needed (in milliseconds)
 
 showSlide(slideIndex);
-

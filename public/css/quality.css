@@ -1,31 +1,31 @@
-.quality{
+.quality {
     width: 100%;
     height: 100vh;
     padding: 40px 7vw 0px 7vw;
     display: flex;
     flex-direction: column;
-    font-family: 'Codec Cold Trial Regular';
+    font-family: "Codec Cold Trial Regular";
 }
 
-.qualityHeading h1{
-    font-family: 'Codec Cold Trial Heavy';
+.qualityHeading h1 {
+    font-family: "Codec Cold Trial Heavy";
     font-size: 45px;
 }
 
-.qualityLeft{
+.qualityLeft {
     display: none;
 }
 
-.qualityRight{
+.qualityRight {
     display: none;
 }
 
-.choosePoints{
+.choosePoints {
     width: 100%;
     height: 100px;
 }
 
-.choosePointsItems{
+.choosePointsItems {
     width: 100%;
     height: 100%;
     display: flex;
@@ -33,25 +33,25 @@
     align-items: center;
 }
 
-.choosePointsItems li{
+.choosePointsItems li {
     height: 30px;
     list-style: none;
     position: relative;
 }
 
 .hover-underline-animation-quality::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 100%;
     transform: scaleX(0);
     height: 2px;
     bottom: 1px;
-    left: 0; 
+    left: 0;
     background: red;
     transform-origin: center;
-    transition: transform 0.20s ease-out;
+    transition: transform 0.2s ease-out;
     z-index: 100;
-  }
+}
 
 .hover-underline-animation-quality:hover::after {
     transform: scaleX(1);
@@ -59,26 +59,26 @@
     height: 2px;
 }
 
-.chooseItem{
+.chooseItem {
     border: none;
     background-color: #ffffff;
     font-size: 20px;
-    font-family: 'Codec Cold Trial Heavy';
+    font-family: "Codec Cold Trial Heavy";
     cursor: pointer;
 }
 
-.pointsDisplay{
+.pointsDisplay {
     width: 100%;
     height: 70%;
 }
 
-.pointsListContent{
+.pointsListContent {
     width: 100%;
     height: 100%;
     position: relative;
 }
 
-.pointsContent{
+.pointsContent {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -89,26 +89,26 @@
     overflow: hidden;
 }
 
-.pointsPara{
+.pointsPara {
     width: 35%;
     height: 100%;
     padding: 40px;
 }
 
-.pointSentence{
+.pointSentence {
     width: 100%;
     line-height: 1.3;
     font-size: 20px; /* change font for different sizes */
 }
 
-.pointsImages{
+.pointsImages {
     width: 65%;
     height: 100%;
     z-index: 1;
     text-align: center;
 }
 
-.pointsImages img{
+.pointsImages img {
     max-height: 100%;
     max-width: 100%;
     width: auto;
@@ -118,149 +118,144 @@
     object-fit: cover;
 }
 
-@media screen and (max-width: 1200px){
-    .quality{
+@media screen and (max-width: 1200px) {
+    .quality {
         height: 80vh;
     }
 
-    .pointSentence{
+    .pointSentence {
         font-size: 18px;
     }
 }
 
-@media screen and (max-width: 1075px){
-
-    .pointsDisplay{
+@media screen and (max-width: 1075px) {
+    .pointsDisplay {
         height: 60%;
     }
 
-    .pointsContent{
+    .pointsContent {
         border-radius: 30px;
     }
 
-    .pointSentence{
+    .pointSentence {
         font-size: 14px;
     }
 }
 
-@media screen and (max-width: 900px){
-
-    .qualityHeading h1{
+@media screen and (max-width: 900px) {
+    .qualityHeading h1 {
         font-size: 30px;
     }
 
-    .chooseItem{
+    .chooseItem {
         font-size: 20px;
     }
 
-    .pointsContent{
+    .pointsContent {
         border-radius: 25px;
     }
 
-    .pointsPara{
+    .pointsPara {
         width: 50%;
     }
 
-    .pointsImages{
+    .pointsImages {
         width: 50%;
     }
-
 }
 
-@media screen and (max-width: 650px){
-    .pointsContent{
+@media screen and (max-width: 650px) {
+    .pointsContent {
         display: flex;
         flex-direction: column;
         border-radius: 20px;
     }
 
-    .pointsPara{
+    .pointsPara {
         width: 100%;
         height: 40%;
         padding: 20px;
     }
 
-    .pointsImages{
+    .pointsImages {
         width: 100%;
         height: 60%;
         text-align: center;
     }
-    
-    .pointsImages img{
+
+    .pointsImages img {
         width: 100%;
         height: auto;
     }
 
-    .chooseItem{
+    .chooseItem {
         font-size: 17px;
     }
-    
 }
 
-@media screen and (max-width: 525px){
-
-    .qualityHeading h1{
+@media screen and (max-width: 525px) {
+    .qualityHeading h1 {
         font-size: 25px;
     }
 
-    .qualityLeft{
+    .qualityLeft {
         display: block;
         border: none;
         background-color: #ffffff00;
     }
 
-    .qualityLeft img{
+    .qualityLeft img {
         width: 20px;
         height: auto;
     }
-    
-    .qualityRight{
+
+    .qualityRight {
         display: block;
         border: none;
         background-color: #ffffff00;
     }
 
-    .qualityRight img{
+    .qualityRight img {
         width: 20px;
         height: auto;
     }
 
-    .choosePoints{
+    .choosePoints {
         display: flex;
         justify-content: space-around;
         align-items: center;
     }
 
-    .pointsImages img{
+    .pointsImages img {
         width: 100%;
         height: auto;
     }
 
-    .choosePointsItems{
+    .choosePointsItems {
         width: 20vw;
     }
 }
 
-@media screen and (max-width: 425px){
-    .pointsDisplay{
+@media screen and (max-width: 425px) {
+    .pointsDisplay {
         height: 70%;
     }
 
-    .pointsPara{
+    .pointsPara {
         height: 50%;
     }
 
-    .pointsImages{
+    .pointsImages {
         height: 50%;
     }
 
-    .pointSentence{
+    .pointSentence {
         font-size: 14px;
     }
-} 
+}
 
-@media screen and (min-width: 525px){
-    .chooseItem{
+@media screen and (min-width: 525px) {
+    .chooseItem {
         display: block;
     }
-} 
+}

@@ -9,20 +9,20 @@
     padding: 5rem 10rem;
     padding-right: 0;
 
-    background-image: url('/resource/media/bg/pattern.svg');
+    background-image: url("/resource/media/bg/pattern.svg");
     background-size: 150vh;
     background-repeat: repeat;
 }
 
 .blog-title {
     font-size: 45px;
-    font-family: 'Codec Cold Trial Heavy';
+    font-family: "Codec Cold Trial Heavy";
 }
 
 .blog-subtitle {
     font-size: 18px;
     width: 60%;
-    font-family: 'Codec Cold Trial Regular';
+    font-family: "Codec Cold Trial Regular";
 }
 
 .videos-container {
@@ -60,7 +60,7 @@
         width: 240px;
         height: 135px;
     }
-    
+
     .video {
         width: 240px;
         height: 135px;

@@ -1,5 +1,4 @@
-
-.footer{
+.footer {
     color: rgb(236, 224, 224);
     height: 500px;
     width: 100%;
@@ -8,7 +7,7 @@
     background-color: #2b2b2b;
 }
 
-.upperFooter{
+.upperFooter {
     height: 90%;
     display: flex;
     flex-direction: row;
@@ -16,7 +15,7 @@
     justify-content: space-around;
 }
 
-.socialAndAddress{
+.socialAndAddress {
     height: 100%;
     width: 45%;
     display: flex;
@@ -24,28 +23,28 @@
     justify-content: space-around;
 }
 
-.socialContent{
+.socialContent {
     width: 22%;
     height: 100%;
     display: flex;
     justify-content: flex-start;
 }
 
-.socialContent ul{
+.socialContent ul {
     padding: 40px 0 0 2vw;
 }
 
-.socialContent ul li{
+.socialContent ul li {
     list-style-type: none;
     padding: 0 0 15px 0;
 }
 
-.socialContent img{
+.socialContent img {
     height: 30px;
     width: 30px;
 }
 
-.footerDetail{
+.footerDetail {
     height: 100%;
     width: 78%;
     display: flex;
@@ -59,7 +58,7 @@
     height: 150px;
 }
 
-.mapContent{
+.mapContent {
     width: 55%;
     height: 100%;
     display: flex;
@@ -67,51 +66,47 @@
     justify-content: center;
 }
 
-.mapContent iframe{
+.mapContent iframe {
     width: 80%;
     height: 80%;
     border-radius: 30px;
 }
 
-
-.lowerFooter{
+.lowerFooter {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
 }
 
-
-@media screen and (max-width: 950px){
+@media screen and (max-width: 950px) {
     .footerLogoContainer img {
         height: 130px;
     }
 }
 
 @media screen and (max-width: 725px) {
-    .footer{
-        height: 800px   
-
+    .footer {
+        height: 800px;
     }
-    .upperFooter{
+    .upperFooter {
         height: 92%;
         display: flex;
         flex-direction: column;
     }
 
-    .socialContent{
+    .socialContent {
         width: 10%;
         justify-content: center;
     }
 
-    .socialAndAddress{
+    .socialAndAddress {
         width: 100%;
         height: 60%;
-        padding-top: 20px ;
+        padding-top: 20px;
     }
 
-    .mapContent{
-        width: 100%;    
+    .mapContent {
+        width: 100%;
     }
-
 }

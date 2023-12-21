@@ -4,7 +4,7 @@
 }
 
 .colours h2 {
-    font-family: 'Codec Cold Trial ExtraBold';
+    font-family: "Codec Cold Trial ExtraBold";
     font-size: 45px;
     padding: 0px 0px 20px 0px;
     color: var(--font-color);
@@ -41,7 +41,7 @@
 .swiper-slide p {
     position: relative;
     color: white;
-    font-family: 'Codec Cold Trial Regular';
+    font-family: "Codec Cold Trial Regular";
     top: -30px;
     left: 0px;
 }

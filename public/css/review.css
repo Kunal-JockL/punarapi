@@ -5,19 +5,17 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    
+
     margin: 0;
     padding: 0;
 }
 
 .swiper {
     height: 500px;
-    width: 100%; 
+    width: 100%;
     padding-top: 0px;
     padding-bottom: 70px;
 }
-
-
 
 /* Individual Item Styles */
 .swiper-slide {
@@ -31,12 +29,12 @@
     justify-content: flex-end !important;
     padding: 0px 20px 20px 25px;
     overflow: hidden;
-    background-position: center; 
+    background-position: center;
     background-size: cover;
 }
 
 .swiper-slide h2 {
-    font-family: 'Codec Cold Trial ExtraBold';
+    font-family: "Codec Cold Trial ExtraBold";
     font-size: 20px;
     padding-bottom: 5px;
 }
@@ -53,9 +51,8 @@
 }
 
 .author-details h3 {
-    font-family: 'Codec Cold Trial Extrabold';
+    font-family: "Codec Cold Trial Extrabold";
 }
-
 
 .para-review {
     position: relative;
@@ -64,7 +61,7 @@
 }
 
 .para-review p {
-    font-family: 'Codec Cold Trial Regular';
+    font-family: "Codec Cold Trial Regular";
     font-size: 14px;
     color: white;
 }
@@ -85,8 +82,6 @@
     z-index: 0;
 }
 
-
-
 .review-overlay {
     position: relative;
     background: linear-gradient(to top, #00000094, #ffffff00);
@@ -100,18 +95,18 @@
 .ourCustomers {
     position: relative;
     color: var(--font-color);
-    font-family: 'Codec Cold Trial Heavy';
+    font-family: "Codec Cold Trial Heavy";
     padding: 0px 0px 30px 7vw;
     font-size: 45px;
 }
 
-.swiper-pagination{
+.swiper-pagination {
     position: relative;
     transform: translateY(-20px) !important;
 }
 
-@media screen and (max-width: 900px){
-    .swiper-slide{
+@media screen and (max-width: 900px) {
+    .swiper-slide {
         width: 450px !important;
         height: 430px !important;
         padding: 0px 15px 15px 25px;
@@ -137,7 +132,7 @@
     }
 }
 
-@media screen and (max-width: 650px){
+@media screen and (max-width: 650px) {
     .review-section {
         height: 530px;
     }
@@ -145,7 +140,7 @@
         height: 480px;
     }
 
-    .swiper-slide{
+    .swiper-slide {
         width: 330px !important;
         height: 400px !important;
         border-radius: 20px;
@@ -172,7 +167,7 @@
     }
 }
 
-@media screen and (max-width: 425px){
+@media screen and (max-width: 425px) {
     .review-section {
         height: 520px;
     }
@@ -180,7 +175,7 @@
         height: 480px;
     }
 
-    .swiper-slide{
+    .swiper-slide {
         width: 340px !important;
         height: 400px !important;
         border-radius: 20px;

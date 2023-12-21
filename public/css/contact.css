@@ -6,10 +6,10 @@
     row-gap: 2rem;
     width: 100%;
     color: white;
-    font-family: 'Codec Cold Trial Regular';
+    font-family: "Codec Cold Trial Regular";
     padding: 5rem 10rem;
 
-    background-image: url('/resource/media/bg/pattern-dark.svg');
+    background-image: url("/resource/media/bg/pattern-dark.svg");
     background-size: 150vh;
     background-repeat: repeat;
 }
@@ -21,7 +21,7 @@
 
 .contact-request-title {
     font-size: 3.5rem;
-    font-family: 'Codec Cold Trial Heavy';
+    font-family: "Codec Cold Trial Heavy";
 }
 
 .contact-request-subtitle {
@@ -64,7 +64,7 @@
 
 .form-input {
     padding-left: 0.5rem;
-    font-family: 'Codec Cold Trial Regular';
+    font-family: "Codec Cold Trial Regular";
     height: 2.2rem;
 }
 
@@ -81,16 +81,16 @@
 
 @media only screen and (max-width: 768px) {
     .contact-section {
-	padding: 5rem 2rem;
-	flex-direction: column;
+        padding: 5rem 2rem;
+        flex-direction: column;
     }
 
     .form-section {
-	width: 90vw;
-        grid-template-columns: repeat(2, 50%)
+        width: 90vw;
+        grid-template-columns: repeat(2, 50%);
     }
 
     .form-item {
-   	font-size: 0.8rem; 
+        font-size: 0.8rem;
     }
 }

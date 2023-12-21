@@ -27,7 +27,6 @@
     z-index: 100;
 }
 
-
 .logo {
     position: relative;
     /* margin-left: 10px; */
@@ -52,7 +51,7 @@
 }
 
 .navlist li {
-    font-family: 'Codec Cold Trial ExtraBold';
+    font-family: "Codec Cold Trial ExtraBold";
     position: relative;
     top: 3px;
     cursor: pointer;
@@ -68,7 +67,7 @@ a {
 }
 
 .contact_us {
-    font-family: 'Codec Cold Trial ExtraBold';
+    font-family: "Codec Cold Trial ExtraBold";
     position: relative;
     background-color: #c16632;
     color: white;
@@ -89,14 +88,11 @@ a {
     color: #c16632;
 }
 
-
 .hamburger {
     position: relative;
-    border: none; 
+    border: none;
     background-color: #ffffff00;
-} 
-
-
+}
 
 #nav-icon3 {
     width: 30px;
@@ -108,10 +104,10 @@ a {
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
     transform: rotate(0deg);
-    -webkit-transition: .5s ease-in-out;
-    -moz-transition: .5s ease-in-out;
-    -o-transition: .5s ease-in-out;
-    transition: .5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
     cursor: pointer;
 }
 
@@ -128,10 +124,10 @@ a {
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
     transform: rotate(0deg);
-    -webkit-transition: .25s ease-in-out;
-    -moz-transition: .25s ease-in-out;
-    -o-transition: .25s ease-in-out;
-    transition: .25s ease-in-out;
+    -webkit-transition: 0.25s ease-in-out;
+    -moz-transition: 0.25s ease-in-out;
+    -o-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
 }
 
 #nav-icon3 span:nth-child(1) {
@@ -173,37 +169,35 @@ a {
     left: 50%;
 }
 
-
 /* ------------------media quaries---------------- */
 
- @media screen and (min-width: 1020px) {
+@media screen and (min-width: 1020px) {
     .navlist {
         position: relative;
         left: 23px;
     }
-} 
+}
 
-@media screen and (min-width: 400px) and (max-width: 768px){
+@media screen and (min-width: 400px) and (max-width: 768px) {
     .navbar {
         margin: 3.5rem;
     }
-} 
+}
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 500px) {
     .navbar {
         margin: 2rem;
     }
-} 
+}
 
-@media screen and (min-width: 768px) and (max-width: 3000px){
-    .hamburger{
+@media screen and (min-width: 768px) and (max-width: 3000px) {
+    .hamburger {
         display: none;
     }
 }
 
 @media screen and (max-width: 768px) {
-
-    .navtop{
+    .navtop {
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -217,14 +211,14 @@ a {
         display: none;
     }
 
-    .contact_us{
+    .contact_us {
         display: none;
-    } 
+    }
 
     .hamburger {
         display: visible;
-    } 
-    
+    }
+
     .navbar-wrapper {
         height: 65px;
         top: 1.5rem;
@@ -232,7 +226,7 @@ a {
 
     .navbar {
         height: 100%;
-    } 
+    }
 
     /* ------------------dropdown---------------- */
 
@@ -240,26 +234,26 @@ a {
         --dpLength: 400px;
     }
 
-    .dropdown-navbar-wrapper{
+    .dropdown-navbar-wrapper {
         height: var(--dpLength);
         width: 100%;
         display: flex;
     }
 
-    .dropdown-navbar{
+    .dropdown-navbar {
         display: flex;
         flex-direction: column;
     }
 
-    .dropdown-middle{
+    .dropdown-middle {
         top: calc(-1 * (var(--dpLength) + 10px));
     }
 
-    .dropdown-logo{
+    .dropdown-logo {
         top: -2px;
     }
 
-    .dropdown-navlist{
+    .dropdown-navlist {
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -267,17 +261,17 @@ a {
         justify-content: space-around;
     }
 
-    .dropdown-contact_us{
+    .dropdown-contact_us {
         display: visible;
     }
 
     .dropdown-hamburger {
         top: -5px;
-    } 
+    }
 }
 
 .hover-underline-animation::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 100%;
     transform: scaleX(0);
@@ -286,11 +280,9 @@ a {
     left: 0;
     background: red;
     transform-origin: center;
-    transition: transform 0.20s ease-out;
-  }
+    transition: transform 0.2s ease-out;
+}
 
-
-  
 .hover-underline-animation:hover::after {
     transform: scaleX(1);
     transform-origin: center;
