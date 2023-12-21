@@ -4,7 +4,9 @@
   "description": "@font-face {\r   font-family: 'Codec Cold Trial Heavy';\r   font-style: normal;\r   font-weight: normal;\r   src: local('Codec Cold Trial Heavy'), url('resource/fonts/Codec-Cold-Heavy-trial.woff') format('woff');\r }",
   "main": "product-page.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "check-format": "npx prettier --check .",
+    "format": "npx prettier --write ."
   },
   "keywords": [],
   "author": "",
