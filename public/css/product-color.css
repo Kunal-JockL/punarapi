@@ -65,7 +65,7 @@
 }
 
 @media screen and (max-width: 1200px) {
-    :root{
+    :root {
         --colorHeight: 280px;
     }
 
@@ -93,8 +93,7 @@
 }
 
 @media screen and (max-width: 900px) {
-
-    :root{
+    :root {
         --colorHeight: 260px;
     }
 
@@ -122,8 +121,7 @@
 }
 
 @media screen and (max-width: 750px) {
-
-    :root{
+    :root {
         --colorHeight: 240px;
     }
 
@@ -152,8 +150,7 @@
 }
 
 @media screen and (max-width: 600px) {
-
-    :root{
+    :root {
         --colorHeight: 240px;
     }
 

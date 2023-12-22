@@ -125,11 +125,11 @@
         min-height: 600px;
     }
 
-    .pointsDisplay{
+    .pointsDisplay {
         padding-bottom: 20px;
     }
 
-    .pointsPara{
+    .pointsPara {
         padding: 25px;
     }
 
@@ -191,7 +191,6 @@
 }
 
 @media screen and (max-width: 636px) {
-
     .pointsDisplay {
         height: 75%;
         padding-bottom: 0px;

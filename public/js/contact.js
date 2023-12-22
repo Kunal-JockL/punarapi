@@ -8,7 +8,7 @@ $(document).ready(() => {
         state = $("#state"),
         country = $("#country"),
         jobPosition = $("#position"),
-        message = $('#message');
+        message = $("#message");
 
     $("#submit-request").click((e) => {
         e.preventDefault();

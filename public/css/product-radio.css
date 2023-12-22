@@ -27,7 +27,7 @@
     position: fixed;
     height: calc(var(--s) / 2);
     left: calc(var(--s) / 4 + var(--_x, 0px));
-    top: calc(var(--s) / 4 );
+    top: calc(var(--s) / 4);
     background: var(--c);
     border-radius: 50%;
     aspect-ratio: 1;
@@ -119,7 +119,6 @@ input:disabled {
 }
 
 @media screen and (max-width: 1200px) {
-
     .radio-parent {
         right: 50px;
     }
@@ -132,7 +131,6 @@ input:disabled {
 }
 
 @media screen and (max-width: 900px) {
-
     .radio-parent {
         right: 42px;
     }
@@ -145,20 +143,18 @@ input:disabled {
 }
 
 @media screen and (max-width: 750px) {
-
     .radio-parent {
         right: 35px;
     }
 
     .radio-buttons {
-        --s: 1.0em;
+        --s: 1em;
         --g: 15px;
         font-size: 16px;
     }
 }
 
 @media screen and (max-width: 600px) {
-
     .radio-parent {
         display: none;
     }

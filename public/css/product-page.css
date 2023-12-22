@@ -23,7 +23,10 @@ body {
 .products {
     position: relative;
     width: 100%;
-    height: calc(min(var(--opening), var(--openingMax)) + var(--colorHeight) + var(--gallery) + var(--specs));
+    height: calc(
+        min(var(--opening), var(--openingMax)) + var(--colorHeight) +
+            var(--gallery) + var(--specs)
+    );
     z-index: 0;
     background-color: #d50000;
     top: 0;
@@ -68,7 +71,6 @@ body {
     background-color: var(--bg-color);
     z-index: 0;
 }
-
 
 /*SCROLLBAR*/
 

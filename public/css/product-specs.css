@@ -43,7 +43,7 @@
     justify-content: space-around;
 }
 
-.test-2-Wrapper{
+.test-2-Wrapper {
     width: 100%;
     max-width: 500px;
     margin-right: 20px;
@@ -97,105 +97,98 @@
 }
 
 @media screen and (max-width: 1200px) {
-
-    :root{
+    :root {
         --specs: 650px;
     }
 
-    .specs{
+    .specs {
         padding: 0px 245px 0px 5vw;
     }
-    
 }
 
 @media screen and (max-width: 900px) {
-
-    :root{
+    :root {
         --specs: 580px;
     }
 
-    .specs{
+    .specs {
         padding: 0px 215px 0px 5vw;
     }
 
     .specs h3 {
         font-size: 25px;
     }
-    
+
     .specs h4 {
         font-size: 17px;
     }
-    
+
     .specs p {
         font-size: 17px;
     }
-    
 }
 
 @media screen and (max-width: 750px) {
-
-    :root{
+    :root {
         --specs: 580px;
     }
 
-    .specs{
+    .specs {
         padding: 0px 190px 0px 5vw;
     }
-    
+
     .specs h3 {
         font-size: 22px;
     }
-    
+
     .specs h4 {
         font-size: 14px;
     }
-    
+
     .specs p {
         font-size: 14px;
     }
 }
 
 @media screen and (max-width: 600px) {
-
-    :root{
+    :root {
         --specs: 580px;
     }
 
-    .specs{
+    .specs {
         padding: 0px 5vw 0px 5vw;
     }
-    
+
     .specs h3 {
         font-size: 22px;
     }
-    
+
     .specs h4 {
         font-size: 14px;
     }
-    
+
     .specs p {
         font-size: 14px;
     }
 }
 
 @media screen and (max-width: 500px) {
-
-    :root{
+    :root {
         --specs: 580px;
     }
 
-    .specs{
+    .specs {
         padding: 0px 5vw 0px 5vw;
     }
-    
+
     .specs h3 {
         font-size: 22px;
     }
-    
+
     .specs h4 {
         font-size: 14px;
     }
-    
+
     .specs p {
         font-size: 14px;
     }
