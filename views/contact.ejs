@@ -28,12 +28,26 @@
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
     <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/request.css">
     <link rel="stylesheet" href="/css/contact-page.css">
 </head>
 
 <body>
     <%- include('partials/_navbar.ejs'); %>
 
+    <% if(!form) { %>
+    <div class="request-result-wrapper">
+        <div class="result-title-wrapper">
+            <h1 class="result-title">
+                <%= result %>
+            </h1>
+            <p class="result-subtitle">
+                <%= resultSubtitle %>
+            </p>
+            <a class="return-home" id="submit-request" href="/"><i class="fa-solid fa-arrow-left"></i> &nbsp;Return Home</a>
+        </div>
+    </div>
+    <% } else { %>
     <section class="contact-request-section" id="contact-section">
         <div class="contact-request-title-wrapper">
             <h1 class="contact-request-title">
@@ -138,7 +152,7 @@
             <button type="submit" class="contact_us submit-button" id="submit-request">Submit</button>
         </form>
     </section>
-
+    <% } %>
     <%- include('partials/_footer.ejs'); %>
     <script src="/js/navbar.js" async defer></script>
     <script src="/js/contact.js" async defer></script>

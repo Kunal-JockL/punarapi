@@ -25,7 +25,26 @@ app.get("/products", (req, res) => {
 });
 
 app.get("/contact", (req, res) => {
-    res.render("contact");
+    res.render("contact", { form: true });
+});
+
+app.post("/contact", (req, res) => {
+    const formBody = req.body;
+
+    const firstName = formBody.firstname,
+        lastName = formBody.lastname,
+        email = formBody.email,
+        phoneNumber = formBody.phno,
+        jobPosition = formBody.position,
+        sampleTile = formBody.sample,
+        colors = formBody.colors,
+        address = formBody.address,
+        city = formBody.city,
+        state = formBody.state,
+        zipCode = formBody.zip,
+        country = formBody.country;
+
+    res.render("contact", { form: false, result: 'Thank You For Contacting Us', resultSubtitle: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, alias.' });
 });
 
 app.post("/request_sample", (req, res) => {
