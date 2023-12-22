@@ -15,7 +15,7 @@
 }
 
 #contact-section {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .contact-request-title-wrapper {
@@ -84,9 +84,13 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .contact-section {
+    .contact-request-section {
         padding: 5rem 2rem;
         flex-direction: column;
+    }
+
+    #contact-section {
+        padding-top: 10rem;
     }
 
     .form-section {
