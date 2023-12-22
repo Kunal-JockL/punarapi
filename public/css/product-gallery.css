@@ -1,0 +1,174 @@
+.gallery {
+    padding: 40px 350px 0px 5vw;
+    height: var(--gallery);
+}
+
+.gallery h2 {
+    color: var(--font-color);
+    font-family: "Codec Cold Trial ExtraBold";
+    font-size: 45px;
+    padding: 0px 0px 20px 0px;
+}
+
+.set {
+    display: flex;
+    gap: 40px;
+    padding: 0px 0px 40px 0px;
+    list-style: none;
+}
+
+.set li {
+    position: relative;
+    height: 400px;
+    width: 650px;
+}
+
+.set li img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.spot {
+    position: relative;
+    background: linear-gradient(to bottom, #00000000, #0000009c);
+    height: 70px;
+    width: 100%;
+    transform: translate(0px, calc(-100% + -3px));
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.spot p {
+    font-family: "Codec Cold Trial Regular";
+    position: relative;
+    transform: translate(3%, -10px);
+    color: #ffffff;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (max-width: 1200px) {
+
+    :root{
+        --gallery: 790px;
+    }
+
+    .gallery{
+        padding: 40px 245px 0px 5vw;
+    }
+
+    .set li {
+        height: 300px;
+        width: 400px;
+    }
+    
+}
+
+@media screen and (max-width: 900px) {
+
+    :root{
+        --gallery: 590px;
+    }
+
+    .gallery{
+        padding: 40px 215px 0px 5vw;
+    }
+
+    .set {
+        gap: 30px;
+        padding: 0px 0px 30px 0px;
+    }
+
+    .set li {
+        height: 210px;
+        width: 300px;
+    }
+
+    .spot p{
+        font-size: 15px;
+    }
+    
+}
+
+@media screen and (max-width: 750px) {
+
+    :root{
+        --gallery: 490px;
+    }
+
+    .gallery{
+        padding: 40px 190px 0px 5vw;
+    }
+
+    .set {
+        gap: 20px;
+        padding: 0px 0px 20px 0px;
+    }
+
+    .set li {
+        height: 170px;
+        width: 240px;
+    }
+
+    .spot p{
+        font-size: 13px;
+        transform: translate(5%, -5px);
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+
+    :root{
+        --gallery: 530px;
+    }
+
+    .gallery{
+        padding: 40px 5vw 0px 5vw;
+    }
+
+    .set {
+        gap: 30px;
+        padding: 0px 0px 30px 0px;
+    }
+
+    .set li {
+        height: 170px;
+        width: 240px;
+    }
+
+    .spot p{
+        font-size: 13px;
+        transform: translate(5%, -5px);
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    :root{
+        --gallery: 510px;
+    }
+
+    .gallery{
+        padding: 40px 5vw 0px 5vw;
+    }
+
+    .set {
+        gap: 20px;
+        padding: 0px 0px 20px 0px;
+    }
+
+    .set li {
+        height: 150px;
+        width: 240px;
+    }
+
+    .spot p{
+        font-size: 12px;
+        transform: translate(5%, -5px);
+    }
+}
