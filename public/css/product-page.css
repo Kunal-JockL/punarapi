@@ -1,11 +1,3 @@
-:root {
-    --bg-color: rgb(255, 255, 255);
-    --font-color: #000000;
-    --primary-color: #ffffff;
-    --secondary-color: #2ecc71;
-    --text-color: #333;
-}
-
 @font-face {
     font-family: "Codec Cold Trial Heavy";
     font-style: normal;
@@ -58,7 +50,7 @@ body {
 .products {
     position: relative;
     width: 100%;
-    height: calc(100vh + 320px + 60px + 260px + 60px + 650px + 880px);
+    height: calc(min(var(--opening), var(--openingMax)) + var(--colorHeight) + var(--gallery) + var(--specs));
     z-index: 0;
     background-color: #d50000;
     top: 0;
@@ -75,6 +67,14 @@ body {
     height: 100%;
     position: relative;
 }
+
+#RTl,
+#MTl,
+#CTl {
+    font-family: "Codec Cold Trial Heavy";
+    color: #000000;
+}
+
 .mang-til {
     position: absolute;
     width: 100%;
@@ -96,231 +96,6 @@ body {
     z-index: 0;
 }
 
-.opening {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    overflow: hidden;
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.296);
-    z-index: 4;
-}
-
-.opening img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-.intro {
-    position: relative;
-    transform: translateY(-170%);
-    width: auto;
-    height: 300px;
-    z-index: 5;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 0px 330px 0px 40px;
-}
-
-.intro h2 {
-    font-family: "Codec Cold Trial Heavy";
-    color: white;
-    font-size: 70px;
-    margin: 0;
-    padding-bottom: 15px;
-}
-
-.intro p {
-    font-family: "Codec Cold Trial Regular";
-    color: white;
-    width: 100%;
-    font-size: 17px;
-    padding-right: 10vw;
-    padding-bottom: 20px;
-}
-
-.intro button {
-    position: relative;
-    background-color: #939393;
-    border: none;
-    border-radius: 50px;
-    width: 180px;
-    height: 50px;
-    top: 20px;
-    left: 5px;
-}
-
-.arrow {
-    font-size: 20px;
-    font-weight: 500;
-}
-
-.intro button a {
-    position: relative;
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 15px;
-    transform: translateY(-10px);
-}
-
-.slide {
-    position: relative;
-    width: 100%;
-    height: 180px;
-    background: linear-gradient(to bottom, #ffffff00, #ffffff);
-    z-index: 3;
-    top: -146%;
-    transform: translateY(-100%);
-    display: none;
-}
-
-.gallery {
-    padding: 40px 330px 0px 40px;
-}
-
-.gallery h2 {
-    color: var(--font-color);
-    font-family: "Codec Cold Trial ExtraBold";
-    font-size: 45px;
-    padding: 0px 0px 20px 0px;
-}
-
-.set {
-    display: flex;
-    gap: 40px;
-    padding: 0px 0px 40px 0px;
-    list-style: none;
-}
-
-.set li {
-    position: relative;
-    height: 400px;
-    width: 650px;
-}
-
-.set li img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-.spot {
-    position: relative;
-    background: linear-gradient(to bottom, #00000000, #0000009c);
-    height: 70px;
-    width: 100%;
-    transform: translate(0px, calc(-100% + -3px));
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-start;
-}
-
-.spot p {
-    font-family: "Codec Cold Trial Regular";
-    position: relative;
-    transform: translate(3%, -10px);
-    color: #ffffff;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0);
-    padding: 0;
-    margin: 0;
-}
-
-.specs {
-    color: var(--font-color);
-    padding: 0px 350px 0px 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-
-.specs h2 {
-    font-family: "Codec Cold Trial ExtraBold";
-    font-size: 60px;
-    width: 100%;
-}
-
-.test-12 {
-    display: flex;
-    gap: 0;
-    width: 100%;
-    height: auto;
-    margin-bottom: 40px;
-}
-
-.test-3 {
-    margin-bottom: 130px;
-    width: 70%;
-    height: auto;
-}
-
-.test-1 {
-    width: 40%;
-    margin-right: 20%;
-}
-
-.test-2 {
-    width: 60%;
-    margin-right: 10%;
-}
-
-.specs h3 {
-    font-family: "Codec Cold Trial ExtraBold";
-    font-size: 30px;
-    margin: 10px;
-}
-
-.specs h4 {
-    font-family: "Codec Cold Trial Regular";
-    font-size: 20px;
-    margin: 10px;
-}
-
-.specs p {
-    font-size: 20px;
-    margin: 10px;
-}
-
-.qspe-1 {
-    width: 70%;
-}
-
-.aspe-1 {
-    width: 30%;
-}
-
-.qspe-2 {
-    width: 80%;
-}
-
-.aspe-2 {
-    width: 20%;
-}
-
-.qspe-3 {
-    width: 50%;
-}
-
-.aspe-3 {
-    width: 40%;
-}
-
-.alldiv {
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid var(--font-color);
-}
 
 /*SCROLLBAR*/
 

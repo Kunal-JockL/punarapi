@@ -1,6 +1,6 @@
 .radio-parent {
     position: fixed;
-    right: 45px;
+    right: 70px;
     top: 50vh;
     z-index: 100;
     background-color: #00000000;
@@ -19,7 +19,7 @@
     grid-auto-rows: 1fr;
     gap: var(--g);
     position: relative;
-    font-size: 30px;
+    font-size: 30px; /*Change the font here*/
 }
 
 .radio-buttons:before {
@@ -27,7 +27,7 @@
     position: fixed;
     height: calc(var(--s) / 2);
     left: calc(var(--s) / 4 + var(--_x, 0px));
-    top: calc(var(--s) / 4);
+    top: calc(var(--s) / 4 );
     background: var(--c);
     border-radius: 50%;
     aspect-ratio: 1;
@@ -65,13 +65,6 @@ input {
 
 input:checked {
     --_c: var(--c);
-}
-
-#RTl,
-#MTl,
-#CTl {
-    font-family: "Codec Cold Trial Heavy";
-    color: #000000;
 }
 
 .radio-buttons:not(:has(input:checked)):before {
@@ -122,5 +115,51 @@ input:disabled {
     input:checked {
         --_c: var(--c);
         background: var(--c) content-box;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    .radio-parent {
+        right: 50px;
+    }
+
+    .radio-buttons {
+        --s: 0.8em;
+        --g: 26px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .radio-parent {
+        right: 42px;
+    }
+
+    .radio-buttons {
+        --s: 0.9em;
+        --g: 20px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+    .radio-parent {
+        right: 35px;
+    }
+
+    .radio-buttons {
+        --s: 1.0em;
+        --g: 15px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .radio-parent {
+        display: none;
     }
 }

@@ -278,7 +278,7 @@ a {
     height: 2px;
     bottom: -2px;
     left: 0;
-    background: red;
+    background: #c16632;
     transform-origin: center;
     transition: transform 0.2s ease-out;
 }

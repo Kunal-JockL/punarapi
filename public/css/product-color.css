@@ -1,6 +1,6 @@
 .colours {
-    height: 320px;
-    padding: 40px 330px 0px 40px;
+    height: var(--colorHeight);
+    padding: 40px 350px 0px 5vw;
 }
 
 .colours h2 {
@@ -21,6 +21,7 @@
 .swiper-slide {
     width: 200px;
     /* Set a fixed width for each slide */
+    height: 200px;
     text-align: left;
     font-size: 18px;
     background: #fff;
@@ -28,14 +29,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .swiper-slide img {
     object-fit: cover;
     max-width: 100%;
-    /* Make sure images don't exceed the width of the slide */
     max-height: 100%;
-    /* Make sure images don't exceed the height of the slide */
 }
 
 .swiper-slide p {
@@ -44,6 +44,7 @@
     font-family: "Codec Cold Trial Regular";
     top: -30px;
     left: 0px;
+    font-size: 18px;
 }
 
 .swiper-scrollbar {
@@ -61,4 +62,121 @@
     height: 100%;
     background: #000000;
     border-radius: 3px;
+}
+
+@media screen and (max-width: 1200px) {
+    :root{
+        --colorHeight: 280px;
+    }
+
+    .colours {
+        padding: 40px 245px 0px 5vw;
+    }
+
+    .swiper-container {
+        height: 180px;
+    }
+
+    .swiper-slide {
+        width: 180px;
+        height: 180px;
+    }
+
+    .swiper-slide img {
+        width: 140px;
+        height: 140px;
+    }
+
+    .swiper-slide p {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    :root{
+        --colorHeight: 260px;
+    }
+
+    .colours {
+        padding: 40px 215px 0px 5vw;
+    }
+
+    .swiper-container {
+        height: 160px;
+    }
+
+    .swiper-slide {
+        width: 160px;
+        height: 160px;
+    }
+
+    .swiper-slide img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .swiper-slide p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+    :root{
+        --colorHeight: 240px;
+    }
+
+    .colours {
+        padding: 40px 190px 0px 5vw;
+    }
+
+    .swiper-container {
+        height: 140px;
+    }
+
+    .swiper-slide {
+        width: 140px;
+        height: 140px;
+    }
+
+    .swiper-slide img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .swiper-slide p {
+        font-size: 12px;
+        top: -20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    :root{
+        --colorHeight: 240px;
+    }
+
+    .colours {
+        padding: 40px 5vw 0px 5vw;
+    }
+
+    .swiper-container {
+        height: 140px;
+    }
+
+    .swiper-slide {
+        width: 140px;
+        height: 140px;
+    }
+
+    .swiper-slide img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .swiper-slide p {
+        font-size: 12px;
+        top: -20px;
+    }
 }

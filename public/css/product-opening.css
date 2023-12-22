@@ -1,0 +1,190 @@
+.opening {
+    width: 100%;
+    height: var(--opening);
+    max-height: var(--openingMax);
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    max-height: 1000px;
+    background-color: rgba(0, 0, 0, 0.296);
+    z-index: 4;
+}
+
+.opening img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+}
+
+.intro {
+    position: relative;
+    transform: translateY(-130%);
+    width: auto;
+    height: 300px;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px 330px 0px 40px;
+}
+
+.intro h2 {
+    font-family: "Codec Cold Trial Heavy";
+    color: white;
+    font-size: 70px;
+    margin: 0;
+    padding-bottom: 2vh;
+}
+
+.intro p {
+    font-family: "Codec Cold Trial Regular";
+    color: white;
+    width: 100%;
+    font-size: 17px;
+    padding-right: 5vw;
+    padding-bottom: 2vh;
+}
+
+.intro button {
+    position: relative;
+    background-color: #939393;
+    border: none;
+    border-radius: 50px;
+    width: 180px;
+    height: 50px;
+    top: 20px;
+    left: 5px;
+}
+
+.arrow {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.intro button a {
+    position: relative;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+    transform: translateY(-10px);
+}
+
+.slide {
+    position: relative;
+    width: 100%;
+    height: 180px;
+    background: linear-gradient(to bottom, #ffffff00, #ffffff);
+    z-index: 3;
+    top: -146%;
+    transform: translateY(-100%);
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .intro{
+        padding: 0px 245px 0px 40px;
+    }
+
+    .intro h2 {
+        font-size: 50px;
+    }
+
+    .intro p{
+        font-size: 15px;
+        padding-right: 2vw;
+    }
+
+    .intro button {
+        width: 160px;
+        height: 45px;
+        top: 10px;
+    }
+
+    .intro button a {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .intro{
+        padding: 0px 215px 0px 40px;
+    }
+
+    .intro h2 {
+        font-size: 40px;
+    }
+
+    .intro p{
+        font-size: 13px;
+    }
+
+    .intro button {
+        width: 160px;
+        height: 45px;
+        top: 10px;
+    }
+
+    .intro button a {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+    .intro{
+        padding: 0px 190px 0px 40px;
+    }
+
+    .intro h2 {
+        font-size: 35px;
+    }
+
+    .intro p{
+        font-size: 12px;
+    }
+
+    .intro button {
+        width: 150px;
+        height: 35px;
+        top: 10px;
+    }
+
+    .intro button a {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .intro{
+        padding: 0px 20px 0px 20px;
+    }
+
+    .intro h2 {
+        font-size: 35px;
+    }
+
+    .intro p{
+        font-size: 12px;
+    }
+
+    .intro button {
+        width: 150px;
+        height: 35px;
+        top: 10px;
+    }
+
+    .intro button a {
+        font-size: 13px;
+    }
+}

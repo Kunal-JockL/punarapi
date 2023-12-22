@@ -1,6 +1,7 @@
 .quality {
     width: 100%;
     height: 100vh;
+    min-height: 730px;
     padding: 40px 7vw 0px 7vw;
     display: flex;
     flex-direction: column;
@@ -34,7 +35,7 @@
 }
 
 .choosePointsItems li {
-    height: 30px;
+    height: 23px;
     list-style: none;
     position: relative;
 }
@@ -45,9 +46,9 @@
     width: 100%;
     transform: scaleX(0);
     height: 2px;
-    bottom: 1px;
+    bottom: -3px;
     left: 0;
-    background: red;
+    background: #c16632;
     transform-origin: center;
     transition: transform 0.2s ease-out;
     z-index: 100;
@@ -120,17 +121,37 @@
 
 @media screen and (max-width: 1200px) {
     .quality {
-        height: 80vh;
+        height: 90vh;
+        min-height: 600px;
+    }
+
+    .pointsDisplay{
+        padding-bottom: 20px;
+    }
+
+    .pointsPara{
+        padding: 25px;
     }
 
     .pointSentence {
         font-size: 18px;
     }
+
+    .pointsImages img {
+        width: auto;
+        height: 100%;
+    }
 }
 
 @media screen and (max-width: 1075px) {
+    .quality {
+        height: 80vh;
+        min-height: 600px;
+    }
+
     .pointsDisplay {
-        height: 60%;
+        height: 65%;
+        padding-bottom: 0px;
     }
 
     .pointsContent {
@@ -139,6 +160,11 @@
 
     .pointSentence {
         font-size: 14px;
+    }
+
+    .pointsImages img {
+        width: auto;
+        height: 100%;
     }
 }
 
@@ -164,7 +190,18 @@
     }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 636px) {
+
+    .pointsDisplay {
+        height: 75%;
+        padding-bottom: 0px;
+    }
+
+    .quality {
+        height: 100vh;
+        min-height: 600px;
+    }
+
     .pointsContent {
         display: flex;
         flex-direction: column;
@@ -174,6 +211,7 @@
     .pointsPara {
         width: 100%;
         height: 40%;
+        min-height: 150px;
         padding: 20px;
     }
 
@@ -184,8 +222,8 @@
     }
 
     .pointsImages img {
-        width: 100%;
-        height: auto;
+        width: auto;
+        height: 100%;
     }
 
     .chooseItem {
@@ -227,12 +265,12 @@
     }
 
     .pointsImages img {
-        width: 100%;
-        height: auto;
+        width: auto;
+        height: 100%;
     }
 
     .choosePointsItems {
-        width: 20vw;
+        width: 108px;
     }
 }
 
@@ -257,5 +295,11 @@
 @media screen and (min-width: 525px) {
     .chooseItem {
         display: block;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .pointsDisplay {
+        height: 75%;
     }
 }
