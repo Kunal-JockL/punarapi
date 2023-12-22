@@ -84,8 +84,12 @@ app.post("/contact", (req, res) => {
             }
         });
 
-        
-        res.render("contact", { form: false, result: 'Thank You For Contacting Us', resultSubtitle: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, alias.' });
+        res.render("contact", {
+            form: false,
+            result: "Thank You For Contacting Us",
+            resultSubtitle:
+                "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, alias.",
+        });
     });
 });
 
