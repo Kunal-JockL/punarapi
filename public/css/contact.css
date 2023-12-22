@@ -83,7 +83,7 @@
     margin-left: 0.5rem;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
     .contact-request-section {
         padding: 5rem 2rem;
         flex-direction: column;
