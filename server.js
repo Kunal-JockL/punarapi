@@ -24,6 +24,10 @@ app.get("/products", (req, res) => {
     res.render("product-page");
 });
 
+app.get("/contact", (req, res) => {
+    res.render("contact");
+});
+
 app.post("/request_sample", (req, res) => {
     const formBody = req.body;
 
