@@ -60,20 +60,23 @@ window.addEventListener("load", function () {
 
 const mySection = document.getElementById('openingSection');
 const screenHeight = window.innerHeight;
-const sectionHalfHeight = mySection.clientHeight / 2;
 let changedToBlack = false;
 
-window.addEventListener('scroll', function() {
+$(window).scroll(() => {
     const sectionTop = mySection.getBoundingClientRect().bottom;
 
     if(!changedToBlack) {
         if (sectionTop < screenHeight / 2) {
-            console.log('change to black');
+            for(const [tileName, tileGroup] of Object.entries(tileContentGroups)) {
+                tileGroup.label.addClass('radio-black');
+            }
             changedToBlack = true;
         }
     } else {
         if (sectionTop > screenHeight / 2) {
-            console.log('change to white');
+            for(const [tileName, tileGroup] of Object.entries(tileContentGroups)) {
+                tileGroup.label.removeClass('radio-black');
+            }
             changedToBlack = false;
         }
     }
