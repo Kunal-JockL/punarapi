@@ -57,8 +57,10 @@
 
 .hover-underline-animation-quality:hover::after {
     transform: scaleX(1);
-    transform-origin: center;
-    height: 2px;
+}
+
+.selected-quality::after {
+    transform: scaleX(1);
 }
 
 .chooseItem {
