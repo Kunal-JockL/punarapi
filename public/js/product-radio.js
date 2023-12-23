@@ -63,6 +63,8 @@ window.addEventListener("load", function () {
 const mySection = document.getElementById("openingSection");
 let changedToBlack = false;
 
+const radioButtons = $(".radio-buttons");
+
 $(window).scroll(() => {
     const sectionTop = mySection.getBoundingClientRect().bottom;
     const screenHeight = window.innerHeight;
@@ -73,6 +75,7 @@ $(window).scroll(() => {
                 tileContentGroups
             )) {
                 tileGroup.label.addClass("radio-black");
+                radioButtons.addClass("radio-buttons-black");
             }
             changedToBlack = true;
         }
@@ -82,6 +85,7 @@ $(window).scroll(() => {
                 tileContentGroups
             )) {
                 tileGroup.label.removeClass("radio-black");
+                radioButtons.removeClass("radio-buttons-black");
             }
             changedToBlack = false;
         }

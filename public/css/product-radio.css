@@ -12,7 +12,7 @@
     /* control the size */
     --g: 30px;
     /* the gap */
-    --c: black;
+    --c: white;
     /* the active color */
 
     display: grid;
@@ -20,6 +20,10 @@
     gap: var(--g);
     position: relative;
     font-size: 30px; /*Change the font here*/
+}
+
+.radio-buttons-black {
+    --c: black;
 }
 
 .radio-buttons:before {
@@ -49,7 +53,7 @@ label {
 input {
     height: var(--s);
     aspect-ratio: 1;
-    border: calc(var(--s) / 6) solid var(--_c, #00000098);
+    border: calc(var(--s) / 6) solid var(--c);
     border-radius: 50%;
     outline-offset: calc(var(--s) / 10);
     padding: calc(var(--s) / 8);
