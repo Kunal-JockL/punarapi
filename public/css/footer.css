@@ -110,3 +110,10 @@
         width: 100%;
     }
 }
+
+@media screen and (max-width: 500px) {
+    .footerLogoContainer img {
+        height: 110px;
+        width: auto;
+    }
+}

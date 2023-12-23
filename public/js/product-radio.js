@@ -94,11 +94,10 @@ $(window).scroll(() => {
             changedToBlack = false;
         }
 
-
-        if(!hidden && footerTop < screenHeight / 2) {
+        if (!hidden && footerTop < screenHeight / 2) {
             radioParent.addClass("radio-hidden");
             hidden = true;
-        } else if(footerTop > screenHeight / 2) {
+        } else if (footerTop > screenHeight / 2) {
             radioParent.removeClass("radio-hidden");
             hidden = false;
         }

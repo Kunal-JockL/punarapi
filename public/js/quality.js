@@ -17,7 +17,7 @@ chooseItem0.addEventListener("click", () => {
     chooseItemList[currentlySelected].classList.remove("selected-quality");
     currentlySelected = 0;
     chooseItem0.classList.add("selected-quality");
-    
+
     var typed1 = new Typed("#pointSentence1", {
         strings: [
             "Our tiles embody sustainability by ingeniously repurposing plastic waste. By utilizing recycled materials, we contribute to a circular economy, conserve precious resources, and take a proactive step in reducing environmental pollution. Our commitment to sustainability is reflected in every tile, showcasing a fusion of eco-friendliness and innovative design.",
