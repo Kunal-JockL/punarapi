@@ -17,22 +17,24 @@ const tileContentGroups = {
 };
 
 let k = 0;
-for(const [tileName, tileGroup] of Object.entries(tileContentGroups)) {
+for (const [tileName, tileGroup] of Object.entries(tileContentGroups)) {
     const index = k;
-    tileGroup.radio.click(() => { displayContent(index); });
+    tileGroup.radio.click(() => {
+        displayContent(index);
+    });
     k++;
 }
 
 function displayContent(index) {
     console.log(index);
     let i = 0;
-    for(const [tileName, tileGroup] of Object.entries(tileContentGroups)) {
-        if(i === index) {
-            tileGroup.label.removeClass('inactive-radio');
-            tileGroup.content.removeClass('inactive-content');
+    for (const [tileName, tileGroup] of Object.entries(tileContentGroups)) {
+        if (i === index) {
+            tileGroup.label.removeClass("inactive-radio");
+            tileGroup.content.removeClass("inactive-content");
         } else {
-            tileGroup.label.addClass('inactive-radio');
-            tileGroup.content.addClass('inactive-content');
+            tileGroup.label.addClass("inactive-radio");
+            tileGroup.content.addClass("inactive-content");
         }
         i++;
     }
@@ -58,24 +60,28 @@ window.addEventListener("load", function () {
     }
 });
 
-const mySection = document.getElementById('openingSection');
-const screenHeight = window.innerHeight;
+const mySection = document.getElementById("openingSection");
 let changedToBlack = false;
 
 $(window).scroll(() => {
     const sectionTop = mySection.getBoundingClientRect().bottom;
+    const screenHeight = window.innerHeight;
 
-    if(!changedToBlack) {
+    if (!changedToBlack) {
         if (sectionTop < screenHeight / 2) {
-            for(const [tileName, tileGroup] of Object.entries(tileContentGroups)) {
-                tileGroup.label.addClass('radio-black');
+            for (const [tileName, tileGroup] of Object.entries(
+                tileContentGroups
+            )) {
+                tileGroup.label.addClass("radio-black");
             }
             changedToBlack = true;
         }
     } else {
         if (sectionTop > screenHeight / 2) {
-            for(const [tileName, tileGroup] of Object.entries(tileContentGroups)) {
-                tileGroup.label.removeClass('radio-black');
+            for (const [tileName, tileGroup] of Object.entries(
+                tileContentGroups
+            )) {
+                tileGroup.label.removeClass("radio-black");
             }
             changedToBlack = false;
         }
