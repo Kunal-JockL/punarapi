@@ -5,11 +5,19 @@ const pointsContent4 = document.getElementById("pointsContent4");
 
 var typespeed = 5;
 
+const chooseItemList = [chooseItem0, chooseItem1, chooseItem2, chooseItem3];
+let currentlySelected = 0;
+
 chooseItem0.addEventListener("click", () => {
     pointsContent1.style.zIndex = "3";
     pointsContent2.style.zIndex = "0";
     pointsContent3.style.zIndex = "0";
     pointsContent4.style.zIndex = "0";
+
+    chooseItemList[currentlySelected].classList.remove("selected-quality");
+    currentlySelected = 0;
+    chooseItem0.classList.add("selected-quality");
+    
     var typed1 = new Typed("#pointSentence1", {
         strings: [
             "Our tiles embody sustainability by ingeniously repurposing plastic waste. By utilizing recycled materials, we contribute to a circular economy, conserve precious resources, and take a proactive step in reducing environmental pollution. Our commitment to sustainability is reflected in every tile, showcasing a fusion of eco-friendliness and innovative design.",
@@ -26,6 +34,11 @@ chooseItem1.addEventListener("click", () => {
     pointsContent2.style.zIndex = "3";
     pointsContent3.style.zIndex = "0";
     pointsContent4.style.zIndex = "0";
+
+    chooseItemList[currentlySelected].classList.remove("selected-quality");
+    currentlySelected = 1;
+    chooseItem1.classList.add("selected-quality");
+
     var typed2 = new Typed("#pointSentence2", {
         strings: [
             "Elevate your space with our tiles that offer a spectrum of vibrant and customizable color options. From bold hues to subtle tones, our tiles provide an extensive palette to match your style. Ensuring color consistency and UV resistance, our tiles stand the test of time, maintaining their brilliance and aesthetic appeal for years to come.",
@@ -42,6 +55,11 @@ chooseItem2.addEventListener("click", () => {
     pointsContent2.style.zIndex = "0";
     pointsContent3.style.zIndex = "3";
     pointsContent4.style.zIndex = "0";
+
+    chooseItemList[currentlySelected].classList.remove("selected-quality");
+    currentlySelected = 2;
+    chooseItem2.classList.add("selected-quality");
+
     var typed3 = new Typed("#pointSentence3", {
         strings: [
             "Experience durability redefined with our tiles. Crafted for strength, our tiles are engineered to withstand wear and tear in high-traffic areas, ensuring longevity and low maintenance. Their resistance to impact and exceptional strength make them the perfect choice for spaces that demand both resilience and style.",
@@ -58,6 +76,10 @@ chooseItem3.addEventListener("click", () => {
     pointsContent2.style.zIndex = "0";
     pointsContent3.style.zIndex = "0";
     pointsContent4.style.zIndex = "3";
+
+    chooseItemList[currentlySelected].classList.remove("selected-quality");
+    currentlySelected = 3;
+    chooseItem3.classList.add("selected-quality");
 
     var typed4 = new Typed("#pointSentence4", {
         strings: [
