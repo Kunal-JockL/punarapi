@@ -626,7 +626,7 @@ body {
     .product {
         height: auto;
         row-gap: 1rem;
-        padding: 30px 0vw 0px 0vw;
+        padding: 50px 0vw 0px 0vw;
     }
 
     .product-item {
@@ -639,7 +639,7 @@ body {
     }
 
     .product-heading p {
-        font-size: 13px;
+        font-size: 14px;
         padding-bottom: 30px;
     }
 

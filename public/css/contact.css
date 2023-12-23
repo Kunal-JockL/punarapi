@@ -114,4 +114,31 @@
     .form-item {
         font-size: 0.8rem;
     }
+
+    .contact-request-title {
+        font-size: 45px;
+        font-family: "Codec Cold Trial Heavy";
+    }
+    
+    .contact-request-subtitle {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+    .contact-request-title {
+        font-size: 30px;
+    }
+
+    .contact-request-subtitle {
+        font-size: 17px;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .contact-request-subtitle {
+        font-size: 15px;
+    }
 }

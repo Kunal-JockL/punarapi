@@ -66,3 +66,9 @@
         height: 135px;
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .blog-title {
+        font-size: 30px;
+    }
+}
