@@ -1,57 +1,44 @@
-const MT = document.getElementById("MT");
-const RT = document.getElementById("RT");
-const CT = document.getElementById("CT");
+const tileContentGroups = {
+    mangalore: {
+        radio: $("#MT"),
+        label: $("#MTl"),
+        content: $("#mang-ti"),
+    },
+    roman: {
+        radio: $("#RT"),
+        label: $("#RTl"),
+        content: $("#rom-ti"),
+    },
+    ridge: {
+        radio: $("#CT"),
+        label: $("#CTl"),
+        content: $("#rig-ti"),
+    },
+};
 
-const MTl = document.getElementById("MTl");
-const RTl = document.getElementById("RTl");
-const CTl = document.getElementById("CTl");
-
-const zm = document.getElementById("mang-ti");
-const zr = document.getElementById("rom-ti");
-const zc = document.getElementById("rig-ti");
-
-function handleMTClick() {
-    MTl.style.color = "#000000";
-    MTl.style.transform = "scale(1.2)";
-    RTl.style.color = "#00000098";
-    RTl.style.transform = "scale(1)";
-    CTl.style.color = "#00000098";
-    CTl.style.transform = "scale(1)";
-
-    zm.style.zIndex = 3;
-    zr.style.zIndex = 2;
-    zc.style.zIndex = 1;
+let k = 0;
+for (const [tileName, tileGroup] of Object.entries(tileContentGroups)) {
+    const index = k;
+    tileGroup.radio.click(() => {
+        displayContent(index);
+    });
+    k++;
 }
 
-function handleRTClick() {
-    MTl.style.color = "#00000098";
-    MTl.style.transform = "scale(1)";
-    RTl.style.color = "#000000";
-    RTl.style.transform = "scale(1.2)";
-    CTl.style.color = "#00000098";
-    CTl.style.transform = "scale(1)";
-
-    zm.style.zIndex = 2;
-    zr.style.zIndex = 3;
-    zc.style.zIndex = 1;
+function displayContent(index) {
+    console.log(index);
+    let i = 0;
+    for (const [tileName, tileGroup] of Object.entries(tileContentGroups)) {
+        if (i === index) {
+            tileGroup.label.removeClass("inactive-radio");
+            tileGroup.content.removeClass("inactive-content");
+        } else {
+            tileGroup.label.addClass("inactive-radio");
+            tileGroup.content.addClass("inactive-content");
+        }
+        i++;
+    }
 }
-
-function handleCTClick() {
-    MTl.style.color = "#00000098";
-    MTl.style.transform = "scale(1)";
-    RTl.style.color = "#00000098";
-    RTl.style.transform = "scale(1)";
-    CTl.style.color = "#000000";
-    CTl.style.transform = "scale(1.2)";
-
-    zm.style.zIndex = 1;
-    zr.style.zIndex = 2;
-    zc.style.zIndex = 3;
-}
-
-MT.addEventListener("click", handleMTClick);
-RT.addEventListener("click", handleRTClick);
-CT.addEventListener("click", handleCTClick);
 
 window.addEventListener("load", function () {
     function getParameterByName(name, url) {
@@ -64,19 +51,56 @@ window.addEventListener("load", function () {
         return decodeURIComponent(results[2].replace(/\+/g, " "));
     }
 
-    var buttonId = getParameterByName("button");
+    const tile = getParameterByName("tile");
 
-    if (buttonId === "button1") {
-        handleMTClick();
-        MT.click();
-    } else if (buttonId === "button2") {
-        handleRTClick();
+    if (tile === "roman") {
         RT.click();
-    } else if (buttonId === "button3") {
-        handleCTClick();
+    } else if (tile === "ridge") {
         CT.click();
+    }
+});
+
+const openingSection = document.getElementById("openingSection");
+const footer = document.getElementById("footer");
+let changedToBlack = false;
+let hidden = false;
+
+const radioButtons = $(".radio-buttons");
+const radioParent = $(".radio-parent");
+
+$(window).scroll(() => {
+    const sectionBottom = openingSection.getBoundingClientRect().bottom;
+    const footerTop = footer.getBoundingClientRect().top;
+    const screenHeight = window.innerHeight;
+
+    if (!changedToBlack) {
+        if (sectionBottom < screenHeight / 2) {
+            for (const [tileName, tileGroup] of Object.entries(
+                tileContentGroups
+            )) {
+                tileGroup.label.addClass("radio-black");
+                radioButtons.addClass("radio-buttons-black");
+            }
+            changedToBlack = true;
+        }
     } else {
-        handleMTClick();
-        MT.click();
+        if (!hidden && sectionBottom > screenHeight / 2) {
+            for (const [tileName, tileGroup] of Object.entries(
+                tileContentGroups
+            )) {
+                tileGroup.label.removeClass("radio-black");
+                radioButtons.removeClass("radio-buttons-black");
+            }
+            changedToBlack = false;
+        }
+
+
+        if(!hidden && footerTop < screenHeight / 2) {
+            radioParent.addClass("radio-hidden");
+            hidden = true;
+        } else if(footerTop > screenHeight / 2) {
+            radioParent.removeClass("radio-hidden");
+            hidden = false;
+        }
     }
 });
