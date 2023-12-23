@@ -45,14 +45,18 @@ body {
 }
 
 .radio-label {
-    color: black;
+    color: white;
     font-family: "Codec Cold Trial Heavy";
     transform: scale(1.2);
 }
 
+.radio-black {
+    color: black;
+}
+
 .inactive-radio {
     transform: scale(1);
-    color: rgba(0, 0, 0, 0.5);
+    opacity: 50%;
 }
 
 .mang-til {

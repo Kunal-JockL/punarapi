@@ -16,9 +16,12 @@ const tileContentGroups = {
     },
 };
 
-$("#MT").click(() => { displayContent(0); });
-$("#RT").click(() => { displayContent(1); });
-$("#CT").click(() => { displayContent(2); });
+let k = 0;
+for(const [tileName, tileGroup] of Object.entries(tileContentGroups)) {
+    const index = k;
+    tileGroup.radio.click(() => { displayContent(index); });
+    k++;
+}
 
 function displayContent(index) {
     console.log(index);
@@ -52,5 +55,26 @@ window.addEventListener("load", function () {
         RT.click();
     } else if (tile === "ridge") {
         CT.click();
+    }
+});
+
+const mySection = document.getElementById('openingSection');
+const screenHeight = window.innerHeight;
+const sectionHalfHeight = mySection.clientHeight / 2;
+let changedToBlack = false;
+
+window.addEventListener('scroll', function() {
+    const sectionTop = mySection.getBoundingClientRect().bottom;
+
+    if(!changedToBlack) {
+        if (sectionTop < screenHeight / 2) {
+            console.log('change to black');
+            changedToBlack = true;
+        }
+    } else {
+        if (sectionTop > screenHeight / 2) {
+            console.log('change to white');
+            changedToBlack = false;
+        }
     }
 });

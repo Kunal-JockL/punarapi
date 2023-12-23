@@ -12,7 +12,7 @@
     /* control the size */
     --g: 30px;
     /* the gap */
-    --c: var(--font-color);
+    --c: black;
     /* the active color */
 
     display: grid;
@@ -42,7 +42,6 @@ label {
     align-items: center;
     gap: 10px;
     cursor: pointer;
-    color: rgb(255, 255, 255);
     transition: 0.3s;
     transform-origin: 8.5px 8.5px;
 }
