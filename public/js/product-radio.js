@@ -60,17 +60,21 @@ window.addEventListener("load", function () {
     }
 });
 
-const mySection = document.getElementById("openingSection");
+const openingSection = document.getElementById("openingSection");
+const footer = document.getElementById("footer");
 let changedToBlack = false;
+let hidden = false;
 
 const radioButtons = $(".radio-buttons");
+const radioParent = $(".radio-parent");
 
 $(window).scroll(() => {
-    const sectionTop = mySection.getBoundingClientRect().bottom;
+    const sectionBottom = openingSection.getBoundingClientRect().bottom;
+    const footerTop = footer.getBoundingClientRect().top;
     const screenHeight = window.innerHeight;
 
     if (!changedToBlack) {
-        if (sectionTop < screenHeight / 2) {
+        if (sectionBottom < screenHeight / 2) {
             for (const [tileName, tileGroup] of Object.entries(
                 tileContentGroups
             )) {
@@ -80,7 +84,7 @@ $(window).scroll(() => {
             changedToBlack = true;
         }
     } else {
-        if (sectionTop > screenHeight / 2) {
+        if (!hidden && sectionBottom > screenHeight / 2) {
             for (const [tileName, tileGroup] of Object.entries(
                 tileContentGroups
             )) {
@@ -88,6 +92,15 @@ $(window).scroll(() => {
                 radioButtons.removeClass("radio-buttons-black");
             }
             changedToBlack = false;
+        }
+
+
+        if(!hidden && footerTop < screenHeight / 2) {
+            radioParent.addClass("radio-hidden");
+            hidden = true;
+        } else if(footerTop > screenHeight / 2) {
+            radioParent.removeClass("radio-hidden");
+            hidden = false;
         }
     }
 });

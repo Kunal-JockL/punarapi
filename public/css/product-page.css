@@ -54,6 +54,10 @@ body {
     color: black;
 }
 
+.radio-hidden {
+    opacity: 0%;
+}
+
 .inactive-radio {
     transform: scale(1);
     opacity: 60%;
