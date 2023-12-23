@@ -7,7 +7,7 @@
     width: 100%;
     color: white;
     font-family: "Codec Cold Trial Regular";
-    padding: 5rem 10rem;
+    padding: 10rem 10rem 5rem 10rem;
 
     background-image: url("/resource/media/bg/pattern-dark.svg");
     background-size: 150vh;
@@ -79,6 +79,19 @@
 }
 
 .submit-button {
+    font-family: "Codec Cold Trial ExtraBold";
+    position: relative;
+    background-color: #c16632;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    width: 150px;
+    font-size: 17px;
+    height: 45px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.322);
+    cursor: pointer;
+    padding-top: 3px;
     margin-top: 1rem;
     margin-left: 0.5rem;
 }

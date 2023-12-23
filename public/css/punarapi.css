@@ -10,7 +10,13 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: var(var(--bg-color));
+    input,
+    textarea,
+    button,
+    select,
+    a {
+        -webkit-tap-highlight-color: transparent;
+    }
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,600&display=swap");
@@ -221,20 +227,20 @@ body {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    row-gap: 8rem;
+    row-gap: 5rem;
+    padding: 0px 7vw;
     /* NOTE: change for mobile*/
 }
 
 .product-heading {
     color: var(--font-color);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 0px 30px 0px 30px;
 }
 
 .product-heading p {
-    width: 30%;
+    width: 45%;
 }
 
 .product-heading h1 {
@@ -306,7 +312,8 @@ body {
     left: 0;
     width: 12rem;
     height: 100%;
-    background-color: #8c9086;
+    color: #000000;
+    background-color: #e6ceb5;
     transition: 0.3s ease;
 }
 
@@ -320,26 +327,170 @@ body {
     width: 12rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     row-gap: 1rem;
     padding: 1.5rem;
 }
 
 .tile-r-content {
-    font-size: 1.15rem;
+    font-size: 15px;
 }
 
 .view-button {
-    border: none;
-    background-color: antiquewhite;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.322);
+    width: 150px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    background-color: #c16632;
     border-radius: 40px;
-    color: black;
-    padding: 0.3rem 0.6rem;
+    color: rgb(255, 255, 255);
+}
+
+.view-button p {
+    padding: 7px 10px 0px 10px;
+}
+
+.view-button img {
+    width: auto;
+    height: 100%;
+    padding: 5px 0px 5px 0px;
 }
 
 @media screen and (max-width: 1024px) {
+    .product {
+        height: auto;
+        row-gap: 2rem;
+        padding: 40px 7vw 0px 7vw;
+    }
+
+    .product-heading {
+        flex-direction: column;
+        width: 100%;
+        row-gap: 1rem;
+        align-items: flex-start;
+        padding: 0px 0px 0px 0px;
+    }
+
+    .product-heading p {
+        width: 80%;
+    }
+
+    .product-list {
+        height: auto;
+        width: 110%;
+        margin-top: 0;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        row-gap: 1rem;
+    }
+
+    .product-item {
+        height: 20rem;
+        width: 100%;
+    }
+
+    .tile-name {
+        position: relative;
+        top: -20px;
+    }
+
+    .tile-le {
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        align-items: center;
+    }
+
+    .view-button {
+        width: 40px;
+        height: 40px;
+    }
+
+    .view-button p {
+        display: none;
+    }
+
+    .view-button img {
+        padding: 5px;
+    }
+
+    .tile-r {
+        border-top-right-radius: 2rem;
+        height: 50%;
+        width: 90%;
+        z-index: 999;
+        top: auto;
+        bottom: 0;
+        background-color: #f0f0f0ce;
+    }
+
+    .tile-r-wrapper {
+        height: 100%;
+        width: 100%;
+        flex-direction: row;
+        column-gap: 0;
+        padding: 18px;
+    }
+
+    .tile-r-content {
+        font-size: 0.8rem;
+        width: 80%;
+    }
+
+    .view-button {
+        font-size: 0.8rem;
+    }
+
+    /* REMOVING HOVER EFFECTS  */
+
+    .product-item:hover .tile-r {
+        width: 90%;
+    }
+
+    .product-item:hover .tile-name {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .product-item:hover {
+        height: 20rem;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .product-heading h1 {
+        font-size: 30px;
+    }
+
+    .product-heading p {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .tile-r-wrapper {
+        padding: 18px 9px 18px 12px;
+    }
+
+    .tile-r-content {
+        width: 85%;
+    }
+
+    .view-button {
+        width: 30px;
+        height: 30px;
+    }
+
+    .view-button img {
+        padding: 3px;
+        position: relative;
+        left: 1px;
+    }
+}
+
+@media screen and (max-width: 750px) {
     .product {
         height: auto;
         row-gap: 2rem;
@@ -354,7 +505,8 @@ body {
     }
 
     .product-heading p {
-        width: 80%;
+        width: 100%;
+        font-size: 14px;
     }
 
     .product-list {
@@ -368,6 +520,7 @@ body {
     .product-item {
         height: 20rem;
         width: 100%;
+        border-radius: 1rem;
     }
 
     .tile-le {
@@ -378,7 +531,7 @@ body {
     }
 
     .tile-r {
-        border-top-right-radius: 2rem;
+        border-top-right-radius: 1rem;
         height: 40%;
         width: 90%;
         z-index: 999;
@@ -415,6 +568,51 @@ body {
     .product-item:hover {
         height: 20rem;
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .product {
+        height: auto;
+        row-gap: 1rem;
+        padding: 30px 0vw 0px 0vw;
+    }
+
+    .product-item {
+        height: 15rem;
+    }
+
+    .product-heading {
+        margin-top: 15px;
+        padding: 0px 7vw;
+    }
+
+    .product-heading p {
+        font-size: 13px;
+        padding-bottom: 30px;
+    }
+
+    .product-item {
+        border-radius: 0.7rem;
+    }
+
+    .tile-le {
+        width: 100%;
+    }
+
+    .tile-r {
+        border-top-right-radius: 0.7rem;
+        height: 55%;
+    }
+
+    .tile-name {
+        top: -30px;
+    }
+
+    /* REMOVING HOVER EFFECTS  */
+
+    .product-item:hover {
+        height: 15rem;
     }
 }
 

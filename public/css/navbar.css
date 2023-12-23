@@ -190,7 +190,7 @@ a {
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 3000px) {
+@media screen and (min-width: 769px) and (max-width: 3000px) {
     .hamburger {
         display: none;
     }

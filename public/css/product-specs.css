@@ -174,7 +174,7 @@
 
 @media screen and (max-width: 500px) {
     :root {
-        --specs: 580px;
+        --specs: 800px;
     }
 
     .specs {
@@ -191,5 +191,18 @@
 
     .specs p {
         font-size: 14px;
+    }
+
+    .test-12 {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .test-1 {
+        width: 100%;
+    }
+
+    .test-2 {
+        width: 100%;
     }
 }

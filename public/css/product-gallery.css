@@ -117,7 +117,7 @@
 
 @media screen and (max-width: 600px) {
     :root {
-        --gallery: 530px;
+        --gallery: 500px;
     }
 
     .gallery {
@@ -142,7 +142,7 @@
 
 @media screen and (max-width: 500px) {
     :root {
-        --gallery: 510px;
+        --gallery: 450px;
     }
 
     .gallery {
