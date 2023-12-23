@@ -1,3 +1,42 @@
+// const tileContentGroups = {
+//     mangalore: {
+//         radio: $("#MT"),
+//         label: $("#MTl"),
+//         content: $("mang-ti"),
+//     },
+//     roman: {
+//         radio: $("#RT"),
+//         label: $("#RTl"),
+//         content: $("rom-ti"),
+//     },
+//     ridge: {
+//         radio: $("#CT"),
+//         label: $("#CTl"),
+//         content: $("rig-ti"),
+//     },
+// }
+
+// let i = 0;
+// for(const [tileType, tileGroup] in tileContentGroups) {
+//     tileGroup.radio.click(displayContent(i));
+//     i++;
+// }
+
+// function displayContent(index) {
+//     tileContentGroups[j].label.removeClass('inactive-radio');
+//     tileContentGroups[j].content.removeClass('inactive-content');
+
+//     for(let j = 0; j < tileContentGroups.length; j++) {
+//         if(j === index) {
+//             continue; 
+//         }
+//         tileContentGroups[j].label.addClass('inactive-radio');
+//         tileContentGroups[j].content.addClass('inactive-content');
+//     }
+// }
+
+
+
 const MT = document.getElementById("MT");
 const RT = document.getElementById("RT");
 const CT = document.getElementById("CT");
@@ -67,16 +106,12 @@ window.addEventListener("load", function () {
     var buttonId = getParameterByName("button");
 
     if (buttonId === "button1") {
-        handleMTClick();
         MT.click();
     } else if (buttonId === "button2") {
-        handleRTClick();
         RT.click();
     } else if (buttonId === "button3") {
-        handleCTClick();
         CT.click();
     } else {
-        handleMTClick();
         MT.click();
     }
 });
