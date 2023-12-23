@@ -1,96 +1,39 @@
-// const tileContentGroups = {
-//     mangalore: {
-//         radio: $("#MT"),
-//         label: $("#MTl"),
-//         content: $("mang-ti"),
-//     },
-//     roman: {
-//         radio: $("#RT"),
-//         label: $("#RTl"),
-//         content: $("rom-ti"),
-//     },
-//     ridge: {
-//         radio: $("#CT"),
-//         label: $("#CTl"),
-//         content: $("rig-ti"),
-//     },
-// }
+const tileContentGroups = {
+    mangalore: {
+        radio: $("#MT"),
+        label: $("#MTl"),
+        content: $("#mang-ti"),
+    },
+    roman: {
+        radio: $("#RT"),
+        label: $("#RTl"),
+        content: $("#rom-ti"),
+    },
+    ridge: {
+        radio: $("#CT"),
+        label: $("#CTl"),
+        content: $("#rig-ti"),
+    },
+};
 
-// let i = 0;
-// for(const [tileType, tileGroup] in tileContentGroups) {
-//     tileGroup.radio.click(displayContent(i));
-//     i++;
-// }
+$("#MT").click(() => { displayContent(0); });
+$("#RT").click(() => { displayContent(1); });
+$("#CT").click(() => { displayContent(2); });
 
-// function displayContent(index) {
-//     tileContentGroups[j].label.removeClass('inactive-radio');
-//     tileContentGroups[j].content.removeClass('inactive-content');
-
-//     for(let j = 0; j < tileContentGroups.length; j++) {
-//         if(j === index) {
-//             continue; 
-//         }
-//         tileContentGroups[j].label.addClass('inactive-radio');
-//         tileContentGroups[j].content.addClass('inactive-content');
-//     }
-// }
-
-
-
-const MT = document.getElementById("MT");
-const RT = document.getElementById("RT");
-const CT = document.getElementById("CT");
-
-const MTl = document.getElementById("MTl");
-const RTl = document.getElementById("RTl");
-const CTl = document.getElementById("CTl");
-
-const zm = document.getElementById("mang-ti");
-const zr = document.getElementById("rom-ti");
-const zc = document.getElementById("rig-ti");
-
-function handleMTClick() {
-    MTl.style.color = "#000000";
-    MTl.style.transform = "scale(1.2)";
-    RTl.style.color = "#00000098";
-    RTl.style.transform = "scale(1)";
-    CTl.style.color = "#00000098";
-    CTl.style.transform = "scale(1)";
-
-    zm.style.zIndex = 3;
-    zr.style.zIndex = 2;
-    zc.style.zIndex = 1;
+function displayContent(index) {
+    console.log(index);
+    let i = 0;
+    for(const [tileName, tileGroup] of Object.entries(tileContentGroups)) {
+        if(i === index) {
+            tileGroup.label.removeClass('inactive-radio');
+            tileGroup.content.removeClass('inactive-content');
+        } else {
+            tileGroup.label.addClass('inactive-radio');
+            tileGroup.content.addClass('inactive-content');
+        }
+        i++;
+    }
 }
-
-function handleRTClick() {
-    MTl.style.color = "#00000098";
-    MTl.style.transform = "scale(1)";
-    RTl.style.color = "#000000";
-    RTl.style.transform = "scale(1.2)";
-    CTl.style.color = "#00000098";
-    CTl.style.transform = "scale(1)";
-
-    zm.style.zIndex = 2;
-    zr.style.zIndex = 3;
-    zc.style.zIndex = 1;
-}
-
-function handleCTClick() {
-    MTl.style.color = "#00000098";
-    MTl.style.transform = "scale(1)";
-    RTl.style.color = "#00000098";
-    RTl.style.transform = "scale(1)";
-    CTl.style.color = "#000000";
-    CTl.style.transform = "scale(1.2)";
-
-    zm.style.zIndex = 1;
-    zr.style.zIndex = 2;
-    zc.style.zIndex = 3;
-}
-
-MT.addEventListener("click", handleMTClick);
-RT.addEventListener("click", handleRTClick);
-CT.addEventListener("click", handleCTClick);
 
 window.addEventListener("load", function () {
     function getParameterByName(name, url) {
@@ -105,13 +48,9 @@ window.addEventListener("load", function () {
 
     var buttonId = getParameterByName("button");
 
-    if (buttonId === "button1") {
-        MT.click();
-    } else if (buttonId === "button2") {
+    if (buttonId === "button2") {
         RT.click();
     } else if (buttonId === "button3") {
         CT.click();
-    } else {
-        MT.click();
     }
 });

@@ -44,31 +44,40 @@ body {
     position: relative;
 }
 
-#RTl,
-#MTl,
-#CTl {
+.radio-label {
+    color: black;
     font-family: "Codec Cold Trial Heavy";
+    transform: scale(1.2);
+}
+
+.inactive-radio {
+    transform: scale(1);
+    color: rgba(0, 0, 0, 0.5);
 }
 
 .mang-til {
     position: absolute;
     width: 100%;
     background-color: var(--bg-color);
-    z-index: 3;
+    z-index: 4;
 }
 
 .rom-til {
     position: absolute;
     width: 100%;
     background-color: var(--bg-color);
-    z-index: 2;
+    z-index: 3;
 }
 
 .rig-til {
     position: absolute;
     width: 100%;
     background-color: var(--bg-color);
-    z-index: 0;
+    z-index: 3;
+}
+
+.inactive-content {
+    z-index: 2;
 }
 
 /*SCROLLBAR*/
