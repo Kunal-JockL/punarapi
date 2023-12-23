@@ -488,6 +488,24 @@ body {
         position: relative;
         left: 1px;
     }
+
+    .request_cont {
+        width: 350px;
+        height: 320px;
+        margin-top: 220px;
+        margin-right: 10vw;
+        margin-left: 10vw;
+        justify-content: space-around;
+    }
+
+    .caroselIntro {
+        font-size: 35px;
+        padding: 40px 30px 20px 30px;
+    }
+
+    .caroselIntro2 {
+        font-size: 22px;
+    }
 }
 
 @media screen and (max-width: 750px) {
@@ -569,6 +587,39 @@ body {
         height: 20rem;
         width: 100%;
     }
+
+    .request_cont {
+        width: 300px;
+        height: 280px;
+        margin-top: 220px;
+        margin-right: 7vw;
+        margin-left: 7vw;
+        justify-content: space-around;
+        border-radius: 25px;
+    }
+
+    .caroselIntro {
+        font-size: 30px;
+        padding: 35px 30px 15px 30px;
+    }
+
+    .caroselIntro2 {
+        font-size: 20px;
+        padding: 0px 30px 15px 30px;
+    }
+
+    .rqButtonContent {
+        width: 160px;
+        height: 35px;
+        font-size: 15px;
+        border-radius: 10px;
+        padding-left: 5px;
+    }
+
+    .rqButtonContentImg {
+        position: relative;
+        top: -1px;
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -613,6 +664,75 @@ body {
 
     .product-item:hover {
         height: 15rem;
+    }
+
+    .request_cont {
+        margin-top: 300px;
+        margin-right: 7vw;
+        margin-left: 7vw;
+        border-radius: 20px;
+        right: auto;
+        left: 0;
+    }
+
+    .caroselIntro {
+        padding: 25px 25px 15px 20px;
+    }
+
+    .caroselIntro2 {
+        padding: 0px 30px 15px 20px;
+    }
+
+    .rqButton {
+        padding: 0px 30px 20px 20px;
+    }
+
+    .rqButtonContentImg {
+        height: 18px;
+        width: auto;
+        position: relative;
+        top: -1px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .request_cont {
+        width: 250px;
+        height: 250px;
+        margin-top: 300px;
+        margin-right: 7vw;
+        margin-left: 7vw;
+        justify-content: space-around;
+        border-radius: 20px;
+        right: auto;
+        left: 0;
+    }
+
+    .caroselIntro {
+        font-size: 25px;
+        padding: 25px 25px 15px 20px;
+    }
+
+    .caroselIntro2 {
+        font-size: 18px;
+        padding: 0px 30px 15px 20px;
+    }
+
+    .rqButtonContent {
+        width: 135px;
+        height: 30px;
+        font-size: 13px;
+    }
+
+    .rqButton {
+        padding: 0px 30px 20px 20px;
+    }
+
+    .rqButtonContentImg {
+        height: 18px;
+        width: auto;
+        position: relative;
+        top: -1px;
     }
 }
 

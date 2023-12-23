@@ -105,7 +105,7 @@ body {
 
 /* Thumb */
 ::-webkit-scrollbar-thumb {
-    background-color: #888; /* Set the color of the thumb */
+    background-color: #464646; /* Set the color of the thumb */
     border-radius: 10px; /* Add border radius to the thumb */
 }
 
@@ -116,5 +116,5 @@ body {
 
 /* Track Piece */
 ::-webkit-scrollbar-track-piece {
-    background-color: black; /* Make the track piece transparent */
+    background-color: rgb(163, 163, 163); /* Make the track piece transparent */
 }
