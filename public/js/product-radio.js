@@ -46,11 +46,11 @@ window.addEventListener("load", function () {
         return decodeURIComponent(results[2].replace(/\+/g, " "));
     }
 
-    var buttonId = getParameterByName("button");
+    const tile = getParameterByName("tile");
 
-    if (buttonId === "button2") {
+    if (tile === "roman") {
         RT.click();
-    } else if (buttonId === "button3") {
+    } else if (tile === "ridge") {
         CT.click();
     }
 });
