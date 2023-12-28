@@ -30,8 +30,8 @@
 .logo {
     position: relative;
     /* margin-left: 10px; */
-    width: 150px;
-    height: auto;
+    width: auto; /*150px*/
+    height: 50px;
     cursor: pointer;
     background-color: transparent;
     top: 2px;
@@ -250,6 +250,10 @@ a {
 
     :root {
         --dpLength: 400px;
+    }
+
+    .logo {
+        height: 40px;
     }
 
     .dropdown-navbar-wrapper {

@@ -121,7 +121,7 @@ function hideElementsOnSmallScreen() {
     if ($(window).width() < 516) {
         // here the reason it is 516 is bescuse 525-9 =516
         for (var i = 1; i < 4; i++) {
-            if(i === currentlySelected) {
+            if (i === currentlySelected) {
                 continue;
             }
             var chooseItem = $(`#chooseItem${i}`);
