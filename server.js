@@ -12,6 +12,9 @@ const app = express();
 
 const mailTransporter = nodemailer.createTransport({
     service: "gmail",
+    // host: 'smtp.office365.com',
+    // port: 587,                // Use 587 for STARTTLS (recommended) or 465 for SSL
+    // secure: false,            // Use `false` for STARTTLS or `true` for SSL (port 465)
     auth: {
         user: SRCEMAIL,
         pass: SRCEMAILPWD,
@@ -88,7 +91,7 @@ app.post("/contact", (req, res) => {
             form: false,
             result: "Thank You For Contacting Us",
             resultSubtitle:
-                "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, alias.",
+                "",
         });
     });
 });
@@ -151,6 +154,6 @@ app.post("/request_sample", (req, res) => {
     });
 });
 
-app.listen(58617, () => {
-    console.log("Server running at http://localhost:3000");
+app.listen(process.env.PORT, () => {
+    console.log("Server running at http://localhost:58617");
 });
